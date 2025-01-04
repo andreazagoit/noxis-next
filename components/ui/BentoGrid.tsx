@@ -163,7 +163,7 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Email is Copied!" : "Copy our email address"}
                 icon={<IoCopyOutline />}
                 position="left"
                 onClick={handleCopy}
