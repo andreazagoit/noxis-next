@@ -1,0 +1,346 @@
+{
+    "header": {
+        "development": "Development",
+        "talent": "Talent",
+        "sign_in": "Sign in"
+    },
+    "hero": {
+        "title_line1": "We love",
+        "title_line2": "challenges.",
+        "title_line3": "Bring us yours.",
+        "description": "Designing immersive, motion-driven experiences that command attention and guide users to act. Clean builds. Sharp strategy. Zero limits.",
+        "cta": "Start a Project",
+        "we_are_good_at": "We Are Good At",
+        "skills": {
+            "web": "Web",
+            "mobile": "Mobile",
+            "design": "Design",
+            "strategy": "Strategy"
+        }
+    },
+    "vision": {
+        "quote_line1": "Impact is engineered,",
+        "quote_line2": "not guessed.",
+        "quote_description": "Design without functionality is hollow. Functionality without design is incomplete. We build digital products that respect both and the people who use them.",
+        "our_vision": "Our Vision",
+        "vision_title": "Setting\nThe\nStandard.",
+        "vision_description": "We envision a digital world where every product is beautiful, functional, and ethically responsible. We aim to prove that technology can be a force for good, improving people's lives without shortcuts or compromises. Our ambition is to become a benchmark for excellence, where design and technology merge into premium digital experiences that leave a lasting positive impact.",
+        "our_mission": "Our Mission",
+        "mission_title": "Engineering\nValue.",
+        "mission_description": "We create web and mobile solutions of the highest quality, combining innovative design, flawless functionality, and obsessive attention to detail. Every project is born from respect for people and our clients' values. We reject shortcuts and unethical practices, collaborating with those who share our vision to produce digital tools that are truly useful, ethical, and sustainable. Our mission is to transform ideas into premium digital experiences that empower people and generate concrete value."
+    },
+    "footer": {
+        "slogan_line1": "Beyond ",
+        "slogan_line2": "Digital Excellence.",
+        "get_in_touch": "Get in touch",
+        "office": "Office"
+    },
+    "services": {
+        "title_line1": "Premium",
+        "title_line2": "Digital Products.",
+        "web_dev": {
+            "title": "Web Development",
+            "description": "Forging high-performance web platforms with surgical precision and modern architectures. We bridge the gap between complex engineering and obsessive art direction to create digital assets that are as powerful as they are beautiful."
+        },
+        "ux_ui": {
+            "title": "UX/UI Design",
+            "description": "Crafting human-centric digital journeys through refined interfaces and sophisticated interaction design. We don't just design screens. We engineer environments that command attention and drive conversion."
+        },
+        "mobile_dev": {
+            "title": "Mobile Development",
+            "description": "Native and cross-platform mobile apps built for performance and natural feel."
+        },
+        "ai": {
+            "title": "Artificial Intelligence",
+            "description": "Integrating smart AI solutions to automate workflows and enhance user interaction."
+        },
+        "marketing": {
+            "title": "Marketing & Strategy",
+            "description": "Data-backed growth and performance marketing to scale your product effectively."
+        }
+    },
+    "partnership": {
+        "title_line1": "Ready for a",
+        "title_line2": "Partner",
+        "description": "We work with brands to turn their ideas into effective digital products. By combining design and engineering, we help you connect with your audience and achieve meaningful results. Let's build something great together.",
+        "cta": "Start a Project"
+    },
+    "quotes": {
+        "items": [
+            "BUILD DIFFERENT",
+            "DESIGN WITH PURPOSE",
+            "CODE WITH PASSION",
+            "CREATE WITH VISION",
+            "INNOVATE ALWAYS"
+        ]
+    },
+    "methodology": {
+        "subtitle": "From chaos to clarity",
+        "title_prefix": "The ",
+        "title_main": "Process",
+        "steps": {
+            "discovery": {
+                "title": "Discovery",
+                "description": "An immersive deep-dive into your brand's core. We research market trends, define specific goals, and align every digital stone with your ultimate ambition.",
+                "items": [
+                    "Creative Brief",
+                    "Brand Research",
+                    "Mood Boards"
+                ]
+            },
+            "concept": {
+                "title": "Concept",
+                "description": "Translating discovery into a tangible vision. We define the visual and artistic direction that will set your product apart from the competition.",
+                "items": [
+                    "Visual Direction",
+                    "Art Direction",
+                    "Storyboarding"
+                ]
+            },
+            "design": {
+                "title": "Design",
+                "description": "Crafting a premium user experience with surgical precision. Every interaction and pixel is designed to convey luxury and technical excellence.",
+                "items": [
+                    "UI/UX Craft",
+                    "Motion Design",
+                    "Interaction Design"
+                ]
+            },
+            "develop": {
+                "title": "Develop",
+                "description": "Forging digital masterpieces with cutting-edge tech. We build robust, scalable, and immersive products that push the boundaries of the web.",
+                "items": [
+                    "Creative Coding",
+                    "WebGL & 3D",
+                    "Animations"
+                ]
+            },
+            "polish": {
+                "title": "Polish",
+                "description": "The obsessive pursuit of perfection. We refine micro-interactions and optimize performance to ensure a flawless experience on every device.",
+                "items": [
+                    "Micro-interactions",
+                    "Performance",
+                    "Pixel Perfect"
+                ]
+            },
+            "launch": {
+                "title": "Launch",
+                "description": "Ensuring a monumental entry into the market. We manage the launch process and partner for long-term evolution and digital legacy.",
+                "items": [
+                    "Go Live",
+                    "Case Study",
+                    "Awards Submit"
+                ]
+            }
+        }
+    },
+    "development": {
+        "eyebrow": "Noxis Development",
+        "title_line1": "We build",
+        "title_line2": "products that ship.",
+        "title_line3": "And keep shipping.",
+        "description": "Web, mobile and AI products engineered with surgical precision. From MVP to enterprise scale — we own design, architecture, code and delivery, so every release moves the business forward.",
+        "cta_project": "Start a Project",
+        "cta_work": "See Our Work",
+        "highlights": {
+            "idea": {
+                "title": "Idea → Shipped",
+                "description": "MVPs that go live in weeks, not quarters. Sharp scope, no fluff."
+            },
+            "scale": {
+                "title": "Built to scale",
+                "description": "Type-safe code, modern architecture. Grow without a rewrite."
+            },
+            "ai": {
+                "title": "AI as a first-class citizen",
+                "description": "LLMs, agents and automations woven into the product — not bolted on."
+            },
+            "partner": {
+                "title": "We stay past launch",
+                "description": "Monitoring, iteration, growth. Long-term partnership over hand-off."
+            }
+        },
+        "services": {
+            "title_line1": "From first commit",
+            "title_line2": "to global scale.",
+            "startup": {
+                "eyebrow": "For Startups",
+                "title": "Ship fast. Without compromise.",
+                "items": {
+                    "mvp": {
+                        "title": "MVP development",
+                        "description": "From idea to live product in weeks. Focused scope, sharp UX, production-grade code from day one."
+                    },
+                    "design": {
+                        "title": "Product design",
+                        "description": "Brand identity, UX/UI and design system built to scale with the product, not against it."
+                    },
+                    "launch": {
+                        "title": "Launch & growth",
+                        "description": "Landing pages, analytics, SEO and growth instrumentation wired in for measurable impact."
+                    },
+                    "iterate": {
+                        "title": "Iterate with data",
+                        "description": "Experiment-driven product work. Feature flags, A/B testing and observability built in."
+                    }
+                }
+            },
+            "enterprise": {
+                "eyebrow": "For Enterprises",
+                "title": "Engineering you can bet the business on.",
+                "items": {
+                    "platforms": {
+                        "title": "Custom platforms",
+                        "description": "Internal tools, dashboards and complex web apps tailored to your operations and stack."
+                    },
+                    "integrations": {
+                        "title": "Systems integration",
+                        "description": "APIs, SSO, ERP, CRM and data pipelines — connected with reliability and observability."
+                    },
+                    "performance": {
+                        "title": "Performance audits",
+                        "description": "Core Web Vitals, edge optimization, caching strategy and bundle surgery to make products feel instant."
+                    },
+                    "support": {
+                        "title": "Long-term partnership",
+                        "description": "Dedicated squad, SLAs, monitoring and continuous evolution. We stay beyond launch."
+                    }
+                }
+            }
+        }
+    },
+    "talent": {
+        "eyebrow": "Noxis Talent",
+        "title_line1": "Voices that",
+        "title_line2": "move brands.",
+        "title_line3": "Built to last.",
+        "description": "We connect ambitious brands with the creators who shape culture. Strategy, production, distribution and measurement — handled end-to-end so every campaign delivers real impact.",
+        "cta_brand": "For Brands",
+        "cta_creator": "For Creators",
+        "highlights": {
+            "matching": {
+                "title": "Briefs that fit",
+                "description": "We match brand goals to the right voice. No spray and pray."
+            },
+            "production": {
+                "title": "End-to-end production",
+                "description": "Concept, shoot, edit, publish. Everything handled in-house."
+            },
+            "data": {
+                "title": "Data over vibes",
+                "description": "Tracked links, attribution and weekly reads. Proof, not promises."
+            },
+            "always_on": {
+                "title": "Always-on partner",
+                "description": "Campaigns + retainer + growth. We stay with you between launches."
+            }
+        },
+        "for_brands": {
+            "description": "From strategy to publish: matched creators, briefs that convert, tracked attribution. Every campaign earns its budget."
+        },
+        "for_creators": {
+            "description": "Brand deals you'd actually take, production support, growth playbook. We handle the noise so you can focus on creating."
+        },
+        "services": {
+            "title_line1": "What we do for",
+            "title_line2": "brands and creators.",
+            "brand": {
+                "eyebrow": "For Brands",
+                "title": "Influence with intent.",
+                "items": {
+                    "matching": {
+                        "title": "Creator matching",
+                        "description": "AI-assisted matching between your brand DNA and the creators with the right audience, tone and performance history."
+                    },
+                    "campaigns": {
+                        "title": "Campaign production",
+                        "description": "Briefing, contracts, content review and publishing schedule — managed end-to-end so you focus on the business."
+                    },
+                    "tracking": {
+                        "title": "Tracked links & attribution",
+                        "description": "Custom short links, UTM strategy, click and conversion tracking on a dedicated tracking domain."
+                    },
+                    "reporting": {
+                        "title": "Real-time reporting",
+                        "description": "Live dashboards with reach, engagement, conversions and ROI. White-label PDF exports for stakeholders."
+                    }
+                }
+            },
+            "creator": {
+                "eyebrow": "For Creators",
+                "title": "Build a career, not just content.",
+                "items": {
+                    "management": {
+                        "title": "Talent management",
+                        "description": "Personal manager, brand outreach, deal negotiation and contracts handled — so you can focus on creating."
+                    },
+                    "deals": {
+                        "title": "Premium brand deals",
+                        "description": "Curated partnerships aligned with your values and audience. No spray-and-pray, only deals worth your name."
+                    },
+                    "production": {
+                        "title": "Production support",
+                        "description": "Strategy, scripting, editing and creative direction to push every piece of content to its best version."
+                    },
+                    "growth": {
+                        "title": "Audience growth",
+                        "description": "Data-driven strategy across platforms, content planning and analytics to grow reach and engagement sustainably."
+                    }
+                }
+            }
+        }
+    },
+    "sign_in": {
+        "eyebrow": "Welcome back",
+        "title": "Sign in to Noxis",
+        "subtitle": "We'll email you a one-time code. No password needed.",
+        "code_subtitle": "Enter the 6-digit code we just sent to {{email}}.",
+        "email": "Email",
+        "code": "Verification code",
+        "send_code": "Send sign-in code",
+        "sending": "Sending...",
+        "submit": "Sign in",
+        "verifying": "Signing in...",
+        "use_different_email": "Use a different email",
+        "error_send": "Unable to send the code. Try again.",
+        "error_generic": "Invalid or expired code. Try again.",
+        "no_account": "Don't have access?",
+        "request_demo": "Request a demo"
+    },
+    "language": {
+        "title": "Select Language",
+        "it": "Italiano",
+        "en": "English"
+    },
+    "common": {
+        "copied": "Copied!"
+    },
+    "email": {
+        "general": {
+            "subject": "Let's talk — new project",
+            "body": "Hi Noxis team,\n\nI'd love to discuss a new project with you.\n\nA few words about it:\n— \n— \n— \n\nThanks!"
+        },
+        "development": {
+            "subject": "Development project — let's build something",
+            "body": "Hi Noxis team,\n\nI'm looking to build a digital product and would love to work with you.\n\nWhat I have in mind:\n— Type of product: \n— Goal: \n— Timeline: \n— Budget range: \n\nLooking forward to hearing from you."
+        },
+        "development_portfolio": {
+            "subject": "Tell me about your work",
+            "body": "Hi Noxis team,\n\nI'd love to learn more about your past projects and case studies.\n\nA bit of context about me/my company:\n— \n— \n\nThanks!"
+        },
+        "talent_brand": {
+            "subject": "Brand looking for creators",
+            "body": "Hi Noxis team,\n\nI represent a brand looking to work with creators.\n\nA few details:\n— Brand: \n— Product/campaign: \n— Type of creators we'd like (niche, audience, platforms): \n— Timeline & budget: \n\nLooking forward to your proposal."
+        },
+        "talent_creator": {
+            "subject": "Creator — I'd like to join the roster",
+            "body": "Hi Noxis team,\n\nI'd like to be considered for your creator roster.\n\nAbout me:\n— Name & handle: \n— Main platforms: \n— Niche / content focus: \n— Audience size / engagement: \n— Past collaborations: \n\nLinks to my socials/portfolio:\n— \n— \n\nThanks!"
+        }
+    },
+    "seo": {
+        "title": "Noxis Agency | Premium Digital Products",
+        "description": "We don’t just write code. We forge assets. Noxis Agency creates digital products that are as powerful as they are beautiful through rigorous engineering and obsessive art direction.",
+        "keywords": "Digital Agency, Web Design, Premium Websites, 3D Web, Awwwards, Creative Agency, Next.js, React, Three.js, Glassmorphism"
+    }
+}

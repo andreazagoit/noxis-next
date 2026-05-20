@@ -1,19 +1,33 @@
-import { Button } from "@/components/ui/button"
+'use client'
 
-export default function Page() {
+import { useTranslations } from 'next-intl'
+import { Hero } from '@/components/sections/hero'
+import { Vision } from '@/components/sections/vision'
+import { Partnership } from '@/components/sections/partnership'
+import { Services } from '@/components/sections/services'
+import { FeaturedWork } from '@/components/sections/featured-work'
+import { Quotes } from '@/components/sections/quotes'
+import { MountainSeparator } from '@/components/ui/mountain-separator'
+
+export default function Home() {
+  const t = useTranslations()
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div className="relative">
+      <Hero />
+      <Vision />
+      <Partnership />
+      <Services />
+
+      <MountainSeparator topColor="bg-background" bottomColor="bg-primary" />
+      <FeaturedWork />
+
+      <MountainSeparator topColor="bg-primary" bottomColor="bg-background" />
+      <Quotes
+        items={t.raw('quotes.items') as string[]}
+        backgroundColor="bg-background"
+        textColor="text-foreground"
+        className="mt-0"
+      />
     </div>
   )
 }
