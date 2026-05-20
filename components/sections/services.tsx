@@ -80,7 +80,7 @@ export function Services() {
                 duration={0.6}
                 className={`group relative overflow-hidden rounded-3xl ${item.span} ${
                   item.accent
-                    ? 'bg-gradient-to-br from-primary/80 to-primary text-black border border-transparent hover:border-white'
+                    ? 'bg-gradient-to-br from-primary/80 to-primary text-primary-foreground border border-transparent hover:border-primary-foreground/40'
                     : 'glass-panel hover:border-primary/50'
                 } transition-all duration-500`}
                 style={{ display: 'block', height: '100%' }}
@@ -97,7 +97,7 @@ export function Services() {
                       <Typography
                         variant={isLarge ? 'h2' : isTall ? 'h3' : 'h4'}
                         className={`mb-3 ${
-                          item.accent ? '!text-black' : 'group-hover:text-primary transition-colors'
+                          item.accent ? '!text-primary-foreground' : 'group-hover:text-primary transition-colors'
                         }`}
                       >
                         {item.title}
@@ -105,7 +105,7 @@ export function Services() {
                       <Typography
                         variant="body"
                         className={`line-clamp-4 ${
-                          item.accent ? '!text-black/80' : 'text-muted-foreground'
+                          item.accent ? '!text-primary-foreground/80' : 'text-muted-foreground'
                         }`}
                       >
                         {item.description}

@@ -1,0 +1,126 @@
+'use client'
+
+import { useState } from 'react'
+import { motion } from 'framer-motion'
+import { ArrowRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { cn } from '@/lib/utils'
+import type { CTAIntent } from '@/components/ui/cta-button'
+
+export type DotCTAVariant = 'primary' | 'outline'
+
+interface DotCTAButtonProps {
+  email?: string
+  intent?: CTAIntent
+  variant?: DotCTAVariant
+  className?: string
+  children: React.ReactNode
+}
+
+const EASE = [0.16, 1, 0.3, 1] as const
+
+type Tokens = {
+  bg: string
+  border: string
+  textIdle: string
+  textHover: string
+  dotIdle: string
+  dotHover: string
+}
+
+const VARIANTS: Record<DotCTAVariant, Tokens> = {
+  // Dark filled main CTA. Hover: dot expands to primary green.
+  primary: {
+    bg: 'bg-foreground',
+    border: 'border-0',
+    textIdle: 'text-background',
+    textHover: 'text-primary-foreground',
+    dotIdle: 'bg-background',
+    dotHover: 'bg-primary',
+  },
+  // White bg outlined. Hover: dot expands to primary green.
+  outline: {
+    bg: 'bg-white',
+    border: 'border border-foreground/15',
+    textIdle: 'text-foreground',
+    textHover: 'text-background',
+    dotIdle: 'bg-foreground',
+    dotHover: 'bg-primary',
+  },
+}
+
+export function DotCTAButton({
+  email = 'hello@noxis.agency',
+  intent,
+  variant = 'primary',
+  className,
+  children,
+}: DotCTAButtonProps) {
+  const t = useTranslations()
+  const [hovered, setHovered] = useState(false)
+  const tokens = VARIANTS[variant]
+
+  const handleClick = () => {
+    if (!intent) return
+    const subject = encodeURIComponent(t(`email.${intent}.subject`))
+    const body = encodeURIComponent(t(`email.${intent}.body`))
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
+  }
+
+  return (
+    <motion.button
+      type="button"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onClick={handleClick}
+      initial={false}
+      animate={{
+        paddingLeft: hovered ? 24 : 48,
+        paddingRight: hovered ? 48 : 24,
+      }}
+      transition={{ duration: hovered ? 0.6 : 0.45, ease: EASE }}
+      className={cn(
+        'relative inline-flex items-center rounded-full overflow-hidden cursor-pointer select-none',
+        tokens.bg,
+        tokens.border,
+        'py-3.5 md:py-4',
+        'text-xs md:text-sm font-bold uppercase tracking-[0.15em]',
+        className,
+      )}
+    >
+      <motion.span
+        aria-hidden
+        initial={false}
+        animate={{ scale: hovered ? 60 : 1 }}
+        transition={{ duration: hovered ? 0.7 : 0.5, ease: EASE }}
+        className={cn(
+          'absolute left-5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full transition-colors duration-500',
+          hovered ? tokens.dotHover : tokens.dotIdle,
+        )}
+      />
+      <span
+        className={cn(
+          'relative z-10 whitespace-nowrap transition-colors duration-500 ease-out',
+          hovered ? tokens.textHover : tokens.textIdle,
+        )}
+      >
+        {children}
+      </span>
+      <motion.span
+        aria-hidden
+        initial={false}
+        animate={{
+          opacity: hovered ? 1 : 0,
+          x: hovered ? 0 : 24,
+        }}
+        transition={{ duration: hovered ? 0.4 : 0.3, delay: hovered ? 0.2 : 0, ease: EASE }}
+        className={cn(
+          'absolute right-5 top-1/2 -translate-y-1/2 inline-flex items-center justify-center z-10 transition-colors duration-500 ease-out',
+          hovered ? tokens.textHover : tokens.textIdle,
+        )}
+      >
+        <ArrowRight size={18} className="shrink-0" />
+      </motion.span>
+    </motion.button>
+  )
+}

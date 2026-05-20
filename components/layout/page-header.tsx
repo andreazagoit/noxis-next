@@ -25,10 +25,7 @@ export function PageHeader({
   return (
     <div
       className={cn(
-        'sticky top-16 z-20',
-        '-mx-4 md:-mx-6 lg:-mx-8 px-4 md:px-6 lg:px-8',
-        '-mt-4 md:-mt-6 lg:-mt-8 pt-4 md:pt-6 lg:pt-8 pb-4',
-        'bg-background/80 backdrop-blur-md border-b border-border/60',
+        'fixed top-16 right-0 left-0 md:left-[var(--sidebar-width)] z-20 px-4 py-4 bg-background',
         'flex flex-col gap-4',
       )}
     >

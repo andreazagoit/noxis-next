@@ -42,13 +42,13 @@ export function FeaturedWork() {
             <div className="flex flex-col items-center">
               <Typography
                 variant="caption"
-                className="mb-4 !text-black/70 selection:bg-black selection:text-primary"
+                className="mb-4 !text-primary-foreground/70"
               >
                 {t('methodology.subtitle')}
               </Typography>
               <Typography
                 variant="display"
-                className="!text-black selection:bg-black selection:text-primary"
+                className="!text-primary-foreground"
               >
                 {t('methodology.title_prefix')}
                 <span>{t('methodology.title_main')}</span>
@@ -95,7 +95,7 @@ function TimelineStep({
     >
       <div className="absolute left-4 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 flex items-center justify-center">
         <motion.div
-          className="absolute w-6 h-6 rounded-full bg-black"
+          className="absolute w-6 h-6 rounded-full bg-primary-foreground"
           animate={{ scale: [0.5, 1.2, 1.8], opacity: [0, 0.4, 0] }}
           transition={{
             duration: 2,
@@ -104,11 +104,11 @@ function TimelineStep({
             delay: index * 0.3,
           }}
         />
-        <div className="w-3 h-3 rounded-full bg-black relative z-10" />
+        <div className="w-3 h-3 rounded-full bg-primary-foreground relative z-10" />
       </div>
 
       {!isLast && (
-        <div className="absolute left-4 md:left-1/2 top-1/2 w-[1px] bg-black/40 -translate-x-1/2 h-[calc(100%+2rem)] md:h-[calc(100%+6rem)] z-0" />
+        <div className="absolute left-4 md:left-1/2 top-1/2 w-[1px] bg-primary-foreground/40 -translate-x-1/2 h-[calc(100%+2rem)] md:h-[calc(100%+6rem)] z-0" />
       )}
 
       <div className="w-full md:w-[46%] group">

@@ -195,8 +195,8 @@ export function Quotes({
     >
       <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center">
         <Container className="relative z-20 grid place-items-center h-full w-full px-[10vw] md:px-[5vw]">
-          <PlusMarker className="top-[10vw] left-[10vw] md:top-[5vw] md:left-[5vw] -translate-x-1/2 -translate-y-1/2" />
-          <PlusMarker className="top-[10vw] right-[10vw] md:top-[5vw] md:right-[5vw] translate-x-1/2 -translate-y-1/2" />
+          <PlusMarker className="top-[calc(10vw+5rem)] left-[10vw] md:top-[calc(5vw+5rem)] md:left-[5vw] -translate-x-1/2 -translate-y-1/2" />
+          <PlusMarker className="top-[calc(10vw+5rem)] right-[10vw] md:top-[calc(5vw+5rem)] md:right-[5vw] translate-x-1/2 -translate-y-1/2" />
           <PlusMarker className="bottom-[10vw] left-[10vw] md:bottom-[5vw] md:left-[5vw] -translate-x-1/2 translate-y-1/2" />
           <PlusMarker className="bottom-[10vw] right-[10vw] md:bottom-[5vw] md:right-[5vw] translate-x-1/2 translate-y-1/2" />
 

@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
-import { CTAButton } from '@/components/ui/cta-button'
+import { DotCTAButton } from '@/components/ui/dot-cta-button'
 import { Reveal } from '@/components/ui/reveal'
 import { Typography } from '@/components/ui/typography'
 
@@ -36,9 +36,9 @@ export function TalentForBrands() {
 
             <Reveal width="100%" delay={0.2} overflowVisible>
               <div className="mt-4">
-                <CTAButton variant="primary" intent="talent_brand">
+                <DotCTAButton variant="primary" intent="talent_brand">
                   {t('talent.cta_brand')}
-                </CTAButton>
+                </DotCTAButton>
               </div>
             </Reveal>
           </div>

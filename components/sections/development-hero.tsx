@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
-import { CTAButton } from '@/components/ui/cta-button'
+import { DotCTAButton } from '@/components/ui/dot-cta-button'
 import { Typography } from '@/components/ui/typography'
 import { Reveal } from '@/components/ui/reveal'
 
@@ -55,7 +55,7 @@ export function DevelopmentHero() {
 
           <Reveal width="100%" delay={0.5} overflowVisible>
             <div className="flex flex-wrap gap-3 mt-2">
-              <CTAButton variant="primary" intent="development">{t('development.cta_project')}</CTAButton>
+              <DotCTAButton variant="outline" intent="development">{t('development.cta_project')}</DotCTAButton>
             </div>
           </Reveal>
         </div>

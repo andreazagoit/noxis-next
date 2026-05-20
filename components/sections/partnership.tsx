@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { Reveal } from '@/components/ui/reveal'
-import { CTAButton } from '@/components/ui/cta-button'
+import { DotCTAButton } from '@/components/ui/dot-cta-button'
 import { Typography } from '@/components/ui/typography'
 
 export function Partnership() {
@@ -25,7 +25,7 @@ export function Partnership() {
         </Reveal>
 
         <Reveal width="100%" delay={0.2} overflowVisible>
-          <CTAButton variant="light" intent="general">{t('partnership.cta')}</CTAButton>
+          <DotCTAButton variant="outline" intent="general">{t('partnership.cta')}</DotCTAButton>
         </Reveal>
       </Container>
     </section>

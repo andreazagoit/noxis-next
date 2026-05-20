@@ -51,24 +51,24 @@ export function TalentServices() {
           </Reveal>
 
           <Reveal width="100%" delay={0.1}>
-            <div className="rounded-3xl p-8 md:p-10 h-full flex flex-col gap-6 bg-gradient-to-br from-primary/80 to-primary text-black">
+            <div className="rounded-3xl p-8 md:p-10 h-full flex flex-col gap-6 bg-gradient-to-br from-primary/80 to-primary text-primary-foreground">
               <div>
-                <Typography variant="caption" className="!text-black/70 mb-2">
+                <Typography variant="caption" className="!text-primary-foreground/70 mb-2">
                   {t('talent.services.creator.eyebrow')}
                 </Typography>
-                <Typography variant="h3" className="!text-black">
+                <Typography variant="h3" className="!text-primary-foreground">
                   {t('talent.services.creator.title')}
                 </Typography>
               </div>
               <ul className="flex flex-col gap-4">
                 {CREATOR_ITEMS.map((key) => (
                   <li key={key} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-black mt-2.5 shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground mt-2.5 shrink-0" />
                     <div>
-                      <Typography variant="h4" className="mb-1 !text-black">
+                      <Typography variant="h4" className="mb-1 !text-primary-foreground">
                         {t(`talent.services.creator.items.${key}.title`)}
                       </Typography>
-                      <Typography variant="body" className="!text-black/80">
+                      <Typography variant="body" className="!text-primary-foreground/80">
                         {t(`talent.services.creator.items.${key}.description`)}
                       </Typography>
                     </div>

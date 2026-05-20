@@ -31,11 +31,11 @@ export default async function DashboardLayout({ children }: { children: ReactNod
           organizations={organizations}
           activeOrganizationId={activeId}
         />
-        <SidebarInset>
+        <SidebarInset className="mt-16">
           <div className="md:hidden sticky top-16 z-10 flex items-center gap-2 border-b border-border/60 bg-background/80 backdrop-blur-md px-4 py-2">
             <SidebarTrigger />
           </div>
-          <div className="flex-1 p-4 md:p-6 lg:p-8">{children}</div>
+          <div className="flex-1 p-4">{children}</div>
         </SidebarInset>
       </SidebarProvider>
     </TooltipProvider>

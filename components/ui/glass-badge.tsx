@@ -15,9 +15,9 @@ const GlassBadge = React.forwardRef<HTMLSpanElement, GlassBadgeProps>(
         className={cn(
           'px-3 py-1.5 rounded-full',
           'text-xs font-medium',
-          'bg-white/20 dark:bg-black/20',
+          'bg-white/15',
           'text-white',
-          'border border-white/30 dark:border-white/15',
+          'border border-white/25',
           'transition-colors duration-200',
           className,
         )}

@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl'
 import { GlassScene } from '@/components/3d/glass-scene'
 import { Container } from '@/components/layout/container'
 import { useLoading } from '@/context/loading-context'
-import { CTAButton } from '@/components/ui/cta-button'
+import { DotCTAButton } from '@/components/ui/dot-cta-button'
 import { BrandSlider } from '@/components/ui/brand-slider'
 import { Typography } from '@/components/ui/typography'
 
@@ -118,9 +118,9 @@ export function Hero() {
                     animate={isLoading ? { y: 20, opacity: 0 } : { y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay: 1.2 }}
                   >
-                    <CTAButton variant="primary" intent="general" className="mt-8 md:mt-4">
+                    <DotCTAButton variant="primary" intent="general" className="mt-8 md:mt-4">
                       {t('hero.cta')}
-                    </CTAButton>
+                    </DotCTAButton>
                   </motion.div>
                 </div>
               </div>

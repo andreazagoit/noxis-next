@@ -16,7 +16,7 @@ const BRANDS = [
 export function BrandSlider() {
   return (
     <div className="w-full py-16 overflow-hidden relative">
-      <Container variant="contained" className="mb-12">
+      <Container className="mb-12">
         <Typography variant="caption">TRUSTED BY</Typography>
       </Container>
 

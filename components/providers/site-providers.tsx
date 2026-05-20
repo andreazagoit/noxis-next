@@ -44,7 +44,7 @@ export function SiteProviders({
 
   return (
     <LoadingProvider>
-      <ThemeProvider defaultTheme="dark">
+      <ThemeProvider defaultTheme="light">
         {isDashboard ? chrome : <SmoothScroll>{chrome}</SmoothScroll>}
       </ThemeProvider>
     </LoadingProvider>

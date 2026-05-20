@@ -1,7 +1,9 @@
 {
     "header": {
+        "home": "Home",
         "development": "Development",
         "talent": "Talent",
+        "lets_talk": "Let's Talk",
         "sign_in": "Sign in"
     },
     "hero": {
@@ -241,6 +243,61 @@
         },
         "for_creators": {
             "description": "Brand deals you'd actually take, production support, growth playbook. We handle the noise so you can focus on creating."
+        },
+        "method": {
+            "eyebrow": "Our method",
+            "title_line1": "From brief",
+            "title_line2": "to result.",
+            "description": "A linear four-step process. Every campaign runs the same steps, tailored to the brand.",
+            "steps": {
+                "discovery": {
+                    "title": "Discovery",
+                    "description": "We map the brand, the goal and the audience. Realistic KPIs and a measurable path."
+                },
+                "match": {
+                    "title": "Match",
+                    "description": "We pick creators by voice, audience and cultural fit. No generic lists."
+                },
+                "produce": {
+                    "title": "Produce",
+                    "description": "Briefs, contracts, production, review. We coordinate creators and brand to publish."
+                },
+                "measure": {
+                    "title": "Measure",
+                    "description": "We track links, reach and conversions. Readable reports, decisions for the next round."
+                }
+            }
+        },
+        "capabilities": {
+            "eyebrow": "What we do",
+            "title_line1": "One team,",
+            "title_line2": "the whole campaign.",
+            "items": {
+                "strategy": {
+                    "title": "Strategy",
+                    "description": "Positioning, goals, format and channel mix."
+                },
+                "research": {
+                    "title": "Research",
+                    "description": "Audience analysis, competitor benchmarks, creator mapping."
+                },
+                "production": {
+                    "title": "Creative production",
+                    "description": "Concept, writing, direction, editing through delivery."
+                },
+                "management": {
+                    "title": "Project management",
+                    "description": "Briefs, contracts, calendar, review and publishing."
+                },
+                "protection": {
+                    "title": "Brand protection",
+                    "description": "Creator vetting, content review, reputational risk management."
+                },
+                "campaign": {
+                    "title": "Campaign management",
+                    "description": "End-to-end execution, live monitoring, in-flight optimization."
+                }
+            }
         },
         "services": {
             "title_line1": "What we do for",

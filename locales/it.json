@@ -1,7 +1,9 @@
 {
     "header": {
+        "home": "Home",
         "development": "Development",
         "talent": "Talent",
+        "lets_talk": "Let's Talk",
         "sign_in": "Accedi"
     },
     "hero": {
@@ -241,6 +243,61 @@
         },
         "for_creators": {
             "description": "Deal con brand che vorresti davvero, supporto in produzione, playbook di crescita. Noi gestiamo il resto, tu pensi a creare."
+        },
+        "method": {
+            "eyebrow": "Il nostro metodo",
+            "title_line1": "Dal brief",
+            "title_line2": "al risultato.",
+            "description": "Un processo lineare in quattro fasi. Ogni campagna passa per gli stessi step, ma viene cucita addosso al brand.",
+            "steps": {
+                "discovery": {
+                    "title": "Discovery",
+                    "description": "Capiamo il brand, l'obiettivo e l'audience. Definiamo KPI realistici e una rotta misurabile."
+                },
+                "match": {
+                    "title": "Match",
+                    "description": "Selezioniamo i creator giusti per voce, audience e fit culturale. Niente liste generiche."
+                },
+                "produce": {
+                    "title": "Produce",
+                    "description": "Brief, contratti, produzione, revisione. Coordiniamo creator e brand fino alla pubblicazione."
+                },
+                "measure": {
+                    "title": "Measure",
+                    "description": "Tracciamo link, reach e conversioni. Report leggibili, decisioni per il prossimo round."
+                }
+            }
+        },
+        "capabilities": {
+            "eyebrow": "Cosa facciamo",
+            "title_line1": "Una squadra,",
+            "title_line2": "tutta la campagna.",
+            "items": {
+                "strategy": {
+                    "title": "Strategia",
+                    "description": "Posizionamento, obiettivi, mix di formati e canali."
+                },
+                "research": {
+                    "title": "Research",
+                    "description": "Analisi audience, benchmark competitor, mappatura creator."
+                },
+                "production": {
+                    "title": "Produzione creativa",
+                    "description": "Concept, scrittura, direzione, editing fino al delivery."
+                },
+                "management": {
+                    "title": "Project management",
+                    "description": "Brief, contratti, calendario, revisione e pubblicazione."
+                },
+                "protection": {
+                    "title": "Brand protection",
+                    "description": "Vetting creator, content review, gestione del rischio reputazionale."
+                },
+                "campaign": {
+                    "title": "Campaign management",
+                    "description": "Esecuzione end-to-end, monitoraggio live, ottimizzazione in corsa."
+                }
+            }
         },
         "services": {
             "title_line1": "Cosa facciamo per",

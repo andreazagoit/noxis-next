@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
-import { CTAButton } from '@/components/ui/cta-button'
+import { DotCTAButton } from '@/components/ui/dot-cta-button'
 import { Typography } from '@/components/ui/typography'
 import { Reveal } from '@/components/ui/reveal'
 
@@ -54,9 +54,8 @@ export function TalentHero() {
           </Reveal>
 
           <Reveal width="100%" delay={0.5} overflowVisible>
-            <div className="flex flex-wrap gap-3 mt-2">
-              <CTAButton variant="primary" intent="talent_brand">{t('talent.cta_brand')}</CTAButton>
-              <CTAButton variant="light" intent="talent_creator">{t('talent.cta_creator')}</CTAButton>
+            <div className="mt-2">
+              <DotCTAButton variant="primary" intent="talent_brand">{t('talent.cta_brand')}</DotCTAButton>
             </div>
           </Reveal>
         </div>
