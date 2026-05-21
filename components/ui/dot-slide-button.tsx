@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
+import Magnetic from '@/components/ui/magnetic'
 import type { CTAIntent } from '@/components/ui/cta-button'
 
 export type DotSlideVariant = 'primary' | 'outline'
@@ -63,6 +64,7 @@ export function DotSlideButton({
   }
 
   return (
+    <Magnetic>
     <motion.button
       type="button"
       onMouseEnter={() => setHovered(true)}
@@ -113,5 +115,6 @@ export function DotSlideButton({
         )}
       />
     </motion.button>
+    </Magnetic>
   )
 }

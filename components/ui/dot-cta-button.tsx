@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
+import Magnetic from '@/components/ui/magnetic'
 import type { CTAIntent } from '@/components/ui/cta-button'
 
 export type DotCTAVariant = 'primary' | 'outline'
@@ -68,6 +69,7 @@ export function DotCTAButton({
   }
 
   return (
+    <Magnetic>
     <motion.button
       type="button"
       onMouseEnter={() => setHovered(true)}
@@ -122,5 +124,6 @@ export function DotCTAButton({
         <ArrowRight size={18} className="shrink-0" />
       </motion.span>
     </motion.button>
+    </Magnetic>
   )
 }
