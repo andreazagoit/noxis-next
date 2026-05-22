@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { Reveal } from '@/components/ui/reveal'
@@ -35,18 +36,23 @@ export function TalentForBrands() {
             </Typography>
           </div>
 
-          <ul className="flex flex-col gap-6">
+          <ul className="flex flex-col gap-6 list-none">
             {ITEMS.map((key, i) => (
-              <Reveal key={key} width="100%" delay={0.1 + i * 0.08}>
-                <li className="glass-panel rounded-3xl p-6 md:p-8 flex flex-col gap-2">
-                  <Typography variant="h4">
-                    {t(`talent.services.brand.items.${key}.title`)}
-                  </Typography>
-                  <Typography variant="body" className="text-muted-foreground">
-                    {t(`talent.services.brand.items.${key}.description`)}
-                  </Typography>
-                </li>
-              </Reveal>
+              <motion.li
+                key={key}
+                className="glass-panel rounded-3xl p-6 md:p-8 flex flex-col gap-2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-10%' }}
+                transition={{ duration: 0.5, delay: 0.1 + i * 0.08, ease: 'easeOut' }}
+              >
+                <Typography variant="h4">
+                  {t(`talent.services.brand.items.${key}.title`)}
+                </Typography>
+                <Typography variant="body" className="text-muted-foreground">
+                  {t(`talent.services.brand.items.${key}.description`)}
+                </Typography>
+              </motion.li>
             ))}
           </ul>
         </div>

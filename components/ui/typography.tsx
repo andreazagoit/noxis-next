@@ -1,4 +1,5 @@
 import { cva, type VariantProps } from 'class-variance-authority'
+import { createElement } from 'react'
 import type { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
@@ -24,7 +25,7 @@ type Variant = NonNullable<VariantProps<typeof typographyVariants>['variant']>
 
 const elementByVariant: Record<Variant, ElementType> = {
   hero: 'h1',
-  display: 'h1',
+  display: 'h2',
   h2: 'h2',
   h3: 'h3',
   h4: 'h4',
@@ -35,20 +36,24 @@ const elementByVariant: Record<Variant, ElementType> = {
 
 type TypographyProps = {
   variant?: Variant
+  /**
+   * Override the rendered HTML element. Use to keep visual style (`variant`)
+   * decoupled from document outline — e.g., render an h4-styled title as `<h3>`
+   * to satisfy heading-order accessibility without changing visual sizing.
+   */
+  as?: ElementType
   className?: string
   children?: ReactNode
 } & Omit<ComponentPropsWithoutRef<'p'>, 'children' | 'className'>
 
 export function Typography({
   variant = 'body',
+  as,
   className,
   ...props
 }: TypographyProps) {
-  const Component = elementByVariant[variant]
-  return (
-    <Component
-      className={cn(typographyVariants({ variant }), className)}
-      {...props}
-    />
-  )
+  return createElement(as ?? elementByVariant[variant], {
+    className: cn(typographyVariants({ variant }), className),
+    ...props,
+  })
 }

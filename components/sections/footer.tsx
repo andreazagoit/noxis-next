@@ -28,7 +28,7 @@ export function Footer() {
               href="mailto:hello@noxis.agency"
               className="hover:underline underline-offset-8 decoration-foreground transition-all"
             >
-              <Typography variant="h4">hello@noxis.agency</Typography>
+              <Typography as="span" variant="h4">hello@noxis.agency</Typography>
             </a>
           </div>
         </div>

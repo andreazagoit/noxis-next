@@ -10,8 +10,18 @@ import { SiteProviders } from '@/components/providers/site-providers'
 import { OrganizationJsonLd } from '@/components/seo/organization-jsonld'
 import { SITE_URL } from '@/lib/seo'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
-const fontMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono' })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+  preload: true,
+})
+const fontMono = Geist_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  display: 'swap',
+  preload: false,
+})
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('seo')

@@ -15,6 +15,12 @@ interface WordRevealProps {
   preserveLineBreaks?: boolean
   /** Wrapper element (default: span). Use 'div' or 'h2' if needed semantically */
   as?: 'span' | 'div'
+  /**
+   * Render the text visible immediately (no initial opacity:0 / y offset).
+   * Use for above-the-fold LCP-critical text to avoid blocking Largest
+   * Contentful Paint on the entry animation.
+   */
+  eager?: boolean
 }
 
 const EASE = [0.33, 1, 0.68, 1] as const
@@ -28,11 +34,30 @@ export function WordReveal({
   yOffset = 24,
   preserveLineBreaks = false,
   as = 'span',
+  eager = false,
 }: WordRevealProps) {
   const ref = useRef<HTMLElement>(null)
   const inView = useInView(ref, { once: true, margin: '-10%' })
 
   const lines = preserveLineBreaks ? text.split('\n') : [text]
+
+  // Eager mode: render plain text without motion wrappers.
+  // Critical for LCP — the text is painted on first frame, no animation gate.
+  if (eager) {
+    const Wrapper = as
+    return (
+      <Wrapper className={cn('inline', className)}>
+        {lines.map((line, i) => (
+          <span
+            key={i}
+            className={cn(preserveLineBreaks ? 'block' : 'inline')}
+          >
+            {line}
+          </span>
+        ))}
+      </Wrapper>
+    )
+  }
 
   let wordIndex = 0
 

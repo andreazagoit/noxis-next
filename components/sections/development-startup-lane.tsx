@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { Reveal } from '@/components/ui/reveal'
 import { Typography } from '@/components/ui/typography'
-import { BentoWireframe, type GeometryType } from '@/components/3d/bento-wireframe'
+import { BentoWireframe, type GeometryType } from '@/components/3d/bento-wireframe-lazy'
 import { WordReveal } from '@/components/ui/word-reveal'
 import { useIsMobile } from '@/hooks/use-mobile'
 

@@ -38,7 +38,7 @@ export function TalentContent() {
       <TalentMarquee />
       <TalentForBrands />
       <TalentMethod />
-      <SelectedWork />
+      <SelectedWork placeholderOnly />
       <CreatorApply />
       <Partnership />
     </div>

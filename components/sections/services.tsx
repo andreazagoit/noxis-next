@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { Reveal } from '@/components/ui/reveal'
-import { BentoWireframe, type GeometryType } from '@/components/3d/bento-wireframe'
+import { BentoWireframe, type GeometryType } from '@/components/3d/bento-wireframe-lazy'
 import { Container } from '@/components/layout/container'
 import { Typography } from '@/components/ui/typography'
 import { WordReveal } from '@/components/ui/word-reveal'
@@ -96,6 +96,7 @@ export function Services() {
                   >
                     <div className="pointer-events-auto">
                       <Typography
+                        as="h3"
                         variant={isLarge ? 'h2' : isTall ? 'h3' : 'h4'}
                         className={`mb-3 ${
                           item.accent ? '!text-primary-foreground' : 'group-hover:text-primary transition-colors'

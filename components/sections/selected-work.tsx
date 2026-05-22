@@ -3,10 +3,12 @@
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { Reveal } from '@/components/ui/reveal'
 import { Typography } from '@/components/ui/typography'
 import { WordReveal } from '@/components/ui/word-reveal'
+import { cn } from '@/lib/utils'
 
 interface Project {
   name: string
@@ -40,6 +42,10 @@ interface SelectedWorkProps {
   eyebrow?: string
   titleLine1?: string
   titleLine2?: string
+  /** Render placeholder cards instead of the real PROJECTS list. */
+  placeholderOnly?: boolean
+  /** Number of placeholder cards to show when placeholderOnly is true. */
+  placeholderCount?: number
 }
 
 function BrowserFrame({
@@ -71,14 +77,16 @@ function BrowserFrame({
         </div>
       </div>
       <div className="absolute inset-0 pt-8 md:pt-9">
-        <div className="relative h-full w-full">
+        <div className="relative h-full w-full overflow-hidden">
           <Image
             src={image}
             alt={alt}
-            fill
+            width={1280}
+            height={800}
             sizes={sizes}
-            className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+            className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
             priority={priority}
+            quality={80}
           />
         </div>
       </div>
@@ -90,7 +98,10 @@ export function SelectedWork({
   eyebrow = 'Selected Work',
   titleLine1 = 'From first commit',
   titleLine2 = 'to global scale.',
+  placeholderOnly = false,
+  placeholderCount = 3,
 }: SelectedWorkProps) {
+  const t = useTranslations()
   return (
     <section
       id="selected-work"
@@ -114,7 +125,30 @@ export function SelectedWork({
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-5"
           style={{ gridAutoRows: 'minmax(420px, 1fr)' }}
         >
-          {PROJECTS.map((p, i) => (
+          {placeholderOnly &&
+            Array.from({ length: placeholderCount }).map((_, i) => (
+              <motion.div
+                key={`placeholder-${i}`}
+                className="h-full"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-10%' }}
+                transition={{ duration: 0.5, delay: i * 0.06, ease: 'easeOut' }}
+              >
+                <div className="h-full w-full rounded-3xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-sm flex items-center justify-center p-6">
+                  <span
+                    className={cn(
+                      'font-heading font-bold uppercase tracking-tight text-primary-foreground/70 text-center text-xl md:text-2xl',
+                    )}
+                  >
+                    {t('selected_work.placeholder')}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+
+          {!placeholderOnly &&
+            PROJECTS.map((p, i) => (
             <motion.a
               key={p.name}
               href={p.url}
@@ -158,7 +192,7 @@ export function SelectedWork({
                   sizes="(min-width: 768px) 33vw, 100vw"
                 />
 
-                <Typography variant="h4" className="!text-white">
+                <Typography as="h3" variant="h4" className="!text-white">
                   {p.name}
                 </Typography>
               </div>

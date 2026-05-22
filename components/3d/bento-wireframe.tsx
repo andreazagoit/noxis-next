@@ -1,7 +1,7 @@
 'use client'
 
 import { Suspense, useRef, useState, useEffect, useMemo } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Environment, Float, MeshTransmissionMaterial } from '@react-three/drei'
 import { useTheme } from 'next-themes'
 import * as THREE from 'three'
@@ -142,6 +142,35 @@ interface BentoWireframeProps {
   position?: [number, number, number]
 }
 
+// Pauses the R3F render loop when the Canvas's host element is off-screen.
+// Drops CPU/GPU use to ~0 for bentos below the fold or scrolled past.
+function ViewportPause({ hostRef }: { hostRef: React.RefObject<HTMLDivElement | null> }) {
+  const invalidate = useThree((s) => s.invalidate)
+  const setFrameloop = useThree((s) => s.setFrameloop)
+
+  useEffect(() => {
+    const el = hostRef.current
+    if (!el) return
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            setFrameloop('always')
+            invalidate()
+          } else {
+            setFrameloop('never')
+          }
+        }
+      },
+      { rootMargin: '200px' },
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [hostRef, invalidate, setFrameloop])
+
+  return null
+}
+
 export function BentoWireframe({
   geometry,
   className = '',
@@ -149,15 +178,27 @@ export function BentoWireframe({
   useGlass = false,
   position = [0, 0, 0],
 }: BentoWireframeProps) {
+  const hostRef = useRef<HTMLDivElement>(null)
   const wireColor = accentColor ? '#ffffff' : '#888888'
 
   return (
-    <div className={`absolute inset-0 pointer-events-none ${className}`}>
+    <div
+      ref={hostRef}
+      className={`absolute inset-0 pointer-events-none ${className}`}
+    >
       <Canvas
         camera={{ position: [0, 0, 3], fov: 50 }}
-        dpr={[1, 1.2]}
+        // Cap DPR — retina iPads / phones don't need 3x for a tiny bento.
+        dpr={[1, 1.5]}
+        gl={{ antialias: true, powerPreference: 'low-power' }}
         style={{ background: 'transparent' }}
       >
+        {/*
+          Canvas is mounted as soon as the page loads (no viewport mount gate).
+          The frameloop pauses automatically when the host element scrolls out
+          of view, so off-screen bentos don't burn CPU/GPU.
+        */}
+        <ViewportPause hostRef={hostRef} />
         <Suspense fallback={null}>
           <group position={position}>
             {useGlass ? (

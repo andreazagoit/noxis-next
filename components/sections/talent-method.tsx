@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { Reveal } from '@/components/ui/reveal'
@@ -36,14 +37,21 @@ export function TalentMethod() {
             </Typography>
           </div>
 
-          <ol className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4 relative">
+          <div className="relative">
             <div
               aria-hidden
               className="hidden md:block absolute left-0 right-0 top-[1.5rem] h-px bg-border"
             />
-            {STEPS.map((key, i) => (
-              <Reveal key={key} width="100%" delay={0.05 + i * 0.08}>
-                <li className="relative flex flex-col gap-4">
+            <ol className="relative grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4 list-none">
+              {STEPS.map((key, i) => (
+                <motion.li
+                  key={key}
+                  className="relative flex flex-col gap-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-10%' }}
+                  transition={{ duration: 0.5, delay: 0.05 + i * 0.08, ease: 'easeOut' }}
+                >
                   <div className="flex items-center gap-3 md:block">
                     <div className="relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-foreground text-background font-heading text-lg shrink-0">
                       {String(i + 1).padStart(2, '0')}
@@ -57,10 +65,10 @@ export function TalentMethod() {
                       {t(`talent.method.steps.${key}.description`)}
                     </Typography>
                   </div>
-                </li>
-              </Reveal>
-            ))}
-          </ol>
+                </motion.li>
+              ))}
+            </ol>
+          </div>
         </div>
       </Container>
     </section>

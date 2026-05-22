@@ -20,7 +20,6 @@ interface DriftHeroProps {
 }
 
 const EASE = [0.33, 1, 0.68, 1] as const
-
 const LINE_OFFSETS = ['ml-0', 'md:ml-[18%]', 'md:ml-[6%]']
 
 export function DriftHero({
@@ -71,7 +70,7 @@ export function DriftHero({
               <motion.div
                 initial={{ y: '100%' }}
                 animate={{ y: 0 }}
-                transition={{ duration: 0.8, ease: EASE, delay: 0.1 }}
+                transition={{ duration: 0.4, ease: EASE }}
               >
                 <Typography variant="caption" className="!text-primary">
                   {eyebrow}
@@ -82,13 +81,13 @@ export function DriftHero({
 
           <Typography variant="hero" className="text-foreground">
             {(() => {
-              const stagger = 0.07
+              const stagger = 0.03
               let wordCount = 0
               return lines.map((line, i) => {
-                const startDelay = 0.2 + wordCount * stagger
+                const startDelay = wordCount * stagger
                 wordCount += line.split(' ').length
                 return (
-                  <div
+                  <span
                     key={i}
                     className={cn(
                       'block',
@@ -100,9 +99,9 @@ export function DriftHero({
                       text={line}
                       delay={startDelay}
                       stagger={stagger}
-                      duration={0.7}
+                      duration={0.35}
                     />
-                  </div>
+                  </span>
                 )
               })
             })()}
@@ -110,7 +109,7 @@ export function DriftHero({
 
           <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
             <Typography variant="lead" className="md:max-w-xl">
-              <WordReveal text={lead} delay={0.8} stagger={0.025} />
+              <WordReveal text={lead} delay={0.3} stagger={0.015} duration={0.3} />
             </Typography>
 
             <div className="flex flex-wrap gap-3 md:justify-end">
