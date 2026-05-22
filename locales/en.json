@@ -355,7 +355,7 @@
         "roster": {
             "title_line1": "The",
             "title_line2": "Roster.",
-            "placeholder": "In arrivo"
+            "placeholder": "Coming soon"
         },
         "apply": {
             "eyebrow": "For Creators · Apply",
@@ -432,14 +432,37 @@
         }
     },
     "seo": {
-        "title": "Noxis Agency | Premium Digital Products",
-        "description": "We don’t just write code. We forge assets. Noxis Agency creates digital products that are as powerful as they are beautiful through rigorous engineering and obsessive art direction.",
-        "keywords": "Digital Agency, Web Design, Premium Websites, 3D Web, Awwwards, Creative Agency, Next.js, React, Three.js, Glassmorphism"
+        "site_name": "Noxis",
+        "url": "https://noxis.agency",
+        "title": "Noxis — Premium Digital Agency · Web, Mobile, AI",
+        "description": "Premium digital agency engineering web, mobile and AI products with surgical precision. From startup MVPs to enterprise platforms — design, code and growth strategy under one roof.",
+        "keywords": "digital agency, premium web design, mobile app development, AI integration, Next.js agency, React Native, MVP development, Italian digital agency, custom software, creative agency",
+        "home": {
+            "title": "Noxis — Premium Digital Agency · Web, Mobile & AI",
+            "description": "Italian digital agency engineering premium web, mobile and AI products with surgical precision. We design, build and ship — from startup MVPs to enterprise platforms.",
+            "keywords": "digital agency, premium web design, mobile app development, AI agency, Next.js agency, MVP, creative agency, Italian digital agency, web development Italy",
+            "og_title": "Noxis — Premium Digital Agency · Web, Mobile & AI",
+            "og_description": "Italian digital agency. Premium web, mobile and AI products engineered end-to-end."
+        },
+        "development": {
+            "title": "Development — Web, Mobile & AI Engineering · Noxis",
+            "description": "Web, mobile and AI products engineered end-to-end. Next.js, React, React Native, type-safe code, AI integration. MVPs in weeks, enterprise platforms that scale.",
+            "keywords": "web development, mobile app development, AI integration, Next.js, React, React Native, MVP development, enterprise platform, custom software, startup development",
+            "og_title": "Development — Noxis",
+            "og_description": "Web, mobile and AI products engineered end-to-end. MVPs in weeks, platforms that scale."
+        },
+        "talent": {
+            "title": "Talent — Influencer Marketing & Creator Management · Noxis",
+            "description": "Influencer marketing done right. We connect ambitious brands with the creators who shape culture — strategy, briefs, production, distribution and tracked attribution end-to-end.",
+            "keywords": "influencer marketing, creator management, talent agency, brand campaigns, creator economy, social media marketing, performance marketing, influencer agency Italy",
+            "og_title": "Talent — Noxis",
+            "og_description": "Influencer marketing done right. Strategy, briefs, production, distribution and tracked attribution end-to-end."
+        }
     },
     "selected_work": {
         "eyebrow": "Selected Work",
         "title_line1": "From first commit",
         "title_line2": "to global scale.",
-        "placeholder": "In arrivo"
+        "placeholder": "Coming soon"
     }
 }

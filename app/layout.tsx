@@ -2,35 +2,63 @@ import type { Metadata, Viewport } from 'next'
 import { Geist_Mono, Inter } from 'next/font/google'
 import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
-import { getLocale, getMessages } from 'next-intl/server'
+import { getLocale, getMessages, getTranslations } from 'next-intl/server'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { auth } from '@/lib/auth'
 import { SiteProviders } from '@/components/providers/site-providers'
+import { OrganizationJsonLd } from '@/components/seo/organization-jsonld'
+import { SITE_URL } from '@/lib/seo'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const fontMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
-export const metadata: Metadata = {
-  title: 'Noxis',
-  description: 'Noxis — design, web, mobile, AI agency.',
-  icons: {
-    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
-    apple: '/apple-touch-icon.png',
-  },
-  manifest: '/manifest.json',
-  openGraph: {
-    type: 'website',
-    title: 'Noxis',
-    description: 'Noxis — design, web, mobile, AI agency.',
-    images: ['/og-image.jpg'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Noxis',
-    description: 'Noxis — design, web, mobile, AI agency.',
-    images: ['/og-image.jpg'],
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('seo')
+  const locale = await getLocale()
+  const title = t('title')
+  const description = t('description')
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: { default: title, template: '%s' },
+    description,
+    keywords: t('keywords'),
+    applicationName: 'Noxis',
+    authors: [{ name: 'Noxis', url: SITE_URL }],
+    creator: 'Noxis',
+    publisher: 'Noxis',
+    icons: {
+      icon: [
+        { url: '/icon.svg', type: 'image/svg+xml' },
+        { url: '/favicon.svg', type: 'image/svg+xml' },
+      ],
+      shortcut: '/icon.svg',
+      apple: '/apple-touch-icon.png',
+    },
+    manifest: '/manifest.json',
+    formatDetection: { telephone: false, address: false, email: false },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+    },
+    alternates: { canonical: '/', languages: { en: '/', it: '/' } },
+    openGraph: {
+      type: 'website',
+      siteName: 'Noxis',
+      title,
+      description,
+      url: SITE_URL,
+      locale,
+      images: ['/og-image.jpg'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/og-image.jpg'],
+    },
+  }
 }
 
 export const viewport: Viewport = {
@@ -54,6 +82,7 @@ export default async function RootLayout({
       className={cn('antialiased', fontMono.variable, 'font-sans', inter.variable)}
     >
       <body>
+        <OrganizationJsonLd />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SiteProviders session={session}>{children}</SiteProviders>
         </NextIntlClientProvider>

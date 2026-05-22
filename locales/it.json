@@ -10,7 +10,7 @@
         "title_line1": "Noi amiamo",
         "title_line2": "le sfide.",
         "title_line3": "Portaci la tua.",
-        "description": "Progettiamo esperienze immersive guidate dal movimento che catturano l'attenzione e guidano gli utenti all'azione. Sviluppo impeccabile. Strategia. Zero limiti.",
+        "description": "Esperienze immersive, guidate dal movimento, pensate per catturare l'attenzione e portare all'azione. Sviluppo pulito. Strategia affilata. Zero compromessi.",
         "cta": "Inizia un Progetto",
         "we_are_good_at": "Cosa facciamo",
         "skills": {
@@ -24,11 +24,11 @@
         "quote_line1": "L'impatto è progettato,",
         "quote_line2": "non indovinato.",
         "quote_description": "Il design senza funzionalità è vuoto. La funzionalità senza design è incompleta. Costruiamo prodotti digitali che rispettano entrambi e le persone che li usano.",
-        "our_vision": "La Nostra Visione",
-        "vision_title": "Definiamo\nStandard.",
+        "our_vision": "La nostra visione",
+        "vision_title": "Definiamo\nlo\nstandard.",
         "vision_description": "Immaginiamo un mondo digitale in cui ogni prodotto è bello, funzionale ed eticamente responsabile. Puntiamo a dimostrare che la tecnologia può essere una forza positiva, migliorando la vita delle persone senza scorciatoie o compromessi. La nostra ambizione è diventare un punto di riferimento per l'eccellenza, dove design e tecnologia si fondono in esperienze digitali premium che lasciano un impatto positivo duraturo.",
-        "our_mission": "La Nostra Missione",
-        "mission_title": "Progettiamo\nValore.",
+        "our_mission": "La nostra missione",
+        "mission_title": "Progettiamo\nvalore.",
         "mission_description": "Creiamo soluzioni web e mobile della massima qualità, combinando design innovativo, funzionalità impeccabile e un'attenzione ossessiva ai dettagli. Ogni progetto nasce dal rispetto per le persone e per i valori dei nostri clienti. Rifiutiamo scorciatoie e pratiche non etiche, collaborando con chi condivide la nostra visione per produrre strumenti digitali che siano veramente utili, etici e sostenibili. La nostra missione è trasformare le idee in esperienze digitali premium che diano potere alle persone e generino valore concreto."
     },
     "footer": {
@@ -42,11 +42,11 @@
         "title_line2": "Digitali Premium.",
         "web_dev": {
             "title": "Sviluppo Web",
-            "description": "Forgiamo piattaforme web ad alte prestazioni con precisione chirurgica e architetture moderne. Colmiamo il divario tra ingegneria complessa e direzione artistica ossessiva per creare asset digitali potenti e belli."
+            "description": "Forgiamo piattaforme web ad alte prestazioni con precisione chirurgica e architetture moderne. Colmiamo il divario tra ingegneria complessa e direzione artistica meticolosa per creare asset digitali potenti e curati nei minimi dettagli."
         },
         "ux_ui": {
             "title": "Design UX/UI",
-            "description": "Progettiamo percorsi digitali incentrati sull'uomo attraverso interfacce raffinate e design d'interazione sofisticato. Non progettiamo solo schermi. Ingegnerizziamo ambienti che catturano l'attenzione e guidano la conversione."
+            "description": "Progettiamo percorsi digitali pensati per le persone, con interfacce raffinate e interazioni studiate. Non disegniamo schermate: progettiamo ambienti che catturano l'attenzione e portano alla conversione."
         },
         "mobile_dev": {
             "title": "Sviluppo Mobile",
@@ -54,7 +54,7 @@
         },
         "ai": {
             "title": "Intelligenza Artificiale",
-            "description": "Integriamo soluzioni AI intelligenti per automatizzare i flussi di lavoro e migliorare l'interazione con l'utente."
+            "description": "Integriamo soluzioni di AI per automatizzare i flussi di lavoro e migliorare l'interazione con l'utente."
         },
         "marketing": {
             "title": "Marketing & Strategia",
@@ -63,7 +63,7 @@
     },
     "partnership": {
         "title_line1": "Pronto per un",
-        "title_line2": "Partner",
+        "title_line2": "partner",
         "description": "Collaboriamo con i brand per trasformare le loro idee in prodotti digitali efficaci. Combinando design e ingegneria, ti aiutiamo a connetterti con il tuo pubblico e a ottenere risultati significativi. Costruiamo qualcosa di grande insieme.",
         "cta": "Inizia un Progetto"
     },
@@ -85,18 +85,18 @@
                 "title": "Scoperta",
                 "description": "Un'immersione profonda nel cuore del tuo brand. Ricercamo le tendenze del mercato, definiamo obiettivi specifici e allineiamo ogni tassello digitale con la tua ambizione finale.",
                 "items": [
-                    "Brief Creativo",
-                    "Ricerca Brand",
-                    "Mood Board"
+                    "Brief creativo",
+                    "Ricerca brand",
+                    "Mood board"
                 ]
             },
             "concept": {
                 "title": "Concetto",
                 "description": "Tradurre la scoperta in una visione tangibile. Definiamo la direzione visiva e artistica che distinguerà il tuo prodotto dalla concorrenza.",
                 "items": [
-                    "Direzione Visiva",
-                    "Direzione Artistica",
-                    "Storyboarding"
+                    "Direzione visiva",
+                    "Direzione artistica",
+                    "Storyboard"
                 ]
             },
             "design": {
@@ -104,15 +104,15 @@
                 "description": "Creare un'esperienza utente premium con precisione chirurgica. Ogni interazione e pixel è progettato per trasmettere lusso ed eccellenza tecnica.",
                 "items": [
                     "Craft UI/UX",
-                    "Motion Design",
-                    "Design d'Interazione"
+                    "Motion design",
+                    "Design d'interazione"
                 ]
             },
             "develop": {
                 "title": "Sviluppo",
                 "description": "Forgiare capolavori digitali con tecnologia all'avanguardia. Costruiamo prodotti robusti, scalabili e immersivi che spingono i confini del web.",
                 "items": [
-                    "Creative Coding",
+                    "Creative coding",
                     "WebGL & 3D",
                     "Animazioni"
                 ]
@@ -122,8 +122,8 @@
                 "description": "La ricerca ossessiva della perfezione. Affiniamo le micro-interazioni e ottimizziamo le prestazioni per garantire un'esperienza impeccabile su ogni dispositivo.",
                 "items": [
                     "Micro-interazioni",
-                    "Prestazioni",
-                    "Pixel Perfect"
+                    "Performance",
+                    "Pixel perfect"
                 ]
             },
             "launch": {
@@ -131,8 +131,8 @@
                 "description": "Garantire un'entrata monumentale nel mercato. Gestiamo il processo di lancio e collaboriamo per l'evoluzione a lungo termine e l'eredità digitale.",
                 "items": [
                     "Lancio",
-                    "Case Study",
-                    "Invio ad Awards"
+                    "Case study",
+                    "Submission ai premi"
                 ]
             }
         }
@@ -179,7 +179,7 @@
                         "description": "Brand identity, UX/UI e design system costruiti per scalare insieme al prodotto, non contro di esso."
                     },
                     "launch": {
-                        "title": "Launch & growth",
+                        "title": "Lancio & crescita",
                         "description": "Landing page, analytics, SEO e strumenti di crescita integrati per un impatto misurabile."
                     },
                     "iterate": {
@@ -222,7 +222,7 @@
         "title_line1": "Voci che",
         "title_line2": "muovono i brand.",
         "title_line3": "Costruite per durare.",
-        "description": "Connettiamo brand ambiziosi con i creator che plasmano la cultura. Strategia, produzione, distribuzione e misurazione — tutto gestito end-to-end perché ogni campagna abbia un impatto reale.",
+        "description": "Connettiamo brand ambiziosi con i creator che plasmano la cultura. Strategia, produzione, distribuzione e misurazione — gestite end-to-end perché ogni campagna abbia un impatto reale.",
         "cta_brand": "Per i Brand",
         "cta_creator": "Per i Creator",
         "highlights": {
@@ -256,19 +256,19 @@
             "description": "Un processo lineare in quattro fasi. Ogni campagna passa per gli stessi step, ma viene cucita addosso al brand.",
             "steps": {
                 "discovery": {
-                    "title": "Discovery",
+                    "title": "Scoperta",
                     "description": "Capiamo il brand, l'obiettivo e l'audience. Definiamo KPI realistici e una rotta misurabile."
                 },
                 "match": {
-                    "title": "Match",
+                    "title": "Abbinamento",
                     "description": "Selezioniamo i creator giusti per voce, audience e fit culturale. Niente liste generiche."
                 },
                 "produce": {
-                    "title": "Produce",
+                    "title": "Produzione",
                     "description": "Brief, contratti, produzione, revisione. Coordiniamo creator e brand fino alla pubblicazione."
                 },
                 "measure": {
-                    "title": "Measure",
+                    "title": "Misurazione",
                     "description": "Tracciamo link, reach e conversioni. Report leggibili, decisioni per il prossimo round."
                 }
             }
@@ -283,7 +283,7 @@
                     "description": "Posizionamento, obiettivi, mix di formati e canali."
                 },
                 "research": {
-                    "title": "Research",
+                    "title": "Ricerca",
                     "description": "Analisi audience, benchmark competitor, mappatura creator."
                 },
                 "production": {
@@ -291,7 +291,7 @@
                     "description": "Concept, scrittura, direzione, editing fino al delivery."
                 },
                 "management": {
-                    "title": "Project management",
+                    "title": "Gestione progetti",
                     "description": "Brief, contratti, calendario, revisione e pubblicazione."
                 },
                 "protection": {
@@ -299,7 +299,7 @@
                     "description": "Vetting creator, content review, gestione del rischio reputazionale."
                 },
                 "campaign": {
-                    "title": "Campaign management",
+                    "title": "Gestione campagne",
                     "description": "Esecuzione end-to-end, monitoraggio live, ottimizzazione in corsa."
                 }
             }
@@ -312,7 +312,7 @@
                 "title": "Influenza con intenzione.",
                 "items": {
                     "matching": {
-                        "title": "Creator matching",
+                        "title": "Matching creator",
                         "description": "Matching AI-assisted tra il DNA del tuo brand e i creator con audience, tono e performance giusti per te."
                     },
                     "campaigns": {
@@ -432,9 +432,32 @@
         }
     },
     "seo": {
-        "title": "Noxis Agency | Prodotti Digitali Premium",
-        "description": "Non scriviamo solo codice. Forgiamo asset. Noxis Agency crea prodotti digitali tanto potenti quanto belli attraverso un'ingegneria rigorosa e una direzione artistica ossessiva.",
-        "keywords": "Agenzia Digitale, Web Design, Siti Web Premium, 3D Web, Awwwards, Agenzia Creativa, Next.js, React, Three.js, Glassmorphism"
+        "site_name": "Noxis",
+        "url": "https://noxis.agency",
+        "title": "Noxis — Agenzia Digitale Premium · Web, Mobile, AI",
+        "description": "Agenzia digitale premium che progetta prodotti web, mobile e AI con precisione chirurgica. Dagli MVP per startup alle piattaforme enterprise — design, codice e strategia di crescita in un'unica casa.",
+        "keywords": "agenzia digitale, web design premium, sviluppo app mobile, integrazione AI, agenzia Next.js, React Native, sviluppo MVP, agenzia digitale italiana, software custom, creative agency",
+        "home": {
+            "title": "Noxis — Agenzia Digitale Premium · Web, Mobile & AI",
+            "description": "Agenzia digitale italiana che progetta e sviluppa prodotti web, mobile e AI premium con precisione chirurgica. Disegniamo, costruiamo e lanciamo — dagli MVP per startup alle piattaforme enterprise.",
+            "keywords": "agenzia digitale, web design premium, sviluppo app mobile, agenzia AI, agenzia Next.js, MVP, creative agency, agenzia digitale italiana, sviluppo web Italia",
+            "og_title": "Noxis — Agenzia Digitale Premium · Web, Mobile & AI",
+            "og_description": "Agenzia digitale italiana. Prodotti web, mobile e AI premium sviluppati end-to-end."
+        },
+        "development": {
+            "title": "Sviluppo — Web, Mobile & AI Engineering · Noxis",
+            "description": "Prodotti web, mobile e AI sviluppati end-to-end. Next.js, React, React Native, codice type-safe, integrazione AI. MVP in poche settimane, piattaforme enterprise che scalano.",
+            "keywords": "sviluppo web, sviluppo app mobile, integrazione AI, Next.js, React, React Native, sviluppo MVP, piattaforma enterprise, software custom, sviluppo startup",
+            "og_title": "Sviluppo — Noxis",
+            "og_description": "Prodotti web, mobile e AI sviluppati end-to-end. MVP in settimane, piattaforme che scalano."
+        },
+        "talent": {
+            "title": "Talent — Influencer Marketing & Creator Management · Noxis",
+            "description": "Influencer marketing fatto bene. Connettiamo brand ambiziosi con i creator che plasmano la cultura — strategia, brief, produzione, distribuzione e attribuzione tracciata end-to-end.",
+            "keywords": "influencer marketing, creator management, talent agency, campagne brand, creator economy, social media marketing, performance marketing, agenzia influencer Italia",
+            "og_title": "Talent — Noxis",
+            "og_description": "Influencer marketing fatto bene. Strategia, brief, produzione, distribuzione e attribuzione tracciata end-to-end."
+        }
     },
     "selected_work": {
         "eyebrow": "Lavori selezionati",
