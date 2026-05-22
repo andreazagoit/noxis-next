@@ -8,8 +8,8 @@ type ContainerProps = React.HTMLAttributes<HTMLDivElement> & {
 }
 
 const variants: Record<ContainerVariant, string> = {
-  default: 'w-full px-4',
-  contained: 'w-full px-4 max-w-7xl mx-auto',
+  default: 'w-full px-[5vw]',
+  contained: 'w-full px-[5vw] max-w-7xl mx-auto',
 }
 
 export function Container({

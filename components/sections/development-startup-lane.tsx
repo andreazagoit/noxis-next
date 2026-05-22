@@ -1,14 +1,15 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { Reveal } from '@/components/ui/reveal'
-import { BentoWireframe, type GeometryType } from '@/components/3d/bento-wireframe'
 import { Container } from '@/components/layout/container'
+import { Reveal } from '@/components/ui/reveal'
 import { Typography } from '@/components/ui/typography'
+import { BentoWireframe, type GeometryType } from '@/components/3d/bento-wireframe'
 import { WordReveal } from '@/components/ui/word-reveal'
 import { useIsMobile } from '@/hooks/use-mobile'
 
 interface BentoItem {
+  key: string
   title: string
   description: string
   span: string
@@ -16,53 +17,60 @@ interface BentoItem {
   geometry: GeometryType
 }
 
-export function Services() {
+export function DevelopmentStartupLane() {
   const t = useTranslations()
   const isMobile = useIsMobile()
 
   const bentoItems: BentoItem[] = [
     {
-      title: t('services.web_dev.title'),
-      description: t('services.web_dev.description'),
+      key: 'mvp',
+      title: t('development.services.startup.items.mvp.title'),
+      description: t('development.services.startup.items.mvp.description'),
       span: 'md:col-span-2 md:row-span-2',
       accent: true,
       geometry: 'icosahedron',
     },
     {
-      title: t('services.ux_ui.title'),
-      description: t('services.ux_ui.description'),
+      key: 'design',
+      title: t('development.services.startup.items.design.title'),
+      description: t('development.services.startup.items.design.description'),
       span: 'md:col-span-1 md:row-span-2',
       geometry: 'torusKnot',
     },
     {
-      title: t('services.mobile_dev.title'),
-      description: t('services.mobile_dev.description'),
+      key: 'launch',
+      title: t('development.services.startup.items.launch.title'),
+      description: t('development.services.startup.items.launch.description'),
       span: 'md:col-span-1 md:row-span-1',
       geometry: 'torus',
     },
     {
-      title: t('services.ai.title'),
-      description: t('services.ai.description'),
+      key: 'iterate',
+      title: t('development.services.startup.items.iterate.title'),
+      description: t('development.services.startup.items.iterate.description'),
       span: 'md:col-span-1 md:row-span-1',
       geometry: 'octahedron',
     },
     {
-      title: t('services.marketing.title'),
-      description: t('services.marketing.description'),
+      key: 'ai',
+      title: t('development.services.startup.items.ai.title'),
+      description: t('development.services.startup.items.ai.description'),
       span: 'md:col-span-1 md:row-span-1',
       geometry: 'dodecahedron',
     },
   ]
 
   return (
-    <section id="services">
+    <section id="development-startup">
       <Container className="py-section">
-        <div className="mb-element">
-          <Typography variant="display" className="mb-element">
-            <WordReveal text={t('services.title_line1')} /> <br />
-            <span className="text-primary">
-              <WordReveal text={t('services.title_line2')} delay={0.15} />
-            </span>
+        <div className="mb-element flex flex-col gap-3">
+          <Reveal width="100%">
+            <Typography variant="caption" className="!text-primary">
+              {t('development.services.startup.eyebrow')}
+            </Typography>
+          </Reveal>
+          <Typography variant="display">
+            <WordReveal text={t('development.services.startup.title')} delay={0.1} />
           </Typography>
         </div>
 
@@ -74,7 +82,7 @@ export function Services() {
 
             return (
               <Reveal
-                key={index}
+                key={item.key}
                 width="100%"
                 height="100%"
                 delay={index * 0.1}
@@ -98,7 +106,9 @@ export function Services() {
                       <Typography
                         variant={isLarge ? 'h2' : isTall ? 'h3' : 'h4'}
                         className={`mb-3 ${
-                          item.accent ? '!text-primary-foreground' : 'group-hover:text-primary transition-colors'
+                          item.accent
+                            ? '!text-primary-foreground'
+                            : 'group-hover:text-primary transition-colors'
                         }`}
                       >
                         {item.title}

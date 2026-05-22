@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { Reveal } from '@/components/ui/reveal'
 import { Typography } from '@/components/ui/typography'
+import { WordReveal } from '@/components/ui/word-reveal'
 
 const STEPS = ['discovery', 'match', 'produce', 'measure'] as const
 
@@ -20,17 +21,19 @@ export function TalentMethod() {
                 {t('talent.method.eyebrow')}
               </Typography>
             </Reveal>
-            <Reveal width="100%" delay={0.05}>
-              <Typography variant="display">
-                {t('talent.method.title_line1')}{' '}
-                <span className="text-primary">{t('talent.method.title_line2')}</span>
-              </Typography>
-            </Reveal>
-            <Reveal width="100%" delay={0.1}>
-              <Typography variant="lead" className="text-muted-foreground">
-                {t('talent.method.description')}
-              </Typography>
-            </Reveal>
+            <Typography variant="display">
+              <WordReveal text={t('talent.method.title_line1')} delay={0.05} />{' '}
+              <span className="text-primary">
+                <WordReveal text={t('talent.method.title_line2')} delay={0.2} />
+              </span>
+            </Typography>
+            <Typography variant="lead" className="text-muted-foreground">
+              <WordReveal
+                text={t('talent.method.description')}
+                delay={0.35}
+                stagger={0.02}
+              />
+            </Typography>
           </div>
 
           <ol className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4 relative">

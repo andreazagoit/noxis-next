@@ -36,7 +36,7 @@ export function FeaturedWork() {
       className="relative py-48 md:py-64 bg-primary overflow-hidden"
       id="methodology"
     >
-      <Container variant="contained">
+      <Container>
         <div className="flex flex-col items-center mb-32 text-center">
           <Reveal width="100%">
             <div className="flex flex-col items-center">
@@ -58,7 +58,7 @@ export function FeaturedWork() {
           </Reveal>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative">
           <div className="space-y-8 md:space-y-24 relative">
             {PROCESS_STEPS.map((step, index) => (
               <TimelineStep

@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
-import { DotCTAButton } from '@/components/ui/dot-cta-button'
+import { DotButton } from '@/components/ui/dot-button'
+import { mailtoHref } from '@/lib/mailto'
 import { Typography } from '@/components/ui/typography'
 import { Reveal } from '@/components/ui/reveal'
 
@@ -55,7 +56,14 @@ export function TalentHero() {
 
           <Reveal width="100%" delay={0.5} overflowVisible>
             <div className="mt-2">
-              <DotCTAButton variant="primary" intent="talent_brand">{t('talent.cta_brand')}</DotCTAButton>
+              <DotButton
+                variant="primary"
+                onClick={() => {
+                  window.location.href = mailtoHref(t, 'talent_brand')
+                }}
+              >
+                {t('talent.cta_brand')}
+              </DotButton>
             </div>
           </Reveal>
         </div>

@@ -185,8 +185,13 @@
                     "iterate": {
                         "title": "Iterare con i dati",
                         "description": "Sviluppo guidato dagli esperimenti. Feature flag, A/B test e observability integrati."
+                    },
+                    "ai": {
+                        "title": "AI integrata",
+                        "description": "LLM, agenti e funzioni smart tessute nel prodotto dal primo giorno — non aggiunte dopo."
                     }
-                }
+                },
+                "description": "Scope ridotto, craft premium, codice production-grade dal primo giorno."
             },
             "enterprise": {
                 "eyebrow": "Per le Aziende",
@@ -320,7 +325,7 @@
                     },
                     "reporting": {
                         "title": "Report in tempo reale",
-                        "description": "Dashboard live con reach, engagement, conversioni e ROI. Export PDF white-label per gli stakeholder."
+                        "description": "Dashboard live con reach, engagement, conversioni e ROI."
                     }
                 }
             },
@@ -344,6 +349,37 @@
                         "title": "Crescita audience",
                         "description": "Strategia data-driven multi-piattaforma, content planning e analytics per crescere in modo sostenibile."
                     }
+                }
+            }
+        },
+        "roster": {
+            "title_line1": "Il",
+            "title_line2": "Roster.",
+            "placeholder": "In arrivo"
+        },
+        "apply": {
+            "eyebrow": "Per i Creator · Candidati",
+            "window": "Q3 2026",
+            "title_line1": "Entra nel",
+            "title_line2": "roster Noxis.",
+            "description": "Pochi nuovi nomi ogni trimestre. Management vero, supporto in produzione, deal premium — per chi tiene al mestiere.",
+            "cta": "Candidati ora",
+            "perks": {
+                "manager": {
+                    "title": "Manager personale",
+                    "description": "Un punto di contatto dedicato per outreach, trattativa e gestione."
+                },
+                "deals": {
+                    "title": "Brand deal premium",
+                    "description": "Partnership selezionate in linea con valori e audience."
+                },
+                "production": {
+                    "title": "Supporto produzione",
+                    "description": "Strategia, scrittura, editing, direzione creativa."
+                },
+                "growth": {
+                    "title": "Crescita audience",
+                    "description": "Pianificazione cross-platform e analytics settimanali."
                 }
             }
         }
@@ -399,5 +435,11 @@
         "title": "Noxis Agency | Prodotti Digitali Premium",
         "description": "Non scriviamo solo codice. Forgiamo asset. Noxis Agency crea prodotti digitali tanto potenti quanto belli attraverso un'ingegneria rigorosa e una direzione artistica ossessiva.",
         "keywords": "Agenzia Digitale, Web Design, Siti Web Premium, 3D Web, Awwwards, Agenzia Creativa, Next.js, React, Three.js, Glassmorphism"
+    },
+    "selected_work": {
+        "eyebrow": "Lavori selezionati",
+        "title_line1": "Dal primo commit",
+        "title_line2": "alla scala globale.",
+        "placeholder": "In arrivo"
     }
 }

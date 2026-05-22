@@ -2,9 +2,9 @@
 
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
-import { DotCTAButton } from '@/components/ui/dot-cta-button'
 import { Reveal } from '@/components/ui/reveal'
 import { Typography } from '@/components/ui/typography'
+import { WordReveal } from '@/components/ui/word-reveal'
 
 const ITEMS = ['matching', 'campaigns', 'tracking', 'reporting'] as const
 
@@ -22,25 +22,17 @@ export function TalentForBrands() {
               </Typography>
             </Reveal>
 
-            <Reveal width="100%" delay={0.05}>
-              <Typography variant="display">
-                {t('talent.services.brand.title')}
-              </Typography>
-            </Reveal>
+            <Typography variant="display">
+              <WordReveal text={t('talent.services.brand.title')} delay={0.05} />
+            </Typography>
 
-            <Reveal width="100%" delay={0.1}>
-              <Typography variant="lead">
-                {t('talent.for_brands.description')}
-              </Typography>
-            </Reveal>
-
-            <Reveal width="100%" delay={0.2} overflowVisible>
-              <div className="mt-4">
-                <DotCTAButton variant="primary" intent="talent_brand">
-                  {t('talent.cta_brand')}
-                </DotCTAButton>
-              </div>
-            </Reveal>
+            <Typography variant="lead">
+              <WordReveal
+                text={t('talent.for_brands.description')}
+                delay={0.2}
+                stagger={0.02}
+              />
+            </Typography>
           </div>
 
           <ul className="flex flex-col gap-6">

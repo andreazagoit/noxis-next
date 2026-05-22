@@ -2,7 +2,8 @@
 
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
-import { DotCTAButton } from '@/components/ui/dot-cta-button'
+import { DotButton } from '@/components/ui/dot-button'
+import { mailtoHref } from '@/lib/mailto'
 import { Reveal } from '@/components/ui/reveal'
 import { Typography } from '@/components/ui/typography'
 
@@ -26,9 +27,14 @@ export function TalentForCreators() {
               </Typography>
             </div>
             <div className="shrink-0">
-              <DotCTAButton variant="primary" intent="talent_creator">
+              <DotButton
+                variant="primary"
+                onClick={() => {
+                  window.location.href = mailtoHref(t, 'talent_creator')
+                }}
+              >
                 {t('talent.cta_creator')}
-              </DotCTAButton>
+              </DotButton>
             </div>
           </div>
         </Reveal>

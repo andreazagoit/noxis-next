@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 export const typographyVariants = cva('', {
   variants: {
     variant: {
+      hero: 'text-[13vw] md:text-[10vw] lg:text-[9vw] xl:text-[8.5vw] font-bold uppercase leading-[1.02] tracking-tight text-foreground',
       display:
         'text-[12vw] md:text-[8vw] lg:text-[6vw] font-bold uppercase leading-[0.95] tracking-tight text-foreground',
       h2: 'text-[7vw] md:text-[5vw] lg:text-[4vw] font-bold uppercase leading-[1] tracking-tight text-foreground',
@@ -22,6 +23,7 @@ export const typographyVariants = cva('', {
 type Variant = NonNullable<VariantProps<typeof typographyVariants>['variant']>
 
 const elementByVariant: Record<Variant, ElementType> = {
+  hero: 'h1',
   display: 'h1',
   h2: 'h2',
   h3: 'h3',

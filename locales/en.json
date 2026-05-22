@@ -185,8 +185,13 @@
                     "iterate": {
                         "title": "Iterate with data",
                         "description": "Experiment-driven product work. Feature flags, A/B testing and observability built in."
+                    },
+                    "ai": {
+                        "title": "AI built-in",
+                        "description": "LLMs, agents and smart features woven into the product from day one — not bolted on later."
                     }
-                }
+                },
+                "description": "Sharp scope, premium craft, production-grade code from day one."
             },
             "enterprise": {
                 "eyebrow": "For Enterprises",
@@ -320,7 +325,7 @@
                     },
                     "reporting": {
                         "title": "Real-time reporting",
-                        "description": "Live dashboards with reach, engagement, conversions and ROI. White-label PDF exports for stakeholders."
+                        "description": "Live dashboards with reach, engagement, conversions and ROI."
                     }
                 }
             },
@@ -344,6 +349,37 @@
                         "title": "Audience growth",
                         "description": "Data-driven strategy across platforms, content planning and analytics to grow reach and engagement sustainably."
                     }
+                }
+            }
+        },
+        "roster": {
+            "title_line1": "The",
+            "title_line2": "Roster.",
+            "placeholder": "In arrivo"
+        },
+        "apply": {
+            "eyebrow": "For Creators · Apply",
+            "window": "Q3 2026",
+            "title_line1": "Join the",
+            "title_line2": "Noxis roster.",
+            "description": "A handful of new voices each quarter. Real management, production support, premium brand deals — for creators who care about craft.",
+            "cta": "Apply now",
+            "perks": {
+                "manager": {
+                    "title": "Personal manager",
+                    "description": "Dedicated point of contact for outreach, negotiation, admin."
+                },
+                "deals": {
+                    "title": "Premium brand deals",
+                    "description": "Curated partnerships aligned with your values and audience."
+                },
+                "production": {
+                    "title": "Production support",
+                    "description": "Strategy, scripting, editing, creative direction."
+                },
+                "growth": {
+                    "title": "Audience growth",
+                    "description": "Cross-platform planning + weekly analytics."
                 }
             }
         }
@@ -399,5 +435,11 @@
         "title": "Noxis Agency | Premium Digital Products",
         "description": "We don’t just write code. We forge assets. Noxis Agency creates digital products that are as powerful as they are beautiful through rigorous engineering and obsessive art direction.",
         "keywords": "Digital Agency, Web Design, Premium Websites, 3D Web, Awwwards, Creative Agency, Next.js, React, Three.js, Glassmorphism"
+    },
+    "selected_work": {
+        "eyebrow": "Selected Work",
+        "title_line1": "From first commit",
+        "title_line2": "to global scale.",
+        "placeholder": "In arrivo"
     }
 }
