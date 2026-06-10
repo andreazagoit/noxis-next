@@ -50,7 +50,9 @@ function OfferCard({ offerKey, highlighted }: { offerKey: OfferKey; highlighted:
           </span>
         )}
       </div>
-      <p className="text-sm leading-relaxed text-muted-foreground mb-7 min-h-[2.6rem]">
+      {/* Le tre tagline sono scritte per stare su ~3 righe: la min-height
+          riserva quelle righe così prezzo e CTA restano allineati tra card. */}
+      <p className="text-sm leading-relaxed text-muted-foreground mb-7 min-h-[4.3rem]">
         {t(`pricing.${offerKey}.tagline`)}
       </p>
 
@@ -108,9 +110,6 @@ export function PricingOffers() {
           ))}
         </div>
 
-        <p className="mt-5 text-xs leading-relaxed text-muted-foreground max-w-3xl">
-          {t('pricing.automation.note')}
-        </p>
       </Container>
     </section>
   )

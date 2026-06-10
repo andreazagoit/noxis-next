@@ -1,14 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { CleanButton } from '@/components/ui/clean-button'
 import { HeroVisual } from '@/components/sections/hero-visual'
 import { useCheckDialog } from '@/components/check/check-dialog'
-import { glass } from '@/lib/styles'
-import { cn } from '@/lib/utils'
 
 const EASE = [0.16, 1, 0.3, 1] as const
 
@@ -27,7 +24,6 @@ function FadeUp({ delay, children }: { delay: number; children: React.ReactNode 
 export function CleanHero() {
   const t = useTranslations()
   const { openCheck } = useCheckDialog()
-  const points = t.raw('hero.points') as string[]
   return (
     <section className="relative overflow-hidden pt-44 md:pt-52 pb-24 md:pb-28">
       {/* Quiet depth: one warm glow + a fading engineering grid */}
@@ -73,20 +69,6 @@ export function CleanHero() {
 
           <HeroVisual />
         </div>
-
-        <FadeUp delay={0.36}>
-          <ul className={cn('mt-16 inline-flex flex-col sm:flex-row sm:items-center gap-y-3 sm:gap-x-0 sm:divide-x sm:divide-foreground/10 rounded-2xl sm:px-2 sm:py-3.5', 'max-sm:border-0 max-sm:bg-transparent max-sm:shadow-none max-sm:backdrop-blur-none', glass)}>
-            {points.map((point, i) => (
-              <li
-                key={i}
-                className="flex items-center gap-2.5 text-sm text-foreground/75 sm:px-5"
-              >
-                <Check size={15} aria-hidden className="shrink-0 text-primary" />
-                {point}
-              </li>
-            ))}
-          </ul>
-        </FadeUp>
       </Container>
     </section>
   )

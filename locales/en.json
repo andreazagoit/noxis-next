@@ -178,7 +178,7 @@
             {
                 "value": 43,
                 "suffix": "%",
-                "label": "tax benefit with the 2026 super-depreciation"
+                "label": "maximum tax benefit with the 2026 super-depreciation"
             },
             {
                 "value": 100,
@@ -207,10 +207,10 @@
             "summary": "Process mapping, 3–5 priority automations with an estimate of recoverable hours, a 90-day roadmap and the public incentives applicable to your area."
         },
         "sprint": {
-            "name": "Full Automation",
+            "name": "Complete Project",
             "price": "from €8,500",
-            "price_note": "+ retainer from €1,500/month",
-            "summary": "2–3 automations integrated into your systems (ERP, CRM, email), team training included and ongoing maintenance. The software may qualify for the 180% super-depreciation."
+            "price_note": "+ monthly care",
+            "summary": "The custom project your company needs — a CRM, client portal, platform or app — built turnkey, integrated into your systems and managed month after month. The software may qualify for the 180% super-depreciation."
         },
         "training": {
             "name": "Hands-on training",
@@ -231,7 +231,7 @@
         "timing": "Timeline",
         "automation": {
             "name": "First Automation",
-            "tagline": "One process that steals your hours, automated and live in two weeks.",
+            "tagline": "The process that steals the most hours — quotes, emails, data entry — automated and in production within two weeks.",
             "price": "from €2,900",
             "timing_value": "2 weeks from signing",
             "payment_value": "50% on signing · 50% on working delivery",
@@ -243,7 +243,6 @@
                 "Team mini-training included",
                 "30 days of support included"
             ],
-            "note": "Closed scope: one process, two weeks. If other automatable processes emerge during the work, they go on the roadmap — not on the invoice.",
             "details_list": [
                 "Mapping call (1 hour) to pick the highest-return process",
                 "One process automated end-to-end: draft quotes from emails and PDFs, requests sorted into your system, recurring reports that prepare themselves",
@@ -258,7 +257,7 @@
         },
         "audit": {
             "name": "AI Audit",
-            "tagline": "The map of where your company loses hours, and the plan to recover them.",
+            "tagline": "A clear picture of where your company loses hours: interviews with the people doing the work, measured processes and a plan ordered by return.",
             "price": "from €3,000",
             "timing_value": "2 weeks",
             "payment_value": "50% on signing · 50% on report delivery",
@@ -284,31 +283,33 @@
             "terms": "2 weeks · 50% upfront, 50% on report"
         },
         "sprint": {
-            "name": "Full Automation",
-            "tagline": "Several automations integrated into your systems, with care that grows them.",
+            "name": "Complete Project",
+            "tagline": "A CRM, a client portal, an app: the custom software you need, integrated into your systems and looked after month after month.",
             "price": "from €8,500",
-            "timing_value": "4–6 week sprint, then ongoing",
-            "payment_value": "40% on signing · 40% at go-live · 20% at 30 days · 6-month minimum retainer",
-            "for_whom_value": "Companies that have already identified their processes — often after an Audit or a First Automation — and want an ongoing partner, not a one-off vendor.",
+            "timing_value": "4–8 weeks depending on scope, then ongoing",
+            "payment_value": "40% on signing · 40% at go-live · 20% at 30 days · 6-month minimum care plan",
+            "for_whom_value": "Companies that need more than a single automation: a custom CRM, a client portal, an internal platform, an app. Often the step after an Audit or a First Automation, for those looking for an ongoing partner — not a one-off vendor.",
             "deliverables_list": [
-                "Automations integrated into ERP and CRM",
-                "AI assistant on your company documents",
+                "Turnkey project: CRM, platform, web or mobile",
+                "Integration with the systems you already use",
+                "Automations and AI assistants where they pay off",
                 "Team training and documentation",
-                "Monitoring and improvements monthly",
+                "Monthly care: monitoring and improvements",
                 "Support on incentives and tax relief"
             ],
             "note": "The software we build can be documented as an intangible asset for Italy's 180% super-depreciation (effective benefit up to ~43%): we work with a subsidised-finance firm on the paperwork.",
             "details_list": [
-                "2–3 automations deeply integrated: ERP, CRM, management software, shared inboxes",
-                "AI assistant on your company knowledge base (price lists, procedures, past offers), where useful",
+                "A complete project built around your processes: a custom CRM, client portal, internal platform, mobile app or a suite of automations",
+                "Deep integration with what's already there: ERP, management software, CRM, shared inboxes, spreadsheets",
+                "AI where it truly pays off: automations, an assistant on your company knowledge base (price lists, procedures, past offers), data that enters itself",
                 "Flows with quality controls and audit trail: you see what the AI did and when",
                 "Team training and usage documentation",
-                "Monthly retainer: monitoring, fixes, improvements and new automations every month",
+                "Ongoing care: monitoring, fixes, improvements and new features every month",
                 "Software documentable as an intangible asset for Italy's 180% super-depreciation (effective benefit up to ~43%)",
                 "Incentive paperwork handled with a partner subsidised-finance firm"
             ],
-            "details_tagline": "The automations that matter, properly integrated into your systems and maintained over time: in Italy 77% of AI projects are custom integration, not off-the-shelf software — this is that work, done well.",
-            "terms": "4–6 weeks · then care from €1,500/month"
+            "details_tagline": "When you need more than an automation, you need a project: we build it around your processes and integrate it properly into the systems you use. In Italy 77% of AI projects are custom integration, not off-the-shelf software — this is that work, done well.",
+            "terms": "4–8 weeks · then monthly care"
         },
         "training": {
             "name": "Hands-on training",
@@ -333,7 +334,7 @@
             "cta": "Go to the training page"
         },
         "incentives_title": "What public incentives cover in 2026",
-        "incentives_description": "Incentives vary by province and run out: in every proposal we only list the ones we've verified as applicable to your case. These are the main ones active today:",
+        "incentives_description": "Incentives vary by province and run out, but in 2026 there are several ways to cover part of the investment. These are the main ones active today:",
         "incentives": [
             {
                 "title": "180% super-depreciation",
@@ -345,10 +346,9 @@
             },
             {
                 "title": "Chamber of Commerce vouchers",
-                "text": "Italian Chambers of Commerce fund AI consulting and adoption with coverage up to 70% (e.g. Como-Lecco AI Voucher 2026). We check what's active in your province."
+                "text": "Italian Chambers of Commerce fund AI consulting and adoption with coverage up to 70% (e.g. Como-Lecco AI Voucher 2026); active calls vary from province to province."
             }
         ],
-        "incentives_disclaimer": "No incentive is ever promised as certain: we only reference verified programmes, and the project stands on its own without them.",
         "faq_title": "The questions",
         "faq": [
             {
@@ -566,12 +566,12 @@
                         "description": "ERP, CRM, email and spreadsheets connected to AI. Your usual tools, with less drudgery inside."
                     },
                     "iterate": {
-                        "title": "Full Automation",
-                        "description": "Several integrated automations, team training and ongoing monthly care."
+                        "title": "Complete Project",
+                        "description": "Custom CRMs, platforms and apps: built turnkey, integrated into your systems and managed every month."
                     },
                     "ai": {
-                        "title": "Incentives included",
-                        "description": "In every proposal: the verified picture of super-depreciation, vouchers and funds applicable to your case."
+                        "title": "2026 incentives",
+                        "description": "Super-depreciation, chamber vouchers and training funds: in 2026 there are several ways to cover part of the investment."
                     }
                 },
                 "description": "Closed scope, clear price, balance due on working delivery."
@@ -829,10 +829,10 @@
         },
         "pricing": {
             "title": "Services & Pricing — AI automation with clear pricing · Noxis",
-            "description": "Price ranges shown from the start, no surprise calls: First Automation from €2,900, AI Audit from €3,000, Full Automation from €8,500 + monthly care. Training often 100% fundable.",
+            "description": "Price ranges shown from the start, no surprise calls: First Automation from €2,900, AI Audit from €3,000, Complete Project from €8,500 + monthly care. Training often 100% fundable.",
             "keywords": "AI automation pricing, AI consulting cost, AI audit price, process automation cost, how much does AI cost for a company",
             "og_title": "Services & Pricing — Noxis",
-            "og_description": "First Automation from €2,900 · AI Audit from €3,000 · Full Automation from €8,500. Clear prices, clear scope."
+            "og_description": "First Automation from €2,900 · AI Audit from €3,000 · Complete Project from €8,500. Clear prices, clear scope."
         },
         "check": {
             "title": "Free AI Check — What could your company automate · Noxis",
@@ -925,7 +925,7 @@
         "aiact_text": "Since 2 February 2025, art. 4 of the EU AI Act requires companies using AI systems to ensure adequate AI literacy of their staff. The workshop covers the obligation and leaves you with documentation of the completed training.",
         "takeaway_title": "What you take home",
         "final_title": "Shall we talk about your team?",
-        "final_text": "Tell us about the company and the processes you run: we'll suggest the right format and immediately check whether the funds can cover it."
+        "final_text": "Tell us about the company and the processes you run: we'll suggest the right format. And if the company is signed up to an interprofessional training fund, the training is often reimbursable."
     },
     "bands": {
         "integration": {

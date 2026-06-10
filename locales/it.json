@@ -178,7 +178,7 @@
             {
                 "value": 43,
                 "suffix": "%",
-                "label": "di beneficio fiscale con l'iperammortamento 2026"
+                "label": "di beneficio fiscale massimo con l'iperammortamento 2026"
             },
             {
                 "value": 100,
@@ -207,10 +207,10 @@
             "summary": "Mappatura dei processi, 3–5 automazioni prioritarie con stima delle ore recuperabili, roadmap 90 giorni e quadro degli incentivi applicabili alla tua provincia."
         },
         "sprint": {
-            "name": "Automazione Completa",
+            "name": "Progetto Completo",
             "price": "da 8.500 €",
-            "price_note": "+ retainer da 1.500 €/mese",
-            "summary": "2–3 automazioni integrate nei tuoi sistemi (ERP, CRM, email), formazione del team inclusa e manutenzione continuativa. Il software può rientrare nell'iperammortamento 180%."
+            "price_note": "+ gestione mensile",
+            "summary": "Il progetto su misura che serve alla tua azienda — CRM, portale clienti, piattaforma o app — costruito chiavi in mano, integrato nei tuoi sistemi e gestito mese dopo mese. Il software può rientrare nell'iperammortamento 180%."
         },
         "training": {
             "name": "Formazione operativa",
@@ -231,7 +231,7 @@
         "timing": "Tempi",
         "automation": {
             "name": "Prima Automazione",
-            "tagline": "Un processo che vi ruba ore, automatizzato e in produzione in due settimane.",
+            "tagline": "Il processo che vi ruba più ore — preventivi, email, inserimento dati — automatizzato e in produzione in due settimane.",
             "price": "da 2.900 €",
             "timing_value": "2 settimane dalla firma",
             "payment_value": "50% alla firma · 50% a consegna funzionante",
@@ -243,7 +243,6 @@
                 "Mini-formazione del team inclusa",
                 "30 giorni di assistenza inclusi"
             ],
-            "note": "Perimetro chiuso: un processo, due settimane. Se durante il lavoro emergono altri processi automatizzabili, li mettiamo in roadmap — non in fattura.",
             "details_list": [
                 "Call di mappatura (1 ora) per scegliere il processo a maggior ritorno",
                 "Un processo automatizzato chiavi in mano: bozze di preventivi da email e PDF, smistamento richieste verso il gestionale, report ricorrenti che si preparano da soli",
@@ -258,7 +257,7 @@
         },
         "audit": {
             "name": "AI Audit",
-            "tagline": "La mappa di dove la vostra azienda perde ore, e il piano per recuperarle.",
+            "tagline": "La fotografia di dove l'azienda perde ore: interviste a chi fa il lavoro, ore misurate sui processi e un piano in ordine di ritorno.",
             "price": "da 3.000 €",
             "timing_value": "2 settimane",
             "payment_value": "50% alla firma · 50% alla consegna del report",
@@ -284,31 +283,33 @@
             "terms": "2 settimane · 50% firma, 50% al report"
         },
         "sprint": {
-            "name": "Automazione Completa",
-            "tagline": "Più automazioni integrate nei vostri sistemi, con la gestione che le fa crescere.",
+            "name": "Progetto Completo",
+            "tagline": "Un CRM, un portale clienti, un'app: il software su misura che vi serve, integrato nei vostri sistemi e seguito mese dopo mese.",
             "price": "da 8.500 €",
-            "timing_value": "4–6 settimane di sprint, poi continuativo",
-            "payment_value": "40% alla firma · 40% al go-live · 20% a 30 giorni · retainer minimo 6 mesi",
-            "for_whom_value": "Aziende che hanno già individuato i processi — spesso dopo un Audit o una Prima Automazione — e vogliono un partner continuativo, non un fornitore spot.",
+            "timing_value": "4–8 settimane a seconda del perimetro, poi continuativo",
+            "payment_value": "40% alla firma · 40% al go-live · 20% a 30 giorni · gestione minima 6 mesi",
+            "for_whom_value": "Aziende a cui serve più di una singola automazione: un CRM su misura, un portale clienti, una piattaforma interna, un'app. Spesso si arriva qui dopo un Audit o una Prima Automazione, cercando un partner continuativo — non un fornitore spot.",
             "deliverables_list": [
-                "Automazioni integrate in gestionale e CRM",
-                "Assistente AI sui documenti aziendali",
+                "Progetto chiavi in mano: CRM, piattaforma, web o mobile",
+                "Integrazione con i sistemi che già usate",
+                "Automazioni e assistenti AI dove rendono",
                 "Formazione del team e documentazione",
-                "Monitoraggio ed evoluzioni ogni mese",
+                "Gestione mensile: monitoraggio ed evoluzioni",
                 "Supporto su incentivi e iperammortamento"
             ],
             "note": "Il software sviluppato può essere documentato come bene immateriale per l'iperammortamento 180% (beneficio effettivo fino a ~43%): lavoriamo con uno studio di finanza agevolata per la pratica.",
             "details_list": [
-                "2–3 automazioni integrate in profondità: ERP, CRM, gestionale, caselle di posta condivise",
-                "Assistente AI sulla knowledge base aziendale (listini, procedure, storico offerte), dove utile",
+                "Un progetto completo costruito attorno ai vostri processi: CRM su misura, portale clienti, piattaforma interna, app mobile o una suite di automazioni",
+                "Integrazione in profondità con quello che c'è già: ERP, gestionale, CRM, caselle di posta condivise, fogli di calcolo",
+                "AI dove rende davvero: automazioni, assistente sulla knowledge base aziendale (listini, procedure, storico offerte), dati che si inseriscono da soli",
                 "Flussi con controlli di qualità e tracciatura: si vede cosa ha fatto l'AI e quando",
                 "Formazione del team e documentazione d'uso",
-                "Retainer mensile: monitoraggio, correzioni, evoluzioni e nuove automazioni ogni mese",
+                "Gestione continuativa: monitoraggio, correzioni, evoluzioni e nuove funzionalità ogni mese",
                 "Software documentabile come bene immateriale per l'iperammortamento 180% (beneficio effettivo fino a ~43%)",
                 "Pratica agevolazioni seguita con uno studio di finanza agevolata partner"
             ],
-            "details_tagline": "Le automazioni che contano, integrate sul serio nei vostri sistemi e mantenute nel tempo: in Italia il 77% dei progetti AI è integrazione su misura, non software a scaffale — questo è quel lavoro, fatto bene.",
-            "terms": "4–6 settimane · poi gestione da 1.500 €/mese"
+            "details_tagline": "Quando serve più di un'automazione, serve un progetto: lo costruiamo attorno ai vostri processi e lo integriamo sul serio nei sistemi che usate. In Italia il 77% dei progetti AI è integrazione su misura, non software a scaffale — questo è quel lavoro, fatto bene.",
+            "terms": "4–8 settimane · poi gestione mensile"
         },
         "training": {
             "name": "Formazione operativa",
@@ -333,7 +334,7 @@
             "cta": "Vai alla pagina formazione"
         },
         "incentives_title": "Quanto copre lo Stato nel 2026",
-        "incentives_description": "Gli incentivi cambiano per provincia e si esauriscono: in ogni preventivo ti indichiamo solo quelli verificati e applicabili al tuo caso. Questi sono i principali attivi oggi:",
+        "incentives_description": "Gli incentivi cambiano per provincia e si esauriscono, ma i modi per coprire parte dell'investimento nel 2026 non mancano. Questi sono i principali attivi oggi:",
         "incentives": [
             {
                 "title": "Iperammortamento 180%",
@@ -345,10 +346,9 @@
             },
             {
                 "title": "Bandi camerali e voucher",
-                "text": "Le Camere di Commercio finanziano consulenza e adozione AI con coperture fino al 70% (es. Voucher AI Como-Lecco 2026). Verifichiamo quelli attivi nella tua provincia."
+                "text": "Le Camere di Commercio finanziano consulenza e adozione AI con coperture fino al 70% (es. Voucher AI Como-Lecco 2026); i bandi attivi variano da provincia a provincia."
             }
         ],
-        "incentives_disclaimer": "Nessun incentivo viene promesso come certo: indichiamo solo bandi verificati, e il progetto sta in piedi anche senza.",
         "faq_title": "Le domande",
         "faq": [
             {
@@ -566,12 +566,12 @@
                         "description": "ERP, CRM, email e fogli di calcolo collegati all'AI. I tuoi strumenti di sempre, con meno fatica dentro."
                     },
                     "iterate": {
-                        "title": "Automazione Completa",
-                        "description": "Più automazioni integrate, formazione del team e gestione mensile continuativa."
+                        "title": "Progetto Completo",
+                        "description": "CRM, piattaforme e app su misura: costruiti chiavi in mano, integrati nei tuoi sistemi e gestiti ogni mese."
                     },
                     "ai": {
-                        "title": "Incentivi inclusi",
-                        "description": "In ogni preventivo: il quadro verificato di iperammortamento, voucher e fondi applicabili al tuo caso."
+                        "title": "Incentivi 2026",
+                        "description": "Iperammortamento, voucher camerali e fondi formazione: nel 2026 ci sono diversi modi per coprire parte dell'investimento."
                     }
                 },
                 "description": "Perimetro chiuso, prezzo chiaro, saldo a risultato funzionante."
@@ -829,10 +829,10 @@
         },
         "pricing": {
             "title": "Servizi e prezzi — Automazioni AI con prezzi chiari · Noxis",
-            "description": "Range di prezzo indicati fin da subito, senza call a sorpresa: Prima Automazione da 2.900 €, AI Audit da 3.000 €, Automazione Completa da 8.500 € + gestione mensile. Formazione spesso finanziabile al 100%.",
+            "description": "Range di prezzo indicati fin da subito, senza call a sorpresa: Prima Automazione da 2.900 €, AI Audit da 3.000 €, Progetto Completo da 8.500 € + gestione mensile. Formazione spesso finanziabile al 100%.",
             "keywords": "prezzi automazione AI, costo consulenza AI, AI audit prezzo, automazione processi costo, quanto costa AI azienda, preventivo automazione AI",
             "og_title": "Servizi e prezzi — Noxis",
-            "og_description": "Prima Automazione da 2.900 € · AI Audit da 3.000 € · Automazione Completa da 8.500 €. Prezzi chiari, perimetro chiaro."
+            "og_description": "Prima Automazione da 2.900 € · AI Audit da 3.000 € · Progetto Completo da 8.500 €. Prezzi chiari, perimetro chiaro."
         },
         "check": {
             "title": "Check AI gratuito — Cosa può automatizzare la tua azienda · Noxis",
@@ -925,7 +925,7 @@
         "aiact_text": "Dal 2 febbraio 2025 l'art. 4 dell'AI Act impone a chi usa sistemi AI in azienda di garantire un'adeguata alfabetizzazione del personale. Il workshop copre l'obbligo e ti lascia la documentazione del percorso svolto.",
         "takeaway_title": "Cosa vi portate a casa",
         "final_title": "Parliamo del tuo team?",
-        "final_text": "Raccontaci com'è fatta l'azienda e che processi seguite: ti proponiamo il formato giusto e verifichiamo subito se i fondi possono coprirlo."
+        "final_text": "Raccontaci com'è fatta l'azienda e che processi seguite: ti proponiamo il formato giusto. E se l'azienda aderisce a un fondo interprofessionale, la formazione è spesso rimborsabile."
     },
     "bands": {
         "integration": {

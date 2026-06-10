@@ -20,7 +20,7 @@ export function Incentives() {
           title={t('pricing.incentives_title')}
           description={t('pricing.incentives_description')}
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 mb-7">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {incentives.map((item, i) => {
             const Icon = ICONS[i % ICONS.length]
             return (
@@ -38,9 +38,6 @@ export function Incentives() {
             )
           })}
         </div>
-        <p className="text-xs leading-relaxed text-muted-foreground/80 max-w-2xl">
-          {t('pricing.incentives_disclaimer')}
-        </p>
       </Container>
     </section>
   )

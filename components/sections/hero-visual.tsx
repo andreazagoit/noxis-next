@@ -358,12 +358,16 @@ export function HeroVisual() {
                 animate={
                   phase === 4
                     ? { opacity: [1, 1, 0], scale: [1, 0.92, 0.85] }
-                    : { opacity: 1, scale: 1 }
+                    : phase === 3
+                      ? { opacity: 1, scale: 1 }
+                      : { opacity: 0, scale: 0.9 }
                 }
                 transition={
                   phase === 4
                     ? { duration: 1.5, delay: 0.2, times: [0, 0.9, 1], ease: ['linear', 'easeIn'] }
-                    : { duration: 0.2 }
+                    : phase === 3
+                      ? { duration: 0.5, delay: 0.3, ease: EASE }
+                      : { duration: 0.2 }
                 }
                 className="[grid-area:1/1] justify-self-end rounded-full bg-amber-400/15 px-2 py-0.5 text-[9px] font-semibold text-amber-300"
               >
