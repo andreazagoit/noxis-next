@@ -6,10 +6,10 @@ import { Container } from '@/components/layout/container'
 import { Typography } from '@/components/ui/typography'
 
 const ITEMS = [
-  { key: 'strategy', tag: '01', title: 'Strategy', sub: 'Positioning, goals, channel mix.', accent: 'oklch(0.4357 0.289 264.18)' },
+  { key: 'strategy', tag: '01', title: 'Strategy', sub: 'Positioning, goals, channel mix.', accent: 'oklch(0.705 0.213 47.6)' },
   { key: 'research', tag: '02', title: 'Research', sub: 'Audience, benchmark, creator mapping.', accent: 'oklch(0.145 0 0)' },
   { key: 'production', tag: '03', title: 'Production', sub: 'Concept, scrittura, direzione, editing.', accent: 'rgb(43,46,58)' },
-  { key: 'management', tag: '04', title: 'Management', sub: 'Brief, contratti, calendario.', accent: 'oklch(0.4357 0.289 264.18)' },
+  { key: 'management', tag: '04', title: 'Management', sub: 'Brief, contratti, calendario.', accent: 'oklch(0.705 0.213 47.6)' },
   { key: 'protection', tag: '05', title: 'Protection', sub: 'Vetting creator, content review.', accent: 'oklch(0.145 0 0)' },
   { key: 'campaign', tag: '06', title: 'Campaign', sub: 'Esecuzione end-to-end, live monitoring.', accent: 'rgb(43,46,58)' },
 ]

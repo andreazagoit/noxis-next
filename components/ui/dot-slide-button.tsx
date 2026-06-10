@@ -16,6 +16,7 @@ interface DotSlideButtonProps {
   variant?: DotSlideVariant
   className?: string
   children: React.ReactNode
+  onClick?: () => void
 }
 
 const EASE = [0.16, 1, 0.3, 1] as const
@@ -51,12 +52,17 @@ export function DotSlideButton({
   variant = 'primary',
   className,
   children,
+  onClick,
 }: DotSlideButtonProps) {
   const t = useTranslations()
   const [hovered, setHovered] = useState(false)
   const tokens = VARIANTS[variant]
 
   const handleClick = () => {
+    if (onClick) {
+      onClick()
+      return
+    }
     if (!intent) return
     const subject = encodeURIComponent(t(`email.${intent}.subject`))
     const body = encodeURIComponent(t(`email.${intent}.body`))

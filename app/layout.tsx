@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist_Mono, Inter } from 'next/font/google'
+import { Geist_Mono, Inter, Instrument_Serif } from 'next/font/google'
 import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages, getTranslations } from 'next-intl/server'
@@ -21,6 +21,14 @@ const fontMono = Geist_Mono({
   variable: '--font-mono',
   display: 'swap',
   preload: false,
+})
+const fontDisplay = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-display',
+  display: 'swap',
+  preload: true,
 })
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -89,7 +97,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={cn('antialiased', fontMono.variable, 'font-sans', inter.variable)}
+      className={cn('antialiased overscroll-none', fontMono.variable, fontDisplay.variable, 'font-sans', inter.variable)}
     >
       <body>
         <OrganizationJsonLd />

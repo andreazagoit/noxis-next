@@ -3,7 +3,7 @@ import { getRequestConfig } from 'next-intl/server'
 
 export const SUPPORTED_LOCALES = ['en', 'it'] as const
 export type Locale = (typeof SUPPORTED_LOCALES)[number]
-export const DEFAULT_LOCALE: Locale = 'en'
+export const DEFAULT_LOCALE: Locale = 'it'
 export const LOCALE_COOKIE = 'NEXT_LOCALE'
 
 function pickFromAcceptLanguage(header: string | null): Locale | null {

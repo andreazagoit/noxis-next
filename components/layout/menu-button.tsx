@@ -8,11 +8,12 @@ import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { cn } from '@/lib/utils'
+import { useCheckDialog } from '@/components/check/check-dialog'
 
 const ITEMS = [
-  { href: '/', label: 'HOME' },
-  { href: '/development', label: 'DEVELOPMENT' },
-  { href: '/talent', label: 'TALENT' },
+  { href: '/', labelKey: 'header.home' },
+  { href: '/#pricing', labelKey: 'header.pricing' },
+  { href: '/development', labelKey: 'header.development' },
 ] as const
 
 interface MenuButtonProps {
@@ -52,6 +53,7 @@ export function MenuButton({ className, open: openProp, onOpenChange }: MenuButt
   const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
   const t = useTranslations()
+  const { openCheck } = useCheckDialog()
 
   useEffect(() => setMounted(true), [])
 
@@ -81,8 +83,8 @@ export function MenuButton({ className, open: openProp, onOpenChange }: MenuButt
         className={cn(
           'relative inline-flex items-center justify-center gap-3 rounded-full overflow-hidden cursor-pointer select-none',
           'h-11 w-11 md:w-auto md:pl-6 md:pr-5',
-          'bg-neutral-200 text-foreground',
-          'transition-colors duration-300 hover:bg-white hover:text-foreground',
+          'border border-white/10 bg-white/[0.08] text-foreground backdrop-blur-xl',
+          'transition-colors duration-300 hover:bg-white/[0.16]',
           'text-xs md:text-sm font-bold uppercase tracking-[0.15em]',
           className,
         )}
@@ -162,7 +164,7 @@ export function MenuButton({ className, open: openProp, onOpenChange }: MenuButt
                     onClick={() => setOpen(false)}
                     className="flex items-center justify-between px-4 py-3 rounded-2xl text-lg font-semibold hover:bg-foreground/5 transition-colors"
                   >
-                    <span>{item.label}</span>
+                    <span>{t(item.labelKey).toUpperCase()}</span>
                     {active && (
                       <span aria-hidden className="w-2 h-2 rounded-full bg-foreground" />
                     )}
@@ -176,6 +178,17 @@ export function MenuButton({ className, open: openProp, onOpenChange }: MenuButt
               style={{ transformOrigin: 'top center' }}
               className="rounded-3xl bg-background border border-foreground/10 shadow-2xl p-6 flex flex-col gap-1"
             >
+              <button
+                type="button"
+                onClick={() => {
+                  setOpen(false)
+                  openCheck()
+                }}
+                className="flex items-center justify-between px-4 py-3 rounded-2xl text-lg font-semibold hover:bg-foreground/5 transition-colors cursor-pointer text-left"
+              >
+                <span>{t('header.cta_check').toUpperCase()}</span>
+                <ArrowUpRight size={20} aria-hidden className="shrink-0" />
+              </button>
               <button
                 type="button"
                 onClick={handleLetsTalk}

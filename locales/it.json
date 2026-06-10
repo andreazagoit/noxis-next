@@ -3,78 +3,458 @@
         "home": "Home",
         "development": "Development",
         "talent": "Talent",
-        "lets_talk": "Let's Talk",
-        "sign_in": "Accedi"
+        "services": "Servizi",
+        "pricing": "Prezzi",
+        "check": "Check AI",
+        "cta_check": "Check AI gratuito",
+        "lets_talk": "Parliamone",
+        "sign_in": "Accedi",
+        "formazione": "Formazione"
     },
     "hero": {
-        "title_line1": "Noi amiamo",
-        "title_line2": "le sfide.",
-        "title_line3": "Portaci la tua.",
-        "description": "Esperienze immersive, guidate dal movimento, pensate per catturare l'attenzione e portare all'azione. Sviluppo pulito. Strategia affilata. Zero compromessi.",
-        "cta": "Inizia un Progetto",
+        "eyebrow": "Automazioni AI per PMI",
+        "points": [
+            "Prima automazione consegnata in 2 settimane",
+            "Prezzi chiari, concordati prima di iniziare",
+            "Saldo a risultato consegnato e funzionante"
+        ],
+        "title_line1": "L'AI dentro",
+        "title_line2": "gli strumenti",
+        "title_line3": "che già usi.",
+        "visual": {
+            "dash_title": "Automazioni attive",
+            "dash_live": "In esecuzione",
+            "dash_footer": "Ore recuperate · ultime 8 settimane",
+            "card1_title": "Preventivo #2041",
+            "card1_status": "Bozza pronta · 07:32",
+            "card2_title": "Email cliente smistata",
+            "card2_status": "Dati inseriti nel gestionale",
+            "card3_title": "Report settimanale",
+            "card3_status": "Generato · lunedì 08:00",
+            "stat": "+12 ore recuperate a settimana"
+        },
+        "description": "Automazioni AI per PMI: preventivi, documenti, email e gestionale. Prezzi chiari fin dall'inizio, incentivi 2026 e consegne in settimane, non trimestri.",
+        "cta": "Fai il check gratuito",
+        "cta_secondary": "Vedi i prezzi",
         "we_are_good_at": "Cosa facciamo",
         "skills": {
-            "web": "Web",
-            "mobile": "Mobile",
-            "design": "Design",
-            "strategy": "Strategia"
+            "web": "Automazioni",
+            "mobile": "Integrazioni",
+            "design": "Assistenti AI",
+            "strategy": "Web & App"
+        },
+        "scenes": {
+            "labels": [
+                "Richiesta",
+                "Analisi AI",
+                "Bozza pronta",
+                "Ore recuperate"
+            ],
+            "email_from": "cliente@azienda.it",
+            "email_subject": "Richiesta preventivo — 1.200 pezzi",
+            "email_attachment": "disegno-tecnico.pdf",
+            "scan": "Lettura di email e allegati…",
+            "chips": [
+                "Cliente: Rossi SRL",
+                "Quantità: 1.200 pz",
+                "Consegna: 30 gg",
+                "Materiale: AISI 304"
+            ],
+            "quote_title": "Preventivo #2041",
+            "quote_rows": [
+                "Lavorazione CNC",
+                "Trattamento superficiale",
+                "Trasporto e imballo"
+            ],
+            "quote_total": "Totale 8.640 €",
+            "quote_badge": "Bozza · in attesa di approvazione",
+            "saved_title": "Ore recuperate oggi",
+            "saved_value": 2.5,
+            "saved_suffix": " h",
+            "saved_note": "Il team approva, l'AI prepara.",
+            "lookup": "Ricerca cliente nel gestionale…",
+            "lookup_done": "Trovato: Rossi SRL",
+            "model": "Elaborazione con il modello AI…",
+            "db_search": "Ricerca preventivi simili nel database…",
+            "db_found": "3 preventivi simili trovati",
+            "db_results": [
+                "#1843 · 8.240 €",
+                "#1907 · 8.690 €",
+                "#2012 · 8.950 €"
+            ],
+            "badge_draft": "Bozza",
+            "badge_approved": "Approvato",
+            "badge_sent": "Inviato"
         }
     },
     "vision": {
-        "quote_line1": "L'impatto è progettato,",
-        "quote_line2": "non indovinato.",
-        "quote_description": "Il design senza funzionalità è vuoto. La funzionalità senza design è incompleta. Costruiamo prodotti digitali che rispettano entrambi e le persone che li usano.",
-        "our_vision": "La nostra visione",
-        "vision_title": "Definiamo\nlo\nstandard.",
-        "vision_description": "Immaginiamo un mondo digitale in cui ogni prodotto è bello, funzionale ed eticamente responsabile. Puntiamo a dimostrare che la tecnologia può essere una forza positiva, migliorando la vita delle persone senza scorciatoie o compromessi. La nostra ambizione è diventare un punto di riferimento per l'eccellenza, dove design e tecnologia si fondono in esperienze digitali premium che lasciano un impatto positivo duraturo.",
-        "our_mission": "La nostra missione",
-        "mission_title": "Progettiamo\nvalore.",
-        "mission_description": "Creiamo soluzioni web e mobile della massima qualità, combinando design innovativo, funzionalità impeccabile e un'attenzione ossessiva ai dettagli. Ogni progetto nasce dal rispetto per le persone e per i valori dei nostri clienti. Rifiutiamo scorciatoie e pratiche non etiche, collaborando con chi condivide la nostra visione per produrre strumenti digitali che siano veramente utili, etici e sostenibili. La nostra missione è trasformare le idee in esperienze digitali premium che diano potere alle persone e generino valore concreto."
+        "quote_line1": "Le ore non si comprano.",
+        "quote_line2": "Si recuperano.",
+        "quote_description": "In ogni azienda ci sono decine di ore al mese intrappolate in lavoro ripetitivo: preventivi, email, documenti, dati copiati a mano da un sistema all'altro. Il nostro lavoro è restituirtele.",
+        "image_alt": "Laptop acceso nel buio con riflessi caldi sullo schermo",
+        "image_badge": "Perimetro e prezzo chiari, scritti prima di iniziare",
+        "our_vision": "Come lavoriamo",
+        "vision_title": "Concretezza,\nnon\nhype.",
+        "vision_description": "Quasi tutti in azienda usano già ChatGPT per qualcosa. Pochissime aziende l'hanno portato nei processi veri. Noi facciamo esattamente quel passaggio: niente rivoluzioni, niente promesse vaghe — un processo alla volta, misurando le ore recuperate. Ti diciamo anche cosa NON automatizzare: è la parte del mestiere che i venditori di hype saltano.",
+        "our_mission": "Il nostro impegno",
+        "mission_title": "Integrare,\nnon stravolgere.",
+        "mission_description": "Non ti chiediamo di cambiare gestionale, CRM o abitudini: colleghiamo l'AI agli strumenti che la tua azienda usa già. Si parte da un caso piccolo e circoscritto, con perimetro e prezzo scritti prima di iniziare, con i tuoi dati che restano tuoi. Se il pilota funziona, si scala. Se non funziona, lo sai in due settimane — non dopo sei mesi di consulenza."
     },
     "footer": {
-        "slogan_line1": "Oltre l'",
-        "slogan_line2": "Eccellenza Digitale.",
+        "slogan_line1": "L'AI che lavora.",
+        "slogan_line2": "Non quella che parla.",
         "get_in_touch": "Contattaci",
-        "office": "Ufficio"
+        "office": "Ufficio",
+        "nav_title": "Esplora",
+        "nav_home": "Home",
+        "nav_pricing": "Servizi e prezzi",
+        "nav_check": "Check AI gratuito",
+        "nav_development": "Development",
+        "nav_talent": "Talent",
+        "nav_formazione": "Formazione"
     },
     "services": {
-        "title_line1": "Prodotti",
-        "title_line2": "Digitali Premium.",
+        "title_line1": "Quello che",
+        "title_line2": "facciamo davvero.",
+        "visual_draft_ready": "Bozza pronta",
+        "visual_ai_act": "Conforme AI Act",
+        "visual_task1": "Preventivo #2041",
+        "visual_task2": "Fattura · marzo",
+        "visual_task3": "Report settimanale",
+        "visual_chat_q": "Che prezzo avevamo fatto a Rossi l'anno scorso?",
+        "visual_chat_a": "12.400 €, ordine di febbraio. Ti preparo la bozza del nuovo preventivo?",
+        "visual_url": "app.tuaazienda.it",
+        "visual_module1": "Prompt operativi",
+        "visual_module2": "Dati e riservatezza",
+        "visual_module3": "Casi d'uso reali",
         "web_dev": {
-            "title": "Sviluppo Web",
-            "description": "Forgiamo piattaforme web ad alte prestazioni con precisione chirurgica e architetture moderne. Colmiamo il divario tra ingegneria complessa e direzione artistica meticolosa per creare asset digitali potenti e curati nei minimi dettagli."
+            "title": "Automazioni di processo",
+            "description": "Preventivi, fatture, email ricorrenti, report e inserimento dati che si preparano da soli. L'AI fa la bozza, le persone controllano e approvano: ore recuperate ogni settimana, da subito."
         },
         "ux_ui": {
-            "title": "Design UX/UI",
-            "description": "Progettiamo percorsi digitali pensati per le persone, con interfacce raffinate e interazioni studiate. Non disegniamo schermate: progettiamo ambienti che catturano l'attenzione e portano alla conversione."
+            "title": "Assistenti su misura",
+            "description": "Assistenti AI addestrati su documenti, listini e procedure della tua azienda: rispondono a clienti e colleghi con le informazioni giuste, senza inventare e senza far girare i tuoi dati dove non devono."
         },
         "mobile_dev": {
-            "title": "Sviluppo Mobile",
-            "description": "App mobili native e cross-platform costruite per prestazioni eccellenti e un feeling naturale."
+            "title": "Sviluppo web & app",
+            "description": "Quando serve costruire — un portale clienti, un tool interno, un MVP — lo facciamo con la stessa logica: scope chiaro, codice solido, tempi corti."
         },
         "ai": {
-            "title": "Intelligenza Artificiale",
-            "description": "Integriamo soluzioni di AI per automatizzare i flussi di lavoro e migliorare l'interazione con l'utente."
+            "title": "Integrazione nel gestionale",
+            "description": "ERP, CRM, fogli di calcolo e caselle email collegati all'AI. Niente software nuovo da imparare: i tuoi strumenti di sempre, con molta meno fatica dentro."
         },
         "marketing": {
-            "title": "Marketing & Strategia",
-            "description": "Crescita basata sui dati e marketing delle prestazioni per scalare il tuo prodotto in modo efficace."
+            "title": "Formazione operativa",
+            "description": "Workshop pratici sui processi reali del tuo team — non teoria. Copre l'obbligo di alfabetizzazione AI previsto dall'AI Act ed è spesso finanziabile fino al 100% con i fondi interprofessionali."
         }
     },
     "partnership": {
-        "title_line1": "Pronto per un",
-        "title_line2": "partner",
-        "description": "Collaboriamo con i brand per trasformare le loro idee in prodotti digitali efficaci. Combinando design e ingegneria, ti aiutiamo a connetterti con il tuo pubblico e a ottenere risultati significativi. Costruiamo qualcosa di grande insieme.",
-        "cta": "Inizia un Progetto"
+        "title_line1": "Pronti a recuperare",
+        "title_line2": "le vostre ore",
+        "description": "20 minuti, senza impegno: ci racconti come lavora la tua azienda e ti diciamo subito cosa conviene automatizzare, cosa no, e quanto costerebbe. Prezzo chiaro, concordato prima di iniziare.",
+        "cta": "Parliamone — 20 minuti"
     },
     "quotes": {
         "items": [
-            "PROGETTI UNICI",
-            "DESIGN CON SCOPO",
-            "TECNOLOGIA CHE CRESCE",
-            "VISIONE STRATEGICA",
-            "INNOVAZIONE COSTANTE"
+            "PREZZI CHIARI, PRIMA DI INIZIARE",
+            "ORE RECUPERATE, NON SLIDE",
+            "L'AI NEL GESTIONALE CHE USI GIÀ",
+            "CONSEGNE IN SETTIMANE, NON MESI",
+            "PRIMA UN PROCESSO, POI SI SCALA"
         ]
+    },
+    "stats": {
+        "items": [
+            {
+                "value": 2,
+                "suffix": "",
+                "label": "settimane alla prima automazione consegnata"
+            },
+            {
+                "value": 20,
+                "suffix": "+",
+                "label": "ore/mese recuperabili: l'obiettivo minimo di ogni audit"
+            },
+            {
+                "value": 43,
+                "suffix": "%",
+                "label": "di beneficio fiscale con l'iperammortamento 2026"
+            },
+            {
+                "value": 100,
+                "suffix": "%",
+                "label": "della formazione spesso coperta dai fondi"
+            }
+        ]
+    },
+    "offers": {
+        "eyebrow": "Servizi e prezzi",
+        "title_line1": "Prezzi chiari,",
+        "title_line2": "fin dall'inizio.",
+        "description": "Niente \"contattaci per un preventivo\" a scatola chiusa: tre modi di lavorare insieme, con prezzi indicativi e condizioni già scritti — più la formazione per il tuo team.",
+        "cta_all": "Tutti i dettagli e le condizioni",
+        "badge_start": "Parti da qui",
+        "automation": {
+            "name": "Prima Automazione",
+            "price": "da 2.900 €",
+            "price_note": "indicativo · 2 settimane",
+            "summary": "Un processo che ti ruba ore ogni settimana, automatizzato chiavi in mano: bozze di preventivi, risposte su documenti interni, dati estratti da PDF ed email verso il gestionale."
+        },
+        "audit": {
+            "name": "AI Audit",
+            "price": "da 3.000 €",
+            "price_note": "indicativo · 2 settimane",
+            "summary": "Mappatura dei processi, 3–5 automazioni prioritarie con stima delle ore recuperabili, roadmap 90 giorni e quadro degli incentivi applicabili alla tua provincia."
+        },
+        "sprint": {
+            "name": "Automazione Completa",
+            "price": "da 8.500 €",
+            "price_note": "+ retainer da 1.500 €/mese",
+            "summary": "2–3 automazioni integrate nei tuoi sistemi (ERP, CRM, email), formazione del team inclusa e manutenzione continuativa. Il software può rientrare nell'iperammortamento 180%."
+        },
+        "training": {
+            "name": "Formazione operativa",
+            "price": "da 900 €",
+            "price_note": "spesso finanziabile al 100%",
+            "summary": "Mezza giornata o giornata intera in azienda, sui vostri processi reali. Copre l'obbligo di alfabetizzazione AI (AI Act) ed è spesso rimborsabile via fondi interprofessionali."
+        },
+        "cta_more": "Scopri di più"
+    },
+    "pricing": {
+        "eyebrow": "Servizi e prezzi",
+        "title_line1": "Quanto costa,",
+        "title_line2": "cosa ottieni.",
+        "description": "In Italia quasi nessuna agenzia AI indica i prezzi. Noi sì: range chiari fin da subito, confermati nero su bianco prima della firma — senza call commerciali a sorpresa.",
+        "for_whom": "Per chi è",
+        "deliverables": "Cosa include",
+        "payment": "Pagamento",
+        "timing": "Tempi",
+        "automation": {
+            "name": "Prima Automazione",
+            "tagline": "Un processo che vi ruba ore, automatizzato e in produzione in due settimane.",
+            "price": "da 2.900 €",
+            "timing_value": "2 settimane dalla firma",
+            "payment_value": "50% alla firma · 50% a consegna funzionante",
+            "for_whom_value": "PMI e studi da 5 a 80 persone che vogliono partire da un risultato concreto, non da un'analisi: c'è un processo che fa male e si parte da lì.",
+            "deliverables_list": [
+                "Call di mappatura per scegliere il processo",
+                "Preventivi, email e report automatizzati",
+                "Integrazione con gestionale, CRM ed email",
+                "Mini-formazione del team inclusa",
+                "30 giorni di assistenza inclusi"
+            ],
+            "note": "Perimetro chiuso: un processo, due settimane. Se durante il lavoro emergono altri processi automatizzabili, li mettiamo in roadmap — non in fattura.",
+            "details_list": [
+                "Call di mappatura (1 ora) per scegliere il processo a maggior ritorno",
+                "Un processo automatizzato chiavi in mano: bozze di preventivi da email e PDF, smistamento richieste verso il gestionale, report ricorrenti che si preparano da soli",
+                "Integrazione con gli strumenti che già usate: gestionale, CRM, email, fogli di calcolo",
+                "Controllo umano dove serve: l'AI prepara, le tue persone approvano",
+                "Mini-formazione del team che lo userà, inclusa",
+                "30 giorni di assistenza e aggiustamenti post-consegna inclusi",
+                "Setup con i tuoi account e le tue API key: i dati restano tuoi"
+            ],
+            "details_tagline": "Il modo più rapido per vedere l'AI lavorare sui tuoi processi: scegliamo insieme il flusso che vi ruba più ore — preventivi, email, documenti — e in due settimane è automatizzato, integrato e in produzione.",
+            "terms": "2 settimane · 50% firma, saldo alla consegna"
+        },
+        "audit": {
+            "name": "AI Audit",
+            "tagline": "La mappa di dove la vostra azienda perde ore, e il piano per recuperarle.",
+            "price": "da 3.000 €",
+            "timing_value": "2 settimane",
+            "payment_value": "50% alla firma · 50% alla consegna del report",
+            "for_whom_value": "Aziende più strutturate (indicativamente 30+ addetti) o multi-reparto, dove i processi da sistemare sono tanti e serve decidere l'ordine prima di investire.",
+            "deliverables_list": [
+                "Interviste a chi fa il lavoro",
+                "Stima delle ore/mese recuperabili",
+                "3–5 automazioni in ordine di ritorno",
+                "Roadmap 90 giorni con costi",
+                "Incentivi applicabili alla tua provincia"
+            ],
+            "note": "Il report è tuo: puoi implementare la roadmap con noi o con chi preferisci.",
+            "details_list": [
+                "Interviste alle persone che fanno il lavoro, reparto per reparto (la barriera n.1 all'adozione è la mancanza di competenze interne: partiamo da lì)",
+                "Mappatura dei processi con stima delle ore/mese intrappolate in attività ripetitive",
+                "3–5 automazioni prioritarie, ordinate per ritorno e difficoltà, con stima di costo per ciascuna",
+                "Roadmap 90 giorni: cosa fare prima, cosa dopo, cosa NON automatizzare",
+                "Quadro \"coperture pubbliche\" sulla tua provincia: bandi camerali, iperammortamento, fondi formazione",
+                "Report finale presentato di persona alla direzione",
+                "Il report è tuo: implementi con noi o con chi preferisci"
+            ],
+            "details_tagline": "La fotografia completa di dove l'azienda perde ore: interviste a chi fa il lavoro, mappatura dei processi e un piano in ordine di ritorno — con i conti, i tempi e gli incentivi applicabili.",
+            "terms": "2 settimane · 50% firma, 50% al report"
+        },
+        "sprint": {
+            "name": "Automazione Completa",
+            "tagline": "Più automazioni integrate nei vostri sistemi, con la gestione che le fa crescere.",
+            "price": "da 8.500 €",
+            "timing_value": "4–6 settimane di sprint, poi continuativo",
+            "payment_value": "40% alla firma · 40% al go-live · 20% a 30 giorni · retainer minimo 6 mesi",
+            "for_whom_value": "Aziende che hanno già individuato i processi — spesso dopo un Audit o una Prima Automazione — e vogliono un partner continuativo, non un fornitore spot.",
+            "deliverables_list": [
+                "Automazioni integrate in gestionale e CRM",
+                "Assistente AI sui documenti aziendali",
+                "Formazione del team e documentazione",
+                "Monitoraggio ed evoluzioni ogni mese",
+                "Supporto su incentivi e iperammortamento"
+            ],
+            "note": "Il software sviluppato può essere documentato come bene immateriale per l'iperammortamento 180% (beneficio effettivo fino a ~43%): lavoriamo con uno studio di finanza agevolata per la pratica.",
+            "details_list": [
+                "2–3 automazioni integrate in profondità: ERP, CRM, gestionale, caselle di posta condivise",
+                "Assistente AI sulla knowledge base aziendale (listini, procedure, storico offerte), dove utile",
+                "Flussi con controlli di qualità e tracciatura: si vede cosa ha fatto l'AI e quando",
+                "Formazione del team e documentazione d'uso",
+                "Retainer mensile: monitoraggio, correzioni, evoluzioni e nuove automazioni ogni mese",
+                "Software documentabile come bene immateriale per l'iperammortamento 180% (beneficio effettivo fino a ~43%)",
+                "Pratica agevolazioni seguita con uno studio di finanza agevolata partner"
+            ],
+            "details_tagline": "Le automazioni che contano, integrate sul serio nei vostri sistemi e mantenute nel tempo: in Italia il 77% dei progetti AI è integrazione su misura, non software a scaffale — questo è quel lavoro, fatto bene.",
+            "terms": "4–6 settimane · poi gestione da 1.500 €/mese"
+        },
+        "training": {
+            "name": "Formazione operativa",
+            "tagline": "Il tuo team impara a usare l'AI sui processi veri dell'azienda.",
+            "price": "da 900 € mezza giornata · da 1.500 € giornata intera",
+            "timing_value": "In azienda, da calendario",
+            "payment_value": "Anticipato",
+            "for_whom_value": "Team che già usano (o subiscono) l'AI e vogliono metodo, casi d'uso e regole chiare.",
+            "deliverables_list": [
+                "Sessione pratica sui vostri processi, non su esempi da manuale",
+                "Copertura dell'obbligo di alfabetizzazione AI (art. 4 AI Act, in vigore da febbraio 2025)",
+                "Spesso finanziabile fino al 100% tramite fondi interprofessionali (es. Fondimpresa)",
+                "Regole d'uso interne: cosa usare, cosa evitare, come trattare i dati"
+            ],
+            "note": "È anche il formato che proponiamo gratuitamente a studi professionali e associazioni per i loro clienti: chiedici come."
+        },
+        "training_section": {
+            "eyebrow": "Formazione",
+            "title": "Il team impara",
+            "accent": "sul lavoro vero.",
+            "description": "Workshop operativi in azienda, sui vostri processi — non teoria. Coprono l'obbligo di alfabetizzazione AI previsto dall'AI Act e sono spesso finanziabili fino al 100% con i fondi interprofessionali.",
+            "cta": "Vai alla pagina formazione"
+        },
+        "incentives_title": "Quanto copre lo Stato nel 2026",
+        "incentives_description": "Gli incentivi cambiano per provincia e si esauriscono: in ogni preventivo ti indichiamo solo quelli verificati e applicabili al tuo caso. Questi sono i principali attivi oggi:",
+        "incentives": [
+            {
+                "title": "Iperammortamento 180%",
+                "text": "Per software e piattaforme AI interconnesse ai sistemi aziendali: beneficio fiscale effettivo fino a ~43% dell'investimento (L. 199/2025, investimenti 2026–2028)."
+            },
+            {
+                "title": "Formazione finanziata",
+                "text": "I fondi interprofessionali (Fondimpresa, Fondirigenti) coprono spesso fino al 100% della formazione AI del personale."
+            },
+            {
+                "title": "Bandi camerali e voucher",
+                "text": "Le Camere di Commercio finanziano consulenza e adozione AI con coperture fino al 70% (es. Voucher AI Como-Lecco 2026). Verifichiamo quelli attivi nella tua provincia."
+            }
+        ],
+        "incentives_disclaimer": "Nessun incentivo viene promesso come certo: indichiamo solo bandi verificati, e il progetto sta in piedi anche senza.",
+        "faq_title": "Le domande",
+        "faq": [
+            {
+                "q": "I dati della mia azienda dove finiscono?",
+                "a": "Restano tuoi. Configuriamo i servizi AI con data residency europea dove possibile, senza training sui tuoi dati, e definiamo per iscritto cosa può vedere l'AI e cosa no. La compliance (privacy e AI Act) è parte del lavoro, non un extra."
+            },
+            {
+                "q": "Abbiamo già un gestionale, dobbiamo cambiarlo?",
+                "a": "No, è il contrario: lavoriamo dentro e intorno agli strumenti che usate già. La maggior parte dei progetti AI in Italia è esattamente questo — integrazione, non sostituzione."
+            },
+            {
+                "q": "E se poi non lo usa nessuno in azienda?",
+                "a": "Per questo ogni progetto include la formazione delle persone che useranno l'automazione, e partiamo sempre da un processo che fa risparmiare tempo a qualcuno di preciso — non da un giocattolo tecnologico."
+            },
+            {
+                "q": "Perché indicate i prezzi? Tutti dicono \"dipende\".",
+                "a": "Perché un range onesto aiuta entrambi: tu capisci subito se siamo nel tuo budget, noi parliamo solo con chi può davvero partire. Il prezzo esatto si concorda sul perimetro, prima della firma — e quello che resta fuori va in roadmap, non in fattura."
+            },
+            {
+                "q": "Come so che siete capaci, se siete un'agenzia giovane?",
+                "a": "Per questo le offerte sono costruite per azzerare il tuo rischio: si parte da un progetto piccolo dal costo chiaro e il grosso si paga a risultato consegnato e funzionante. La fiducia si costruisce sul primo progetto, non sulle promesse."
+            }
+        ],
+        "final_cta_kicker_prefix": "Automatizza",
+        "final_cta_kicker_words": [
+            "i preventivi",
+            "le email ripetitive",
+            "i report",
+            "le pratiche"
+        ],
+        "final_cta_kicker_suffix": "senza cambiare strumenti.",
+        "final_cta_title": "Non sai da dove partire?",
+        "final_cta_text": "Fai il check gratuito: 10 domande, 3 minuti, e ti diciamo qual è il punto di partenza giusto per la tua azienda.",
+        "final_cta_button": "Fai il check gratuito",
+        "final_cta_secondary": "Oppure scrivici",
+        "card_cta": "Parliamone",
+        "faq_eyebrow": "FAQ",
+        "faq_title_accent": "che ci fanno tutti.",
+        "faq_description": "Risposte dirette ai dubbi più comuni su dati, costi e modo di lavorare. Senza giri di parole.",
+        "faq_contact": "Non trovi la tua domanda?",
+        "faq_contact_cta": "Scrivici — rispondiamo in giornata"
+    },
+    "check": {
+        "eyebrow": "Check gratuito",
+        "title_line1": "Cosa può automatizzare",
+        "title_line2": "la tua azienda?",
+        "description": "10 domande, 3 minuti, nessuna registrazione per vedere il risultato. Alla fine ti diciamo da dove conviene partire — e se non conviene partire affatto.",
+        "start": "Inizia il check",
+        "question_label": "Domanda {current} di {total}",
+        "questions": [
+            "In azienda qualcuno usa già ChatGPT o strumenti simili per lavoro?",
+            "Avete un gestionale, CRM o ERP usato tutti i giorni?",
+            "Ci sono attività dove si copiano dati a mano tra sistemi, email o fogli di calcolo?",
+            "Preparare un preventivo o un'offerta richiede ore (o giorni) di lavoro manuale?",
+            "Rispondete spesso alle stesse domande di clienti o colleghi?",
+            "Ci sono documenti ricorrenti (report, verbali, pratiche) scritti da zero ogni volta?",
+            "Esiste documentazione interna (procedure, listini, manuali) abbastanza ordinata?",
+            "Ci sarebbe una persona interna disponibile a fare da referente per un progetto pilota?",
+            "In direzione si è già parlato di AI o automazione negli ultimi 6 mesi?",
+            "Sapete già quali incentivi 2026 potreste usare (iperammortamento, voucher, fondi formazione)?"
+        ],
+        "answer_yes": "Sì",
+        "answer_partial": "In parte",
+        "answer_no": "No",
+        "result_title": "Il tuo risultato",
+        "result_score_label": "Potenziale di automazione",
+        "bands": [
+            {
+                "title": "Fondamenta da costruire",
+                "text": "C'è potenziale, ma mancano alcune basi (strumenti, dati o sponsor interno). Il punto di partenza giusto non è un progetto: è una sessione di formazione operativa sul tuo team e una mappatura leggera dei processi. Costo contenuto, spesso finanziabile."
+            },
+            {
+                "title": "Pronti per il primo passo",
+                "text": "La tua azienda ha almeno un processo che si può automatizzare con beneficio immediato. Il punto di partenza giusto è la Prima Automazione: un processo, da 2.900 €, due settimane, saldo a risultato funzionante."
+            },
+            {
+                "title": "Terreno fertile",
+                "text": "Ci sono più processi automatizzabili e le condizioni per farlo bene. Il punto di partenza giusto è l'AI Audit: la mappa completa di dove recuperare ore, con priorità, costi e incentivi applicabili."
+            }
+        ],
+        "form_title": "Ricevi il risultato dettagliato",
+        "form_text": "Lasciaci i contatti e ti mandiamo l'analisi del tuo punteggio con i suggerimenti per il tuo caso. Niente spam, niente telefonate a freddo.",
+        "form_name": "Nome e cognome",
+        "form_email": "Email aziendale",
+        "form_company": "Azienda",
+        "form_sector": "Settore",
+        "form_sector_options": {
+            "services": "Servizi professionali / studio",
+            "manufacturing": "Manifattura / produzione",
+            "retail": "Commercio / retail / horeca",
+            "other": "Altro"
+        },
+        "form_employees": "Dimensione",
+        "form_employees_options": {
+            "micro": "1–9 addetti",
+            "small": "10–49 addetti",
+            "medium": "50–249 addetti",
+            "large": "250+ addetti"
+        },
+        "form_submit": "Inviami il risultato",
+        "form_sending": "Invio in corso...",
+        "form_privacy": "Usiamo questi dati solo per risponderti. Nessuna lista, nessuna cessione a terzi.",
+        "form_error": "Qualcosa è andato storto. Riprova, o scrivici a hello@noxis.agency.",
+        "success_title": "Fatto. Ti rispondiamo entro un giorno lavorativo.",
+        "success_text": "Se vuoi accorciare i tempi, prenota direttamente 20 minuti: ci racconti come lavorate e ti diciamo subito cosa conviene automatizzare.",
+        "success_cta": "Scrivici ora"
     },
     "methodology": {
         "subtitle": "Dal caos alla chiarezza",
@@ -83,72 +463,75 @@
         "steps": {
             "discovery": {
                 "title": "Scoperta",
-                "description": "Un'immersione profonda nel cuore del tuo brand. Ricercamo le tendenze del mercato, definiamo obiettivi specifici e allineiamo ogni tassello digitale con la tua ambizione finale.",
+                "description": "Capiamo come lavora davvero la tua azienda: processi, strumenti, colli di bottiglia. Niente questionari astratti — parliamo con chi fa il lavoro.",
                 "items": [
-                    "Brief creativo",
-                    "Ricerca brand",
-                    "Mood board"
+                    "Interviste al team",
+                    "Mappatura processi",
+                    "Stima ore recuperabili"
                 ]
             },
             "concept": {
-                "title": "Concetto",
-                "description": "Tradurre la scoperta in una visione tangibile. Definiamo la direzione visiva e artistica che distinguerà il tuo prodotto dalla concorrenza.",
+                "title": "Priorità",
+                "description": "Scegliamo insieme il processo giusto da cui partire: impatto alto, rischio basso, risultato misurabile in settimane.",
                 "items": [
-                    "Direzione visiva",
-                    "Direzione artistica",
-                    "Storyboard"
+                    "Caso d'uso pilota",
+                    "Perimetro chiuso",
+                    "Prezzo chiaro"
                 ]
             },
             "design": {
-                "title": "Design",
-                "description": "Creare un'esperienza utente premium con precisione chirurgica. Ogni interazione e pixel è progettato per trasmettere lusso ed eccellenza tecnica.",
+                "title": "Progettazione",
+                "description": "Disegniamo il flusso: dove entra l'AI, dove restano le persone, come si controlla la qualità e dove vivono i dati.",
                 "items": [
-                    "Craft UI/UX",
-                    "Motion design",
-                    "Design d'interazione"
+                    "Flusso e controlli",
+                    "Privacy e dati",
+                    "Integrazione strumenti"
                 ]
             },
             "develop": {
                 "title": "Sviluppo",
-                "description": "Forgiare capolavori digitali con tecnologia all'avanguardia. Costruiamo prodotti robusti, scalabili e immersivi che spingono i confini del web.",
+                "description": "Costruiamo l'automazione e la colleghiamo ai sistemi che usate già. Codice solido, niente prototipi fragili.",
                 "items": [
-                    "Creative coding",
-                    "WebGL & 3D",
-                    "Animazioni"
+                    "Integrazione gestionale",
+                    "Test su casi reali",
+                    "Iterazione rapida"
                 ]
             },
             "polish": {
-                "title": "Rifinitura",
-                "description": "La ricerca ossessiva della perfezione. Affiniamo le micro-interazioni e ottimizziamo le prestazioni per garantire un'esperienza impeccabile su ogni dispositivo.",
+                "title": "Adozione",
+                "description": "Formiamo le persone che la useranno e sistemiamo quello che emerge nei primi giorni di uso reale. Un'automazione che nessuno usa non vale niente.",
                 "items": [
-                    "Micro-interazioni",
-                    "Performance",
-                    "Pixel perfect"
+                    "Formazione sul campo",
+                    "Aggiustamenti",
+                    "Regole d'uso"
                 ]
             },
             "launch": {
-                "title": "Lancio",
-                "description": "Garantire un'entrata monumentale nel mercato. Gestiamo il processo di lancio e collaboriamo per l'evoluzione a lungo termine e l'eredità digitale.",
+                "title": "Misura",
+                "description": "Contiamo le ore recuperate e decidiamo insieme il passo successivo: scalare, aggiungere un processo, o fermarsi qui.",
                 "items": [
-                    "Lancio",
-                    "Case study",
-                    "Submission ai premi"
+                    "Ore recuperate",
+                    "Report semplice",
+                    "Roadmap successiva"
                 ]
             }
         }
     },
     "development": {
         "eyebrow": "Noxis Development",
+        "image_alt": "Consulente con laptop lungo la vetrata di una server room",
+        "image_caption": "Automazioni che vivono dove lavori: in ufficio, in officina, nel gestionale.",
         "title_line1": "Costruiamo",
-        "title_line2": "prodotti che escono.",
-        "title_line3": "E continuano a crescere.",
-        "description": "Prodotti web, mobile e AI ingegnerizzati con precisione chirurgica. Dall'MVP allo scale enterprise — gestiamo design, architettura, codice e delivery, perché ogni release porti valore al business.",
-        "cta_project": "Inizia un Progetto",
-        "cta_work": "Vedi i Lavori",
+        "title_line2": "automazioni e prodotti",
+        "title_line3": "che escono davvero.",
+        "description": "Automazioni per le PMI e sviluppo prodotto per chi parte da zero: integrazioni nei sistemi esistenti, assistenti AI su misura, MVP online in settimane. Perimetro chiaro, prezzi chiari, codice production-grade.",
+        "cta_project": "Inizia un progetto",
+        "cta_work": "Vedi i lavori",
+        "cta_pricing": "Prezzi e offerte",
         "highlights": {
             "idea": {
                 "title": "Dall'idea al live",
-                "description": "MVP online in settimane, non trimestri. Scope chiaro, zero fronzoli."
+                "description": "MVP e automazioni online in settimane, non trimestri. Scope chiaro, zero fronzoli."
             },
             "scale": {
                 "title": "Pronti a scalare",
@@ -160,46 +543,46 @@
             },
             "partner": {
                 "title": "Restiamo oltre il lancio",
-                "description": "Monitoring, iterazione, crescita. Partner di lungo periodo, non venditori."
+                "description": "Monitoring, manutenzione, evoluzione. Partner di lungo periodo, non venditori."
             }
         },
         "services": {
-            "title_line1": "Dal primo commit",
-            "title_line2": "alla scala globale.",
+            "title_line1": "Dal primo processo",
+            "title_line2": "alla piattaforma completa.",
             "startup": {
-                "eyebrow": "Per le Startup",
-                "title": "Vai veloce. Senza compromessi.",
+                "eyebrow": "Per le PMI",
+                "title": "L'AI nei processi, senza stravolgere nulla.",
                 "items": {
                     "mvp": {
-                        "title": "Sviluppo MVP",
-                        "description": "Dall'idea al prodotto live in poche settimane. Scope focalizzato, UX pulita, codice production-grade dal giorno uno."
+                        "title": "Prima Automazione",
+                        "description": "Un processo che ruba ore ogni settimana, automatizzato chiavi in mano in due settimane, con prezzo concordato prima."
                     },
                     "design": {
-                        "title": "Product design",
-                        "description": "Brand identity, UX/UI e design system costruiti per scalare insieme al prodotto, non contro di esso."
+                        "title": "Assistenti su misura",
+                        "description": "Assistenti AI su documenti, listini e procedure aziendali: risposte affidabili per clienti e colleghi."
                     },
                     "launch": {
-                        "title": "Lancio & crescita",
-                        "description": "Landing page, analytics, SEO e strumenti di crescita integrati per un impatto misurabile."
+                        "title": "Integrazione gestionale",
+                        "description": "ERP, CRM, email e fogli di calcolo collegati all'AI. I tuoi strumenti di sempre, con meno fatica dentro."
                     },
                     "iterate": {
-                        "title": "Iterare con i dati",
-                        "description": "Sviluppo guidato dagli esperimenti. Feature flag, A/B test e observability integrati."
+                        "title": "Automazione Completa",
+                        "description": "Più automazioni integrate, formazione del team e gestione mensile continuativa."
                     },
                     "ai": {
-                        "title": "AI integrata",
-                        "description": "LLM, agenti e funzioni smart tessute nel prodotto dal primo giorno — non aggiunte dopo."
+                        "title": "Incentivi inclusi",
+                        "description": "In ogni preventivo: il quadro verificato di iperammortamento, voucher e fondi applicabili al tuo caso."
                     }
                 },
-                "description": "Scope ridotto, craft premium, codice production-grade dal primo giorno."
+                "description": "Perimetro chiuso, prezzo chiaro, saldo a risultato funzionante."
             },
             "enterprise": {
-                "eyebrow": "Per le Aziende",
+                "eyebrow": "Per Startup e Aziende",
                 "title": "Ingegneria su cui scommettere il business.",
                 "items": {
                     "platforms": {
-                        "title": "Piattaforme custom",
-                        "description": "Tool interni, dashboard e web app complesse pensate per i tuoi processi e il tuo stack."
+                        "title": "MVP e piattaforme custom",
+                        "description": "Dall'idea al prodotto live in settimane: web app, tool interni e dashboard pensati per i tuoi processi."
                     },
                     "integrations": {
                         "title": "Integrazione di sistemi",
@@ -207,11 +590,11 @@
                     },
                     "performance": {
                         "title": "Audit di performance",
-                        "description": "Core Web Vitals, ottimizzazione edge, caching e bundle surgery per prodotti che sembrano istantanei."
+                        "description": "Core Web Vitals, caching e ottimizzazione per prodotti che sembrano istantanei."
                     },
                     "support": {
                         "title": "Partnership a lungo termine",
-                        "description": "Team dedicato, SLA, monitoring ed evoluzione continua. Restiamo anche dopo il launch."
+                        "description": "SLA, monitoring ed evoluzione continua. Restiamo anche dopo il lancio."
                     }
                 }
             }
@@ -411,16 +794,16 @@
     },
     "email": {
         "general": {
-            "subject": "Parliamo — nuovo progetto",
-            "body": "Ciao team Noxis,\n\nMi piacerebbe parlare di un nuovo progetto con voi.\n\nDue parole su cosa ho in mente:\n— \n— \n— \n\nGrazie!"
+            "subject": "Vorrei capire cosa automatizzare nella mia azienda",
+            "body": "Ciao Noxis,\n\nvorrei parlare di automazione AI per la mia azienda.\n\nDue righe per inquadrare:\n— Settore e dimensione: \n— Il processo che ci ruba più tempo: \n— Strumenti che usiamo (gestionale, CRM, email): \n\nGrazie!"
         },
         "development": {
-            "subject": "Progetto di sviluppo — costruiamo qualcosa",
-            "body": "Ciao team Noxis,\n\nVorrei costruire un prodotto digitale e mi piacerebbe lavorare con voi.\n\nCosa ho in mente:\n— Tipo di prodotto: \n— Obiettivo: \n— Tempistiche: \n— Budget indicativo: \n\nResto in attesa di una vostra risposta."
+            "subject": "Progetto di sviluppo — parliamone",
+            "body": "Ciao Noxis,\n\nvorrei costruire un prodotto digitale e mi piacerebbe lavorare con voi.\n\nCosa ho in mente:\n— Tipo di prodotto: \n— Obiettivo: \n— Tempistiche: \n— Budget indicativo: \n\nResto in attesa di una vostra risposta."
         },
         "development_portfolio": {
             "subject": "Vorrei vedere il vostro lavoro",
-            "body": "Ciao team Noxis,\n\nMi piacerebbe conoscere i vostri progetti passati e case studies.\n\nContesto su di me/azienda:\n— \n— \n\nGrazie!"
+            "body": "Ciao Noxis,\n\nmi piacerebbe conoscere i vostri progetti e case study.\n\nContesto su di me/azienda:\n— \n— \n\nGrazie!"
         },
         "talent_brand": {
             "subject": "Brand alla ricerca di creator",
@@ -434,22 +817,36 @@
     "seo": {
         "site_name": "Noxis",
         "url": "https://noxis.agency",
-        "title": "Noxis — Agenzia Digitale Premium · Web, Mobile, AI",
-        "description": "Agenzia digitale premium che progetta prodotti web, mobile e AI con precisione chirurgica. Dagli MVP per startup alle piattaforme enterprise — design, codice e strategia di crescita in un'unica casa.",
-        "keywords": "agenzia digitale, web design premium, sviluppo app mobile, integrazione AI, agenzia Next.js, React Native, sviluppo MVP, agenzia digitale italiana, software custom, creative agency",
+        "title": "Noxis — Automazioni AI per PMI · Prezzi chiari",
+        "description": "Integriamo l'AI negli strumenti che la tua azienda usa già: preventivi, documenti, email e gestionale. Prezzi chiari fin dall'inizio, incentivi 2026. Sviluppo web e AI su misura.",
+        "keywords": "automazione AI PMI, intelligenza artificiale aziende, integrazione AI gestionale, consulenza AI Italia, automazione processi aziendali, agenzia AI, sviluppo software AI, automazioni n8n, assistente AI aziendale, AI Lombardia",
         "home": {
-            "title": "Noxis — Agenzia Digitale Premium · Web, Mobile & AI",
-            "description": "Agenzia digitale italiana che progetta e sviluppa prodotti web, mobile e AI premium con precisione chirurgica. Disegniamo, costruiamo e lanciamo — dagli MVP per startup alle piattaforme enterprise.",
-            "keywords": "agenzia digitale, web design premium, sviluppo app mobile, agenzia AI, agenzia Next.js, MVP, creative agency, agenzia digitale italiana, sviluppo web Italia",
-            "og_title": "Noxis — Agenzia Digitale Premium · Web, Mobile & AI",
-            "og_description": "Agenzia digitale italiana. Prodotti web, mobile e AI premium sviluppati end-to-end."
+            "title": "Noxis — Automazioni AI per PMI · Prezzi chiari",
+            "description": "L'AI dentro gli strumenti che già usi: automazioni di preventivi, documenti, email e gestionale per PMI. Prezzi chiari prima di iniziare, incentivi 2026.",
+            "keywords": "automazione AI PMI, AI per aziende, integrazione AI gestionale, automazione processi, consulenza AI Italia, agenzia AI Milano, automazione preventivi, assistente AI aziendale",
+            "og_title": "Noxis — Automazioni AI per PMI",
+            "og_description": "L'AI dentro gli strumenti che già usi. Prezzi chiari fin dall'inizio, incentivi 2026."
+        },
+        "pricing": {
+            "title": "Servizi e prezzi — Automazioni AI con prezzi chiari · Noxis",
+            "description": "Range di prezzo indicati fin da subito, senza call a sorpresa: Prima Automazione da 2.900 €, AI Audit da 3.000 €, Automazione Completa da 8.500 € + gestione mensile. Formazione spesso finanziabile al 100%.",
+            "keywords": "prezzi automazione AI, costo consulenza AI, AI audit prezzo, automazione processi costo, quanto costa AI azienda, preventivo automazione AI",
+            "og_title": "Servizi e prezzi — Noxis",
+            "og_description": "Prima Automazione da 2.900 € · AI Audit da 3.000 € · Automazione Completa da 8.500 €. Prezzi chiari, perimetro chiaro."
+        },
+        "check": {
+            "title": "Check AI gratuito — Cosa può automatizzare la tua azienda · Noxis",
+            "description": "10 domande, 3 minuti: scopri quanto potenziale di automazione AI ha la tua azienda e da dove conviene partire. Gratuito, senza registrazione.",
+            "keywords": "ai readiness check, test automazione azienda, assessment AI gratuito, automazione PMI test, check digitalizzazione",
+            "og_title": "Check AI gratuito — Noxis",
+            "og_description": "10 domande, 3 minuti: scopri cosa può automatizzare la tua azienda e da dove partire."
         },
         "development": {
-            "title": "Sviluppo — Web, Mobile & AI Engineering · Noxis",
-            "description": "Prodotti web, mobile e AI sviluppati end-to-end. Next.js, React, React Native, codice type-safe, integrazione AI. MVP in poche settimane, piattaforme enterprise che scalano.",
-            "keywords": "sviluppo web, sviluppo app mobile, integrazione AI, Next.js, React, React Native, sviluppo MVP, piattaforma enterprise, software custom, sviluppo startup",
-            "og_title": "Sviluppo — Noxis",
-            "og_description": "Prodotti web, mobile e AI sviluppati end-to-end. MVP in settimane, piattaforme che scalano."
+            "title": "Development — Automazioni AI e prodotti su misura · Noxis",
+            "description": "Automazioni AI per PMI e sviluppo prodotto: integrazioni in ERP/CRM/gestionale, assistenti AI su misura, MVP in settimane. Next.js, codice type-safe, prezzi chiari.",
+            "keywords": "sprint AI, integrazione AI ERP CRM, sviluppo automazioni, assistente AI knowledge base, sviluppo MVP, Next.js, software custom PMI",
+            "og_title": "Development — Noxis",
+            "og_description": "Automazioni AI e sviluppo su misura: integrazioni nei tuoi sistemi, MVP in settimane, prezzi chiari."
         },
         "talent": {
             "title": "Talent — Influencer Marketing & Creator Management · Noxis",
@@ -457,6 +854,13 @@
             "keywords": "influencer marketing, creator management, talent agency, campagne brand, creator economy, social media marketing, performance marketing, agenzia influencer Italia",
             "og_title": "Talent — Noxis",
             "og_description": "Influencer marketing fatto bene. Strategia, brief, produzione, distribuzione e attribuzione tracciata end-to-end."
+        },
+        "formazione": {
+            "title": "Formazione AI in azienda — workshop sui vostri processi · Noxis",
+            "description": "Workshop AI operativi in azienda, sui processi reali del team. Coprono l'obbligo AI Act e sono spesso finanziabili al 100% con i fondi interprofessionali. Da 900 €.",
+            "keywords": "formazione AI aziende, corso intelligenza artificiale azienda, AI Act formazione, alfabetizzazione AI, Fondimpresa formazione AI, workshop AI",
+            "og_title": "Formazione AI in azienda — Noxis",
+            "og_description": "Workshop sui vostri processi reali. Obbligo AI Act coperto, spesso finanziabile al 100%."
         }
     },
     "selected_work": {
@@ -464,5 +868,83 @@
         "title_line1": "Dal primo commit",
         "title_line2": "alla scala globale.",
         "placeholder": "In arrivo"
+    },
+    "trainingPage": {
+        "eyebrow": "Noxis Formazione",
+        "title": "Il tuo team operativo con l'AI,",
+        "accent": "in una giornata.",
+        "description": "Workshop in azienda, costruiti sui vostri processi reali: niente teoria da manuale, solo casi vostri. Coprono l'obbligo di alfabetizzazione AI previsto dall'AI Act e sono spesso rimborsabili fino al 100% tramite i fondi interprofessionali.",
+        "cta_primary": "Richiedi il programma",
+        "cta_secondary": "Fai il check gratuito",
+        "formats_title": "Due formati,",
+        "formats_accent": "un solo obiettivo.",
+        "formats_description": "Si parte sempre dai vostri processi: raccogliamo prima esempi reali (email, preventivi, documenti) e costruiamo la giornata su quelli.",
+        "formats": [
+            {
+                "name": "Mezza giornata — Awareness operativa",
+                "duration": "4 ore · in azienda",
+                "price": "da 900 €",
+                "bullets": [
+                    "Cosa sa fare davvero l'AI oggi (e cosa no), senza hype",
+                    "Demo dal vivo sui vostri casi: email, preventivi, documenti",
+                    "Regole d'uso interne: dati, privacy, cosa evitare",
+                    "Copertura dell'obbligo di alfabetizzazione AI (art. 4 AI Act)"
+                ]
+            },
+            {
+                "name": "Giornata intera — Hands-on",
+                "duration": "8 ore · in azienda",
+                "price": "da 1.500 €",
+                "bullets": [
+                    "Mattina: basi, casi d'uso e demo sui vostri processi",
+                    "Pomeriggio: laboratorio pratico — ognuno lavora sui propri compiti reali",
+                    "Prompt e flussi pronti da riusare dal giorno dopo",
+                    "Mappa dei processi automatizzabili emersi durante il laboratorio"
+                ]
+            }
+        ],
+        "funding_title": "Spesso non la paghi tu:",
+        "funding_accent": "la coprono i fondi.",
+        "funding_description": "Se l'azienda aderisce a un fondo interprofessionale (Fondimpresa, Fondirigenti e simili), la formazione è spesso rimborsabile fino al 100%. Il percorso è semplice:",
+        "funding_steps": [
+            {
+                "title": "Verifica dell'adesione",
+                "text": "Col tuo consulente del lavoro verifichi a quale fondo aderisce l'azienda — l'adesione è gratuita e si fa in busta paga."
+            },
+            {
+                "title": "Piano formativo",
+                "text": "Prepariamo noi il programma e la documentazione del corso nella forma richiesta dal fondo."
+            },
+            {
+                "title": "Erogazione e rimborso",
+                "text": "Si svolge il workshop, si rendiconta, e il fondo rimborsa l'azienda — spesso l'intero importo."
+            }
+        ],
+        "funding_note": "La rendicontazione dipende dal fondo e dal bando attivo: lo verifichiamo insieme prima di partire, senza promettere nulla che non sia scritto.",
+        "aiact_title": "L'obbligo che quasi nessuno sta gestendo",
+        "aiact_text": "Dal 2 febbraio 2025 l'art. 4 dell'AI Act impone a chi usa sistemi AI in azienda di garantire un'adeguata alfabetizzazione del personale. Il workshop copre l'obbligo e ti lascia la documentazione del percorso svolto.",
+        "takeaway_title": "Cosa vi portate a casa",
+        "final_title": "Parliamo del tuo team?",
+        "final_text": "Raccontaci com'è fatta l'azienda e che processi seguite: ti proponiamo il formato giusto e verifichiamo subito se i fondi possono coprirlo."
+    },
+    "bands": {
+        "integration": {
+            "alt": "Macro di una scheda elettronica con dettagli in rame",
+            "caption": "Integrazione, non sostituzione: l'AI dentro i sistemi che già usate."
+        }
+    },
+    "admin": {
+        "title": "Richieste",
+        "count": "{count} richieste",
+        "empty": "Nessuna richiesta ancora. Arriveranno dal check sul sito.",
+        "status": {
+            "new": "Nuova",
+            "contacted": "Contattato",
+            "closed": "Chiusa"
+        },
+        "toggle_questionnaire": "Mostra questionario",
+        "no_questionnaire": "Nessun questionario allegato a questa richiesta.",
+        "delete": "Elimina richiesta",
+        "delete_confirm": "Eliminare definitivamente questa richiesta?"
     }
 }

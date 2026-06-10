@@ -1,23 +1,58 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { Typography } from '@/components/ui/typography'
+import { useCheckDialog } from '@/components/check/check-dialog'
+
+const NAV_LINKS = [
+  { href: '/', labelKey: 'footer.nav_home' },
+  { href: '/#pricing', labelKey: 'footer.nav_pricing' },
+  { href: '/#formazione', labelKey: 'footer.nav_formazione' },
+  { href: '/development', labelKey: 'footer.nav_development' },
+  { href: '/talent', labelKey: 'footer.nav_talent' },
+] as const
 
 export function Footer() {
   const t = useTranslations()
+  const { openCheck } = useCheckDialog()
   return (
     <footer className="relative w-full bg-background text-foreground overflow-hidden pt-32 transition-colors duration-300">
       <Container className="relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-start mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 items-start mb-24">
           <div className="md:col-span-2">
-            <Typography variant="h2" className="mb-8">
+            <p className="mb-8 text-3xl md:text-[2.6rem] md:leading-[1.15] font-semibold tracking-[-0.025em] text-foreground">
               {t('footer.slogan_line1')} <br />
-              <span className="text-primary opacity-80">
+              <em className="font-display italic font-normal text-primary tracking-[-0.01em]">
                 {t('footer.slogan_line2')}
-              </span>
-            </Typography>
+              </em>
+            </p>
+          </div>
+
+          <div className="md:col-span-1 flex flex-col gap-6">
+            <span className="text-xs uppercase tracking-widest text-muted-foreground">
+              {t('footer.nav_title')}
+            </span>
+            <nav className="flex flex-col gap-3">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm hover:underline underline-offset-4 transition-all"
+                >
+                  {t(link.labelKey)}
+                </Link>
+              ))}
+              <button
+                type="button"
+                onClick={openCheck}
+                className="text-left text-sm hover:underline underline-offset-4 transition-all cursor-pointer"
+              >
+                {t('footer.nav_check')}
+              </button>
+            </nav>
           </div>
 
           <div className="md:col-span-1 flex flex-col gap-6">
@@ -44,7 +79,7 @@ export function Footer() {
             width={2000}
             height={500}
             priority={false}
-            className="w-full h-auto opacity-[0.03] dark:opacity-[0.05]"
+            className="w-full h-auto invert opacity-[0.05]"
           />
         </div>
       </Container>

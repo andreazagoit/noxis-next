@@ -3,78 +3,458 @@
         "home": "Home",
         "development": "Development",
         "talent": "Talent",
+        "services": "Services",
+        "pricing": "Pricing",
+        "check": "AI Check",
+        "cta_check": "Free AI check",
         "lets_talk": "Let's Talk",
-        "sign_in": "Sign in"
+        "sign_in": "Sign in",
+        "formazione": "Training"
     },
     "hero": {
-        "title_line1": "We love",
-        "title_line2": "challenges.",
-        "title_line3": "Bring us yours.",
-        "description": "Designing immersive, motion-driven experiences that command attention and guide users to act. Clean builds. Sharp strategy. Zero limits.",
-        "cta": "Start a Project",
-        "we_are_good_at": "We Are Good At",
+        "eyebrow": "AI automation for SMBs",
+        "points": [
+            "First automation delivered in 2 weeks",
+            "Clear pricing, agreed before we start",
+            "Balance due on delivered, working results"
+        ],
+        "title_line1": "AI inside",
+        "title_line2": "the tools",
+        "title_line3": "you already use.",
+        "visual": {
+            "dash_title": "Active automations",
+            "dash_live": "Running",
+            "dash_footer": "Hours recovered · last 8 weeks",
+            "card1_title": "Quote #2041",
+            "card1_status": "Draft ready · 07:32",
+            "card2_title": "Customer email sorted",
+            "card2_status": "Data entered into your system",
+            "card3_title": "Weekly report",
+            "card3_status": "Generated · Monday 08:00",
+            "stat": "+12 hours recovered per week"
+        },
+        "description": "AI automation for SMBs: quotes, documents, email and your management software. Clear pricing from the start, 2026 incentives, and delivery in weeks, not quarters.",
+        "cta": "Take the free check",
+        "cta_secondary": "See pricing",
+        "we_are_good_at": "What we do",
         "skills": {
-            "web": "Web",
-            "mobile": "Mobile",
-            "design": "Design",
-            "strategy": "Strategy"
+            "web": "Automation",
+            "mobile": "Integrations",
+            "design": "AI Assistants",
+            "strategy": "Web & Apps"
+        },
+        "scenes": {
+            "labels": [
+                "Request",
+                "AI analysis",
+                "Draft ready",
+                "Hours recovered"
+            ],
+            "email_from": "client@company.com",
+            "email_subject": "Quote request — 1,200 pieces",
+            "email_attachment": "technical-drawing.pdf",
+            "scan": "Reading email and attachments…",
+            "chips": [
+                "Client: Rossi SRL",
+                "Quantity: 1,200 pcs",
+                "Delivery: 30 days",
+                "Material: AISI 304"
+            ],
+            "quote_title": "Quote #2041",
+            "quote_rows": [
+                "CNC machining",
+                "Surface treatment",
+                "Shipping & packaging"
+            ],
+            "quote_total": "Total €8,640",
+            "quote_badge": "Draft · awaiting approval",
+            "saved_title": "Hours recovered today",
+            "saved_value": 2.5,
+            "saved_suffix": " h",
+            "saved_note": "Your team approves, the AI prepares.",
+            "lookup": "Looking up the client in the ERP…",
+            "lookup_done": "Found: Rossi SRL",
+            "model": "Processing with the AI model…",
+            "db_search": "Searching similar quotes in the database…",
+            "db_found": "3 similar quotes found",
+            "db_results": [
+                "#1843 · €8,240",
+                "#1907 · €8,690",
+                "#2012 · €8,950"
+            ],
+            "badge_draft": "Draft",
+            "badge_approved": "Approved",
+            "badge_sent": "Sent"
         }
     },
     "vision": {
-        "quote_line1": "Impact is engineered,",
-        "quote_line2": "not guessed.",
-        "quote_description": "Design without functionality is hollow. Functionality without design is incomplete. We build digital products that respect both and the people who use them.",
-        "our_vision": "Our Vision",
-        "vision_title": "Setting\nThe\nStandard.",
-        "vision_description": "We envision a digital world where every product is beautiful, functional, and ethically responsible. We aim to prove that technology can be a force for good, improving people's lives without shortcuts or compromises. Our ambition is to become a benchmark for excellence, where design and technology merge into premium digital experiences that leave a lasting positive impact.",
-        "our_mission": "Our Mission",
-        "mission_title": "Engineering\nValue.",
-        "mission_description": "We create web and mobile solutions of the highest quality, combining innovative design, flawless functionality, and obsessive attention to detail. Every project is born from respect for people and our clients' values. We reject shortcuts and unethical practices, collaborating with those who share our vision to produce digital tools that are truly useful, ethical, and sustainable. Our mission is to transform ideas into premium digital experiences that empower people and generate concrete value."
+        "quote_line1": "You can't buy hours.",
+        "quote_line2": "You can recover them.",
+        "quote_description": "Every company has dozens of hours per month trapped in repetitive work: quotes, emails, documents, data copied by hand from one system to another. Our job is to give them back to you.",
+        "image_alt": "Laptop glowing in the dark with warm reflections on the screen",
+        "image_badge": "Clear scope and price, written down before we start",
+        "our_vision": "How we work",
+        "vision_title": "Substance,\nnot\nhype.",
+        "vision_description": "Almost everyone in your company already uses ChatGPT for something. Very few companies have brought it into their real processes. That's exactly the step we deliver: no revolutions, no vague promises — one process at a time, measuring the hours recovered. We'll also tell you what NOT to automate: that's the part of the craft the hype merchants skip.",
+        "our_mission": "Our commitment",
+        "mission_title": "Integrate,\ndon't disrupt.",
+        "mission_description": "We don't ask you to change your ERP, CRM or habits: we connect AI to the tools your company already uses. We start from a small, well-scoped case, with scope and price written down before we begin, with your data staying yours. If the pilot works, we scale. If it doesn't, you know within two weeks — not after six months of consulting."
     },
     "footer": {
-        "slogan_line1": "Beyond ",
-        "slogan_line2": "Digital Excellence.",
+        "slogan_line1": "AI that works.",
+        "slogan_line2": "Not AI that talks.",
         "get_in_touch": "Get in touch",
-        "office": "Office"
+        "office": "Office",
+        "nav_title": "Explore",
+        "nav_home": "Home",
+        "nav_pricing": "Services & pricing",
+        "nav_check": "Free AI check",
+        "nav_development": "Development",
+        "nav_talent": "Talent",
+        "nav_formazione": "Training"
     },
     "services": {
-        "title_line1": "Premium",
-        "title_line2": "Digital Products.",
+        "title_line1": "What we",
+        "title_line2": "actually do.",
+        "visual_draft_ready": "Draft ready",
+        "visual_ai_act": "AI Act compliant",
+        "visual_task1": "Quote #2041",
+        "visual_task2": "Invoice · March",
+        "visual_task3": "Weekly report",
+        "visual_chat_q": "What price did we quote Rossi last year?",
+        "visual_chat_a": "€12,400, February order. Want me to draft the new quote?",
+        "visual_url": "app.yourcompany.com",
+        "visual_module1": "Practical prompting",
+        "visual_module2": "Data & confidentiality",
+        "visual_module3": "Real use cases",
         "web_dev": {
-            "title": "Web Development",
-            "description": "Forging high-performance web platforms with surgical precision and modern architectures. We bridge the gap between complex engineering and obsessive art direction to create digital assets that are as powerful as they are beautiful."
+            "title": "Process automation",
+            "description": "Quotes, invoices, recurring emails, reports and data entry that prepare themselves. The AI drafts, your people review and approve: hours recovered every week, starting now."
         },
         "ux_ui": {
-            "title": "UX/UI Design",
-            "description": "Crafting human-centric digital journeys through refined interfaces and sophisticated interaction design. We don't just design screens. We engineer environments that command attention and drive conversion."
+            "title": "Custom assistants",
+            "description": "AI assistants trained on your company's documents, price lists and procedures: they answer customers and colleagues with the right information, without making things up and without your data going where it shouldn't."
         },
         "mobile_dev": {
-            "title": "Mobile Development",
-            "description": "Native and cross-platform mobile apps built for performance and natural feel."
+            "title": "Web & app development",
+            "description": "When something needs building — a client portal, an internal tool, an MVP — we do it with the same logic: clear scope, solid code, short timelines."
         },
         "ai": {
-            "title": "Artificial Intelligence",
-            "description": "Integrating smart AI solutions to automate workflows and enhance user interaction."
+            "title": "ERP & CRM integration",
+            "description": "Your ERP, CRM, spreadsheets and inboxes connected to AI. No new software to learn: the tools you've always used, with much less drudgery inside."
         },
         "marketing": {
-            "title": "Marketing & Strategy",
-            "description": "Data-backed growth and performance marketing to scale your product effectively."
+            "title": "Hands-on training",
+            "description": "Practical workshops on your team's real processes — not theory. Covers the AI literacy obligation under the EU AI Act and is often fundable up to 100% through training funds."
         }
     },
     "partnership": {
-        "title_line1": "Ready for a",
-        "title_line2": "Partner",
-        "description": "We work with brands to turn their ideas into effective digital products. By combining design and engineering, we help you connect with your audience and achieve meaningful results. Let's build something great together.",
-        "cta": "Start a Project"
+        "title_line1": "Ready to get",
+        "title_line2": "your hours back",
+        "description": "20 minutes, no strings attached: tell us how your company works and we'll tell you right away what's worth automating, what isn't, and what it would cost. A clear price, agreed before we start.",
+        "cta": "Let's talk — 20 minutes"
     },
     "quotes": {
         "items": [
-            "BUILD DIFFERENT",
-            "DESIGN WITH PURPOSE",
-            "CODE WITH PASSION",
-            "CREATE WITH VISION",
-            "INNOVATE ALWAYS"
+            "CLEAR PRICING, UPFRONT",
+            "HOURS RECOVERED, NOT SLIDES",
+            "AI IN THE TOOLS YOU ALREADY USE",
+            "DELIVERED IN WEEKS, NOT MONTHS",
+            "ONE PROCESS FIRST, THEN SCALE"
         ]
+    },
+    "stats": {
+        "items": [
+            {
+                "value": 2,
+                "suffix": "",
+                "label": "weeks to your first delivered automation"
+            },
+            {
+                "value": 20,
+                "suffix": "+",
+                "label": "recoverable hours/month: the minimum target of every audit"
+            },
+            {
+                "value": 43,
+                "suffix": "%",
+                "label": "tax benefit with the 2026 super-depreciation"
+            },
+            {
+                "value": 100,
+                "suffix": "%",
+                "label": "of training often covered by public funds"
+            }
+        ]
+    },
+    "offers": {
+        "eyebrow": "Services & pricing",
+        "title_line1": "Clear prices,",
+        "title_line2": "from the start.",
+        "description": "No black-box \"contact us for a quote\": three ways to work together, with indicative prices and terms already written — plus training for your team.",
+        "cta_all": "All details and terms",
+        "badge_start": "Start here",
+        "automation": {
+            "name": "First Automation",
+            "price": "from €2,900",
+            "price_note": "indicative · 2 weeks",
+            "summary": "One process that steals hours from you every week, automated end-to-end: draft quotes, answers from internal documents, data extracted from PDFs and emails into your management software."
+        },
+        "audit": {
+            "name": "AI Audit",
+            "price": "from €3,000",
+            "price_note": "indicative · 2 weeks",
+            "summary": "Process mapping, 3–5 priority automations with an estimate of recoverable hours, a 90-day roadmap and the public incentives applicable to your area."
+        },
+        "sprint": {
+            "name": "Full Automation",
+            "price": "from €8,500",
+            "price_note": "+ retainer from €1,500/month",
+            "summary": "2–3 automations integrated into your systems (ERP, CRM, email), team training included and ongoing maintenance. The software may qualify for the 180% super-depreciation."
+        },
+        "training": {
+            "name": "Hands-on training",
+            "price": "from €900",
+            "price_note": "often 100% fundable",
+            "summary": "Half day or full day on site, on your real processes. Covers the AI literacy obligation (EU AI Act) and is often reimbursable through interprofessional training funds."
+        },
+        "cta_more": "Learn more"
+    },
+    "pricing": {
+        "eyebrow": "Services & pricing",
+        "title_line1": "What it costs,",
+        "title_line2": "what you get.",
+        "description": "In Italy almost no AI agency shows its prices. We do: clear ranges from the start, confirmed in writing before signing — no surprise sales calls.",
+        "for_whom": "Who it's for",
+        "deliverables": "What's included",
+        "payment": "Payment",
+        "timing": "Timeline",
+        "automation": {
+            "name": "First Automation",
+            "tagline": "One process that steals your hours, automated and live in two weeks.",
+            "price": "from €2,900",
+            "timing_value": "2 weeks from signing",
+            "payment_value": "50% on signing · 50% on working delivery",
+            "for_whom_value": "SMBs and firms from 5 to 80 people that want to start from a concrete result, not an analysis: one process hurts, and that's where we start.",
+            "deliverables_list": [
+                "Mapping call to pick the process",
+                "Quotes, emails and reports automated",
+                "Integrated with ERP, CRM and email",
+                "Team mini-training included",
+                "30 days of support included"
+            ],
+            "note": "Closed scope: one process, two weeks. If other automatable processes emerge during the work, they go on the roadmap — not on the invoice.",
+            "details_list": [
+                "Mapping call (1 hour) to pick the highest-return process",
+                "One process automated end-to-end: draft quotes from emails and PDFs, requests sorted into your system, recurring reports that prepare themselves",
+                "Integration with the tools you already use: ERP, CRM, email, spreadsheets",
+                "Human control where it matters: the AI drafts, your people approve",
+                "Mini-training for the team that will use it, included",
+                "30 days of post-delivery support and adjustments included",
+                "Set up on your accounts and API keys: your data stays yours"
+            ],
+            "details_tagline": "The fastest way to see AI working on your processes: together we pick the flow that steals the most hours — quotes, emails, documents — and in two weeks it's automated, integrated and in production.",
+            "terms": "2 weeks · 50% upfront, balance on delivery"
+        },
+        "audit": {
+            "name": "AI Audit",
+            "tagline": "The map of where your company loses hours, and the plan to recover them.",
+            "price": "from €3,000",
+            "timing_value": "2 weeks",
+            "payment_value": "50% on signing · 50% on report delivery",
+            "for_whom_value": "More structured companies (roughly 30+ employees) or multi-department ones, where there are many processes to fix and the order must be decided before investing.",
+            "deliverables_list": [
+                "Interviews with the people doing the work",
+                "Estimate of recoverable hours/month",
+                "3–5 automations ranked by return",
+                "90-day roadmap with costs",
+                "Incentives applicable in your area"
+            ],
+            "note": "The report is yours: implement the roadmap with us or with whoever you prefer.",
+            "details_list": [
+                "Interviews with the people doing the work, department by department (the #1 adoption barrier is missing internal skills: we start there)",
+                "Process mapping with an estimate of hours/month trapped in repetitive tasks",
+                "3–5 priority automations, ranked by return and difficulty, each with a cost estimate",
+                "90-day roadmap: what to do first, what later, what NOT to automate",
+                "\"Public coverage\" overview for your province: chamber grants, super-depreciation, training funds",
+                "Final report presented in person to management",
+                "The report is yours: implement with us or with whoever you prefer"
+            ],
+            "details_tagline": "The complete picture of where the company loses hours: interviews with the people doing the work, process mapping and a plan ordered by return — with the numbers, timelines and applicable incentives.",
+            "terms": "2 weeks · 50% upfront, 50% on report"
+        },
+        "sprint": {
+            "name": "Full Automation",
+            "tagline": "Several automations integrated into your systems, with care that grows them.",
+            "price": "from €8,500",
+            "timing_value": "4–6 week sprint, then ongoing",
+            "payment_value": "40% on signing · 40% at go-live · 20% at 30 days · 6-month minimum retainer",
+            "for_whom_value": "Companies that have already identified their processes — often after an Audit or a First Automation — and want an ongoing partner, not a one-off vendor.",
+            "deliverables_list": [
+                "Automations integrated into ERP and CRM",
+                "AI assistant on your company documents",
+                "Team training and documentation",
+                "Monitoring and improvements monthly",
+                "Support on incentives and tax relief"
+            ],
+            "note": "The software we build can be documented as an intangible asset for Italy's 180% super-depreciation (effective benefit up to ~43%): we work with a subsidised-finance firm on the paperwork.",
+            "details_list": [
+                "2–3 automations deeply integrated: ERP, CRM, management software, shared inboxes",
+                "AI assistant on your company knowledge base (price lists, procedures, past offers), where useful",
+                "Flows with quality controls and audit trail: you see what the AI did and when",
+                "Team training and usage documentation",
+                "Monthly retainer: monitoring, fixes, improvements and new automations every month",
+                "Software documentable as an intangible asset for Italy's 180% super-depreciation (effective benefit up to ~43%)",
+                "Incentive paperwork handled with a partner subsidised-finance firm"
+            ],
+            "details_tagline": "The automations that matter, properly integrated into your systems and maintained over time: in Italy 77% of AI projects are custom integration, not off-the-shelf software — this is that work, done well.",
+            "terms": "4–6 weeks · then care from €1,500/month"
+        },
+        "training": {
+            "name": "Hands-on training",
+            "tagline": "Your team learns to use AI on the company's real processes.",
+            "price": "from €900 half day · from €1,500 full day",
+            "timing_value": "On site, scheduled",
+            "payment_value": "Upfront",
+            "for_whom_value": "Teams that already use (or endure) AI and want method, use cases and clear rules.",
+            "deliverables_list": [
+                "Practical session on your processes, not textbook examples",
+                "Covers the AI literacy obligation (art. 4 EU AI Act, in force since February 2025)",
+                "Often fundable up to 100% through interprofessional training funds",
+                "Internal usage rules: what to use, what to avoid, how to handle data"
+            ],
+            "note": "It's also the format we offer free of charge to professional firms and trade associations for their clients: ask us how."
+        },
+        "training_section": {
+            "eyebrow": "Training",
+            "title": "Your team learns",
+            "accent": "on real work.",
+            "description": "Hands-on workshops at your company, on your processes — not theory. They cover the AI literacy obligation under the EU AI Act and are often fundable up to 100% through interprofessional funds.",
+            "cta": "Go to the training page"
+        },
+        "incentives_title": "What public incentives cover in 2026",
+        "incentives_description": "Incentives vary by province and run out: in every proposal we only list the ones we've verified as applicable to your case. These are the main ones active today:",
+        "incentives": [
+            {
+                "title": "180% super-depreciation",
+                "text": "For software and AI platforms interconnected with company systems: effective tax benefit up to ~43% of the investment (Italian Law 199/2025, investments 2026–2028)."
+            },
+            {
+                "title": "Funded training",
+                "text": "Interprofessional funds (Fondimpresa, Fondirigenti) often cover up to 100% of staff AI training."
+            },
+            {
+                "title": "Chamber of Commerce vouchers",
+                "text": "Italian Chambers of Commerce fund AI consulting and adoption with coverage up to 70% (e.g. Como-Lecco AI Voucher 2026). We check what's active in your province."
+            }
+        ],
+        "incentives_disclaimer": "No incentive is ever promised as certain: we only reference verified programmes, and the project stands on its own without them.",
+        "faq_title": "The questions",
+        "faq": [
+            {
+                "q": "Where does my company's data end up?",
+                "a": "It stays yours. We configure AI services with European data residency where possible, with no training on your data, and we define in writing what the AI can and cannot see. Compliance (privacy and the AI Act) is part of the job, not an extra."
+            },
+            {
+                "q": "We already have a management system — do we need to replace it?",
+                "a": "No, quite the opposite: we work inside and around the tools you already use. Most AI projects in Italy are exactly this — integration, not replacement."
+            },
+            {
+                "q": "What if nobody in the company ends up using it?",
+                "a": "That's why every project includes training for the people who will use the automation, and we always start from a process that saves a specific person real time — not from a tech toy."
+            },
+            {
+                "q": "Why do you show prices? Everyone else says \"it depends\".",
+                "a": "Because an honest range helps both of us: you immediately know whether we fit your budget, and we only talk to companies that can actually start. The exact price is agreed on the scope, before signing — and anything beyond it goes on the roadmap, not on the invoice."
+            },
+            {
+                "q": "How do I know you can deliver, if you're a young agency?",
+                "a": "That's exactly why our offers are built to remove your risk: you start with a small project with a clear cost and the bulk is paid on delivered, working results. Trust is built on the first project, not on promises."
+            }
+        ],
+        "final_cta_kicker_prefix": "Automate",
+        "final_cta_kicker_words": [
+            "quotes",
+            "repetitive emails",
+            "reports",
+            "paperwork"
+        ],
+        "final_cta_kicker_suffix": "without changing your tools.",
+        "final_cta_title": "Not sure where to start?",
+        "final_cta_text": "Take the free check: 10 questions, 3 minutes, and we'll tell you the right starting point for your company.",
+        "final_cta_button": "Take the free check",
+        "final_cta_secondary": "Or write to us",
+        "card_cta": "Let's talk",
+        "faq_eyebrow": "FAQ",
+        "faq_title_accent": "everyone asks.",
+        "faq_description": "Straight answers to the most common doubts about data, costs and how we work. No runaround.",
+        "faq_contact": "Can't find your question?",
+        "faq_contact_cta": "Write to us — we reply within the day"
+    },
+    "check": {
+        "eyebrow": "Free check",
+        "title_line1": "What could your company",
+        "title_line2": "automate?",
+        "description": "10 questions, 3 minutes, no sign-up needed to see your result. At the end we'll tell you where it makes sense to start — and whether it makes sense at all.",
+        "start": "Start the check",
+        "question_label": "Question {current} of {total}",
+        "questions": [
+            "Does anyone in your company already use ChatGPT or similar tools for work?",
+            "Do you have a management system, CRM or ERP used every day?",
+            "Are there tasks where data is copied by hand between systems, emails or spreadsheets?",
+            "Does preparing a quote or proposal take hours (or days) of manual work?",
+            "Do you often answer the same questions from customers or colleagues?",
+            "Are there recurring documents (reports, minutes, files) written from scratch every time?",
+            "Is there reasonably organised internal documentation (procedures, price lists, manuals)?",
+            "Would there be someone internally available to act as the contact for a pilot project?",
+            "Has management discussed AI or automation in the last 6 months?",
+            "Do you already know which 2026 incentives you could use (super-depreciation, vouchers, training funds)?"
+        ],
+        "answer_yes": "Yes",
+        "answer_partial": "Partly",
+        "answer_no": "No",
+        "result_title": "Your result",
+        "result_score_label": "Automation potential",
+        "bands": [
+            {
+                "title": "Foundations to build",
+                "text": "There's potential, but some basics are missing (tools, data or an internal sponsor). The right starting point isn't a project: it's a hands-on training session for your team and a light process mapping. Low cost, often fundable."
+            },
+            {
+                "title": "Ready for the first step",
+                "text": "Your company has at least one process that can be automated with immediate benefit. The right starting point is the First Automation: one process, from €2,900, two weeks, balance due on working delivery."
+            },
+            {
+                "title": "Fertile ground",
+                "text": "There are multiple automatable processes and the conditions to do it well. The right starting point is the AI Audit: the full map of where to recover hours, with priorities, costs and applicable incentives."
+            }
+        ],
+        "form_title": "Get your detailed result",
+        "form_text": "Leave your details and we'll send you the analysis of your score with suggestions for your case. No spam, no cold calls.",
+        "form_name": "Full name",
+        "form_email": "Work email",
+        "form_company": "Company",
+        "form_sector": "Sector",
+        "form_sector_options": {
+            "services": "Professional services / firm",
+            "manufacturing": "Manufacturing / production",
+            "retail": "Retail / commerce / horeca",
+            "other": "Other"
+        },
+        "form_employees": "Size",
+        "form_employees_options": {
+            "micro": "1–9 employees",
+            "small": "10–49 employees",
+            "medium": "50–249 employees",
+            "large": "250+ employees"
+        },
+        "form_submit": "Send me the result",
+        "form_sending": "Sending...",
+        "form_privacy": "We use this data only to reply to you. No lists, no sharing with third parties.",
+        "form_error": "Something went wrong. Try again, or write to hello@noxis.agency.",
+        "success_title": "Done. We'll reply within one business day.",
+        "success_text": "Want to skip ahead? Book 20 minutes directly: tell us how you work and we'll tell you right away what's worth automating.",
+        "success_cta": "Write to us now"
     },
     "methodology": {
         "subtitle": "From chaos to clarity",
@@ -83,123 +463,126 @@
         "steps": {
             "discovery": {
                 "title": "Discovery",
-                "description": "An immersive deep-dive into your brand's core. We research market trends, define specific goals, and align every digital stone with your ultimate ambition.",
+                "description": "We learn how your company really works: processes, tools, bottlenecks. No abstract questionnaires — we talk to the people doing the work.",
                 "items": [
-                    "Creative Brief",
-                    "Brand Research",
-                    "Mood Boards"
+                    "Team interviews",
+                    "Process mapping",
+                    "Recoverable hours estimate"
                 ]
             },
             "concept": {
-                "title": "Concept",
-                "description": "Translating discovery into a tangible vision. We define the visual and artistic direction that will set your product apart from the competition.",
+                "title": "Priorities",
+                "description": "Together we choose the right process to start from: high impact, low risk, results measurable in weeks.",
                 "items": [
-                    "Visual Direction",
-                    "Art Direction",
-                    "Storyboarding"
+                    "Pilot use case",
+                    "Closed scope",
+                    "Clear price"
                 ]
             },
             "design": {
                 "title": "Design",
-                "description": "Crafting a premium user experience with surgical precision. Every interaction and pixel is designed to convey luxury and technical excellence.",
+                "description": "We design the flow: where AI comes in, where people stay, how quality is controlled and where the data lives.",
                 "items": [
-                    "UI/UX Craft",
-                    "Motion Design",
-                    "Interaction Design"
+                    "Flow and controls",
+                    "Privacy and data",
+                    "Tool integration"
                 ]
             },
             "develop": {
-                "title": "Develop",
-                "description": "Forging digital masterpieces with cutting-edge tech. We build robust, scalable, and immersive products that push the boundaries of the web.",
+                "title": "Build",
+                "description": "We build the automation and connect it to the systems you already use. Solid code, no fragile prototypes.",
                 "items": [
-                    "Creative Coding",
-                    "WebGL & 3D",
-                    "Animations"
+                    "System integration",
+                    "Tests on real cases",
+                    "Fast iteration"
                 ]
             },
             "polish": {
-                "title": "Polish",
-                "description": "The obsessive pursuit of perfection. We refine micro-interactions and optimize performance to ensure a flawless experience on every device.",
+                "title": "Adoption",
+                "description": "We train the people who will use it and fix what emerges in the first days of real use. An automation nobody uses is worth nothing.",
                 "items": [
-                    "Micro-interactions",
-                    "Performance",
-                    "Pixel Perfect"
+                    "On-the-job training",
+                    "Adjustments",
+                    "Usage rules"
                 ]
             },
             "launch": {
-                "title": "Launch",
-                "description": "Ensuring a monumental entry into the market. We manage the launch process and partner for long-term evolution and digital legacy.",
+                "title": "Measure",
+                "description": "We count the hours recovered and decide the next step together: scale, add a process, or stop here.",
                 "items": [
-                    "Go Live",
-                    "Case Study",
-                    "Awards Submit"
+                    "Hours recovered",
+                    "Simple report",
+                    "Next roadmap"
                 ]
             }
         }
     },
     "development": {
         "eyebrow": "Noxis Development",
+        "image_alt": "Consultant with a laptop along the glass wall of a server room",
+        "image_caption": "Automations that live where you work: in the office, on the shop floor, in your ERP.",
         "title_line1": "We build",
-        "title_line2": "products that ship.",
-        "title_line3": "And keep shipping.",
-        "description": "Web, mobile and AI products engineered with surgical precision. From MVP to enterprise scale — we own design, architecture, code and delivery, so every release moves the business forward.",
-        "cta_project": "Start a Project",
-        "cta_work": "See Our Work",
+        "title_line2": "automations and products",
+        "title_line3": "that actually ship.",
+        "description": "Automation for SMBs and product development for those starting from scratch: integrations into existing systems, custom AI assistants, MVPs live in weeks. Clear scope, clear pricing, production-grade code.",
+        "cta_project": "Start a project",
+        "cta_work": "See the work",
+        "cta_pricing": "Pricing & offers",
         "highlights": {
             "idea": {
-                "title": "Idea → Shipped",
-                "description": "MVPs that go live in weeks, not quarters. Sharp scope, no fluff."
+                "title": "Idea → Live",
+                "description": "MVPs and automations live in weeks, not quarters. Clear scope, zero fluff."
             },
             "scale": {
                 "title": "Built to scale",
-                "description": "Type-safe code, modern architecture. Grow without a rewrite."
+                "description": "Type-safe code, modern architecture. Grow without rewriting."
             },
             "ai": {
                 "title": "AI as a first-class citizen",
-                "description": "LLMs, agents and automations woven into the product — not bolted on."
+                "description": "LLMs, agents and automations built into the product, not bolted on."
             },
             "partner": {
                 "title": "We stay past launch",
-                "description": "Monitoring, iteration, growth. Long-term partnership over hand-off."
+                "description": "Monitoring, maintenance, evolution. Long-term partners, not vendors."
             }
         },
         "services": {
-            "title_line1": "From first commit",
-            "title_line2": "to global scale.",
+            "title_line1": "From the first process",
+            "title_line2": "to the full platform.",
             "startup": {
-                "eyebrow": "For Startups",
-                "title": "Ship fast. Without compromise.",
+                "eyebrow": "For SMBs",
+                "title": "AI in your processes, without disrupting anything.",
                 "items": {
                     "mvp": {
-                        "title": "MVP development",
-                        "description": "From idea to live product in weeks. Focused scope, sharp UX, production-grade code from day one."
+                        "title": "First Automation",
+                        "description": "One process that steals hours every week, automated end-to-end in two weeks, with the price agreed upfront."
                     },
                     "design": {
-                        "title": "Product design",
-                        "description": "Brand identity, UX/UI and design system built to scale with the product, not against it."
+                        "title": "Custom assistants",
+                        "description": "AI assistants on your documents, price lists and procedures: reliable answers for customers and colleagues."
                     },
                     "launch": {
-                        "title": "Launch & growth",
-                        "description": "Landing pages, analytics, SEO and growth instrumentation wired in for measurable impact."
+                        "title": "System integration",
+                        "description": "ERP, CRM, email and spreadsheets connected to AI. Your usual tools, with less drudgery inside."
                     },
                     "iterate": {
-                        "title": "Iterate with data",
-                        "description": "Experiment-driven product work. Feature flags, A/B testing and observability built in."
+                        "title": "Full Automation",
+                        "description": "Several integrated automations, team training and ongoing monthly care."
                     },
                     "ai": {
-                        "title": "AI built-in",
-                        "description": "LLMs, agents and smart features woven into the product from day one — not bolted on later."
+                        "title": "Incentives included",
+                        "description": "In every proposal: the verified picture of super-depreciation, vouchers and funds applicable to your case."
                     }
                 },
-                "description": "Sharp scope, premium craft, production-grade code from day one."
+                "description": "Closed scope, clear price, balance due on working delivery."
             },
             "enterprise": {
-                "eyebrow": "For Enterprises",
+                "eyebrow": "For Startups & Companies",
                 "title": "Engineering you can bet the business on.",
                 "items": {
                     "platforms": {
-                        "title": "Custom platforms",
-                        "description": "Internal tools, dashboards and complex web apps tailored to your operations and stack."
+                        "title": "MVPs & custom platforms",
+                        "description": "From idea to live product in weeks: web apps, internal tools and dashboards designed around your processes."
                     },
                     "integrations": {
                         "title": "Systems integration",
@@ -207,11 +590,11 @@
                     },
                     "performance": {
                         "title": "Performance audits",
-                        "description": "Core Web Vitals, edge optimization, caching strategy and bundle surgery to make products feel instant."
+                        "description": "Core Web Vitals, caching and optimisation for products that feel instant."
                     },
                     "support": {
                         "title": "Long-term partnership",
-                        "description": "Dedicated squad, SLAs, monitoring and continuous evolution. We stay beyond launch."
+                        "description": "SLAs, monitoring and continuous evolution. We stay after launch."
                     }
                 }
             }
@@ -222,53 +605,53 @@
         "title_line1": "Voices that",
         "title_line2": "move brands.",
         "title_line3": "Built to last.",
-        "description": "We connect ambitious brands with the creators who shape culture. Strategy, production, distribution and measurement — handled end-to-end so every campaign delivers real impact.",
+        "description": "We connect ambitious brands with the creators shaping culture. Strategy, production, distribution and measurement — managed end-to-end so every campaign makes a real impact.",
         "cta_brand": "For Brands",
         "cta_creator": "For Creators",
         "highlights": {
             "matching": {
-                "title": "Briefs that fit",
-                "description": "We match brand goals to the right voice. No spray and pray."
+                "title": "Briefs that work",
+                "description": "Matching brand goals with the right voice. No spray and pray."
             },
             "production": {
                 "title": "End-to-end production",
-                "description": "Concept, shoot, edit, publish. Everything handled in-house."
+                "description": "Concept, shooting, editing, publishing. All in-house."
             },
             "data": {
-                "title": "Data over vibes",
-                "description": "Tracked links, attribution and weekly reads. Proof, not promises."
+                "title": "Data, not feelings",
+                "description": "Tracked links, attribution, weekly reports. Proof, not promises."
             },
             "always_on": {
                 "title": "Always-on partner",
-                "description": "Campaigns + retainer + growth. We stay with you between launches."
+                "description": "Campaigns + retainers + growth. We stay with you between launches."
             }
         },
         "for_brands": {
-            "description": "From strategy to publish: matched creators, briefs that convert, tracked attribution. Every campaign earns its budget."
+            "description": "From strategy to publishing: the right creators, briefs that convert, tracked attribution. Every campaign earns its budget."
         },
         "for_creators": {
-            "description": "Brand deals you'd actually take, production support, growth playbook. We handle the noise so you can focus on creating."
+            "description": "Deals with brands you'd actually want, production support, growth playbooks. We handle the rest, you focus on creating."
         },
         "method": {
             "eyebrow": "Our method",
             "title_line1": "From brief",
-            "title_line2": "to result.",
-            "description": "A linear four-step process. Every campaign runs the same steps, tailored to the brand.",
+            "title_line2": "to results.",
+            "description": "A linear four-step process. Every campaign goes through the same steps, tailored to the brand.",
             "steps": {
                 "discovery": {
                     "title": "Discovery",
-                    "description": "We map the brand, the goal and the audience. Realistic KPIs and a measurable path."
+                    "description": "We understand the brand, the goal and the audience. We define realistic KPIs and a measurable route."
                 },
                 "match": {
-                    "title": "Match",
-                    "description": "We pick creators by voice, audience and cultural fit. No generic lists."
+                    "title": "Matching",
+                    "description": "We select the right creators by voice, audience and cultural fit. No generic lists."
                 },
                 "produce": {
-                    "title": "Produce",
-                    "description": "Briefs, contracts, production, review. We coordinate creators and brand to publish."
+                    "title": "Production",
+                    "description": "Briefs, contracts, production, review. We coordinate creators and brand through to publishing."
                 },
                 "measure": {
-                    "title": "Measure",
+                    "title": "Measurement",
                     "description": "We track links, reach and conversions. Readable reports, decisions for the next round."
                 }
             }
@@ -288,7 +671,7 @@
                 },
                 "production": {
                     "title": "Creative production",
-                    "description": "Concept, writing, direction, editing through delivery."
+                    "description": "Concept, writing, direction, editing through to delivery."
                 },
                 "management": {
                     "title": "Project management",
@@ -300,7 +683,7 @@
                 },
                 "campaign": {
                     "title": "Campaign management",
-                    "description": "End-to-end execution, live monitoring, in-flight optimization."
+                    "description": "End-to-end execution, live monitoring, in-flight optimisation."
                 }
             }
         },
@@ -309,23 +692,23 @@
             "title_line2": "brands and creators.",
             "brand": {
                 "eyebrow": "For Brands",
-                "title": "Influence with intent.",
+                "title": "Influence with intention.",
                 "items": {
                     "matching": {
                         "title": "Creator matching",
-                        "description": "AI-assisted matching between your brand DNA and the creators with the right audience, tone and performance history."
+                        "description": "AI-assisted matching between your brand DNA and creators with the right audience, tone and performance."
                     },
                     "campaigns": {
                         "title": "Campaign production",
-                        "description": "Briefing, contracts, content review and publishing schedule — managed end-to-end so you focus on the business."
+                        "description": "Briefs, contracts, content review and editorial calendar — managed end-to-end. You focus on the business."
                     },
                     "tracking": {
                         "title": "Tracked links & attribution",
-                        "description": "Custom short links, UTM strategy, click and conversion tracking on a dedicated tracking domain."
+                        "description": "Custom short links, UTM strategy, click and conversion tracking on a dedicated domain."
                     },
                     "reporting": {
                         "title": "Real-time reporting",
-                        "description": "Live dashboards with reach, engagement, conversions and ROI."
+                        "description": "Live dashboard with reach, engagement, conversions and ROI."
                     }
                 }
             },
@@ -335,19 +718,19 @@
                 "items": {
                     "management": {
                         "title": "Talent management",
-                        "description": "Personal manager, brand outreach, deal negotiation and contracts handled — so you can focus on creating."
+                        "description": "Personal manager, brand scouting, negotiation and contracts handled. You focus on creating."
                     },
                     "deals": {
                         "title": "Premium brand deals",
-                        "description": "Curated partnerships aligned with your values and audience. No spray-and-pray, only deals worth your name."
+                        "description": "Selected partnerships, aligned with your values and your audience. Only collaborations worthy of your name."
                     },
                     "production": {
                         "title": "Production support",
-                        "description": "Strategy, scripting, editing and creative direction to push every piece of content to its best version."
+                        "description": "Strategy, writing, editing and creative direction to bring every piece of content to its best version."
                     },
                     "growth": {
                         "title": "Audience growth",
-                        "description": "Data-driven strategy across platforms, content planning and analytics to grow reach and engagement sustainably."
+                        "description": "Data-driven multi-platform strategy, content planning and analytics for sustainable growth."
                     }
                 }
             }
@@ -362,24 +745,24 @@
             "window": "Q3 2026",
             "title_line1": "Join the",
             "title_line2": "Noxis roster.",
-            "description": "A handful of new voices each quarter. Real management, production support, premium brand deals — for creators who care about craft.",
+            "description": "A few new names every quarter. Real management, production support, premium deals — for those who care about the craft.",
             "cta": "Apply now",
             "perks": {
                 "manager": {
                     "title": "Personal manager",
-                    "description": "Dedicated point of contact for outreach, negotiation, admin."
+                    "description": "A dedicated point of contact for outreach, negotiation and management."
                 },
                 "deals": {
                     "title": "Premium brand deals",
-                    "description": "Curated partnerships aligned with your values and audience."
+                    "description": "Selected partnerships aligned with values and audience."
                 },
                 "production": {
                     "title": "Production support",
-                    "description": "Strategy, scripting, editing, creative direction."
+                    "description": "Strategy, writing, editing, creative direction."
                 },
                 "growth": {
                     "title": "Audience growth",
-                    "description": "Cross-platform planning + weekly analytics."
+                    "description": "Cross-platform planning and weekly analytics."
                 }
             }
         }
@@ -387,18 +770,18 @@
     "sign_in": {
         "eyebrow": "Welcome back",
         "title": "Sign in to Noxis",
-        "subtitle": "We'll email you a one-time code. No password needed.",
-        "code_subtitle": "Enter the 6-digit code we just sent to {{email}}.",
+        "subtitle": "We'll email you a code. No password needed.",
+        "code_subtitle": "Enter the 6-digit code sent to {{email}}.",
         "email": "Email",
         "code": "Verification code",
-        "send_code": "Send sign-in code",
+        "send_code": "Send code",
         "sending": "Sending...",
         "submit": "Sign in",
         "verifying": "Signing in...",
         "use_different_email": "Use a different email",
-        "error_send": "Unable to send the code. Try again.",
-        "error_generic": "Invalid or expired code. Try again.",
-        "no_account": "Don't have access?",
+        "error_send": "Could not send the code. Please try again.",
+        "error_generic": "Invalid or expired code. Please try again.",
+        "no_account": "No account yet?",
         "request_demo": "Request a demo"
     },
     "language": {
@@ -411,58 +794,157 @@
     },
     "email": {
         "general": {
-            "subject": "Let's talk — new project",
-            "body": "Hi Noxis team,\n\nI'd love to discuss a new project with you.\n\nA few words about it:\n— \n— \n— \n\nThanks!"
+            "subject": "I'd like to understand what my company could automate",
+            "body": "Hi Noxis,\n\nI'd like to talk about AI automation for my company.\n\nA couple of lines for context:\n— Sector and size: \n— The process that steals most of our time: \n— Tools we use (ERP/CRM, email): \n\nThanks!"
         },
         "development": {
-            "subject": "Development project — let's build something",
-            "body": "Hi Noxis team,\n\nI'm looking to build a digital product and would love to work with you.\n\nWhat I have in mind:\n— Type of product: \n— Goal: \n— Timeline: \n— Budget range: \n\nLooking forward to hearing from you."
+            "subject": "Development project — let's talk",
+            "body": "Hi Noxis,\n\nI'd like to build a digital product and would love to work with you.\n\nWhat I have in mind:\n— Type of product: \n— Goal: \n— Timeline: \n— Indicative budget: \n\nLooking forward to hearing from you."
         },
         "development_portfolio": {
-            "subject": "Tell me about your work",
-            "body": "Hi Noxis team,\n\nI'd love to learn more about your past projects and case studies.\n\nA bit of context about me/my company:\n— \n— \n\nThanks!"
+            "subject": "I'd like to see your work",
+            "body": "Hi Noxis,\n\nI'd love to learn about your past projects and case studies.\n\nContext about me/my company:\n— \n— \n\nThanks!"
         },
         "talent_brand": {
             "subject": "Brand looking for creators",
-            "body": "Hi Noxis team,\n\nI represent a brand looking to work with creators.\n\nA few details:\n— Brand: \n— Product/campaign: \n— Type of creators we'd like (niche, audience, platforms): \n— Timeline & budget: \n\nLooking forward to your proposal."
+            "body": "Hi Noxis team,\n\nI represent a brand interested in working with creators.\n\nDetails:\n— Brand: \n— Product/campaign: \n— Creator type (niche, audience, platforms): \n— Timeline & budget: \n\nLooking forward to your proposal."
         },
         "talent_creator": {
             "subject": "Creator — I'd like to join the roster",
-            "body": "Hi Noxis team,\n\nI'd like to be considered for your creator roster.\n\nAbout me:\n— Name & handle: \n— Main platforms: \n— Niche / content focus: \n— Audience size / engagement: \n— Past collaborations: \n\nLinks to my socials/portfolio:\n— \n— \n\nThanks!"
+            "body": "Hi Noxis team,\n\nI'd love to be considered for your creator roster.\n\nAbout me:\n— Name & handle: \n— Main platforms: \n— Niche / topics: \n— Audience / engagement: \n— Past collaborations: \n\nLinks to my socials/portfolio:\n— \n— \n\nThanks!"
         }
     },
     "seo": {
         "site_name": "Noxis",
         "url": "https://noxis.agency",
-        "title": "Noxis — Premium Digital Agency · Web, Mobile, AI",
-        "description": "Premium digital agency engineering web, mobile and AI products with surgical precision. From startup MVPs to enterprise platforms — design, code and growth strategy under one roof.",
-        "keywords": "digital agency, premium web design, mobile app development, AI integration, Next.js agency, React Native, MVP development, Italian digital agency, custom software, creative agency",
+        "title": "Noxis — AI Automation for SMBs · Clear pricing",
+        "description": "We integrate AI into the tools your company already uses: quotes, documents, email and your management software. Clear pricing from the start, 2026 incentives. Custom web and AI development.",
+        "keywords": "AI automation SMB, AI for business, ERP AI integration, AI consulting Italy, business process automation, AI agency, AI software development, n8n automation, company AI assistant",
         "home": {
-            "title": "Noxis — Premium Digital Agency · Web, Mobile & AI",
-            "description": "Italian digital agency engineering premium web, mobile and AI products with surgical precision. We design, build and ship — from startup MVPs to enterprise platforms.",
-            "keywords": "digital agency, premium web design, mobile app development, AI agency, Next.js agency, MVP, creative agency, Italian digital agency, web development Italy",
-            "og_title": "Noxis — Premium Digital Agency · Web, Mobile & AI",
-            "og_description": "Italian digital agency. Premium web, mobile and AI products engineered end-to-end."
+            "title": "Noxis — AI Automation for SMBs · Clear pricing",
+            "description": "AI inside the tools you already use: automation of quotes, documents, email and management software for SMBs. Clear pricing before we start, 2026 incentives.",
+            "keywords": "AI automation SMB, AI for companies, ERP AI integration, process automation, AI consulting Italy, AI agency Milan, quote automation, company AI assistant",
+            "og_title": "Noxis — AI Automation for SMBs",
+            "og_description": "AI inside the tools you already use. Clear pricing from the start, 2026 incentives."
+        },
+        "pricing": {
+            "title": "Services & Pricing — AI automation with clear pricing · Noxis",
+            "description": "Price ranges shown from the start, no surprise calls: First Automation from €2,900, AI Audit from €3,000, Full Automation from €8,500 + monthly care. Training often 100% fundable.",
+            "keywords": "AI automation pricing, AI consulting cost, AI audit price, process automation cost, how much does AI cost for a company",
+            "og_title": "Services & Pricing — Noxis",
+            "og_description": "First Automation from €2,900 · AI Audit from €3,000 · Full Automation from €8,500. Clear prices, clear scope."
+        },
+        "check": {
+            "title": "Free AI Check — What could your company automate · Noxis",
+            "description": "10 questions, 3 minutes: find out how much AI automation potential your company has and where to start. Free, no sign-up.",
+            "keywords": "ai readiness check, company automation test, free AI assessment, SMB automation test, digitalisation check",
+            "og_title": "Free AI Check — Noxis",
+            "og_description": "10 questions, 3 minutes: find out what your company could automate and where to start."
         },
         "development": {
-            "title": "Development — Web, Mobile & AI Engineering · Noxis",
-            "description": "Web, mobile and AI products engineered end-to-end. Next.js, React, React Native, type-safe code, AI integration. MVPs in weeks, enterprise platforms that scale.",
-            "keywords": "web development, mobile app development, AI integration, Next.js, React, React Native, MVP development, enterprise platform, custom software, startup development",
+            "title": "Development — AI automation & custom products · Noxis",
+            "description": "AI automation for SMBs and product development: integrations into ERP/CRM systems, custom AI assistants, MVPs in weeks. Next.js, type-safe code, clear pricing.",
+            "keywords": "AI sprint, ERP CRM AI integration, automation development, knowledge base AI assistant, MVP development, Next.js, custom software SMB",
             "og_title": "Development — Noxis",
-            "og_description": "Web, mobile and AI products engineered end-to-end. MVPs in weeks, platforms that scale."
+            "og_description": "AI automation and custom development: automations in your systems, MVPs in weeks, clear pricing."
         },
         "talent": {
             "title": "Talent — Influencer Marketing & Creator Management · Noxis",
-            "description": "Influencer marketing done right. We connect ambitious brands with the creators who shape culture — strategy, briefs, production, distribution and tracked attribution end-to-end.",
-            "keywords": "influencer marketing, creator management, talent agency, brand campaigns, creator economy, social media marketing, performance marketing, influencer agency Italy",
+            "description": "Influencer marketing done right. We connect ambitious brands with the creators shaping culture — strategy, briefs, production, distribution and tracked attribution end-to-end.",
+            "keywords": "influencer marketing, creator management, talent agency, brand campaigns, creator economy, social media marketing, performance marketing",
             "og_title": "Talent — Noxis",
             "og_description": "Influencer marketing done right. Strategy, briefs, production, distribution and tracked attribution end-to-end."
+        },
+        "formazione": {
+            "title": "In-company AI Training — workshops on your processes · Noxis",
+            "description": "Hands-on AI workshops at your company, on the team's real processes. They cover the EU AI Act obligation and are often 100% fundable through training funds. From €900.",
+            "keywords": "AI training companies, corporate AI course, AI Act training, AI literacy, AI workshop",
+            "og_title": "In-company AI Training — Noxis",
+            "og_description": "Workshops on your real processes. AI Act obligation covered, often 100% fundable."
         }
     },
     "selected_work": {
-        "eyebrow": "Selected Work",
+        "eyebrow": "Selected work",
         "title_line1": "From first commit",
         "title_line2": "to global scale.",
         "placeholder": "Coming soon"
+    },
+    "trainingPage": {
+        "eyebrow": "Noxis Training",
+        "title": "Your team working with AI,",
+        "accent": "in one day.",
+        "description": "On-site workshops built on your real processes: no textbook theory, only your cases. They cover the AI literacy obligation under the EU AI Act and are often reimbursable up to 100% through interprofessional training funds.",
+        "cta_primary": "Request the programme",
+        "cta_secondary": "Take the free check",
+        "formats_title": "Two formats,",
+        "formats_accent": "one goal.",
+        "formats_description": "We always start from your processes: we collect real examples first (emails, quotes, documents) and build the day around them.",
+        "formats": [
+            {
+                "name": "Half day — Operational awareness",
+                "duration": "4 hours · on site",
+                "price": "from €900",
+                "bullets": [
+                    "What AI can really do today (and what it can't), no hype",
+                    "Live demos on your cases: emails, quotes, documents",
+                    "Internal usage rules: data, privacy, what to avoid",
+                    "Covers the AI literacy obligation (art. 4 EU AI Act)"
+                ]
+            },
+            {
+                "name": "Full day — Hands-on",
+                "duration": "8 hours · on site",
+                "price": "from €1,500",
+                "bullets": [
+                    "Morning: fundamentals, use cases and demos on your processes",
+                    "Afternoon: practical lab — everyone works on their real tasks",
+                    "Prompts and flows ready to reuse from the next day",
+                    "Map of automatable processes surfaced during the lab"
+                ]
+            }
+        ],
+        "funding_title": "Often you don't pay for it:",
+        "funding_accent": "the funds do.",
+        "funding_description": "If your company is enrolled in an interprofessional fund (Fondimpresa, Fondirigenti and similar), training is often reimbursable up to 100%. The path is simple:",
+        "funding_steps": [
+            {
+                "title": "Check your enrolment",
+                "text": "With your payroll consultant you check which fund the company belongs to — enrolment is free and handled through payroll."
+            },
+            {
+                "title": "Training plan",
+                "text": "We prepare the programme and the course documentation in the format the fund requires."
+            },
+            {
+                "title": "Delivery and reimbursement",
+                "text": "The workshop takes place, it's reported, and the fund reimburses the company — often the full amount."
+            }
+        ],
+        "funding_note": "Reporting depends on the fund and the active call: we verify it together before starting, without promising anything that isn't written down.",
+        "aiact_title": "The obligation almost nobody is handling",
+        "aiact_text": "Since 2 February 2025, art. 4 of the EU AI Act requires companies using AI systems to ensure adequate AI literacy of their staff. The workshop covers the obligation and leaves you with documentation of the completed training.",
+        "takeaway_title": "What you take home",
+        "final_title": "Shall we talk about your team?",
+        "final_text": "Tell us about the company and the processes you run: we'll suggest the right format and immediately check whether the funds can cover it."
+    },
+    "bands": {
+        "integration": {
+            "alt": "Macro shot of a circuit board with copper details",
+            "caption": "Integration, not replacement: AI inside the systems you already use."
+        }
+    },
+    "admin": {
+        "title": "Requests",
+        "count": "{count} requests",
+        "empty": "No requests yet. They will arrive from the site check.",
+        "status": {
+            "new": "New",
+            "contacted": "Contacted",
+            "closed": "Closed"
+        },
+        "toggle_questionnaire": "Show questionnaire",
+        "no_questionnaire": "No questionnaire attached to this request.",
+        "delete": "Delete request",
+        "delete_confirm": "Permanently delete this request?"
     }
 }

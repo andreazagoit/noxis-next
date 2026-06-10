@@ -85,7 +85,7 @@ export function SignInForm() {
 
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center pt-32 pb-16">
-      <Container variant="contained">
+      <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="flex flex-col gap-4">
             <Typography variant="caption" className="text-primary">

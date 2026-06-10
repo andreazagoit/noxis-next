@@ -78,13 +78,19 @@ export function DotButton({
           className,
         )}
       >
+        {/* Fill layer: clipped to the idle dot, expands past the farthest corner on hover
+            (percentage clip radii are relative to the element size, so any width is covered). */}
         <motion.span
           aria-hidden
           initial={false}
-          animate={{ scale: hovered ? 60 : 1 }}
+          animate={{
+            clipPath: hovered
+              ? 'circle(150% at 24px 50%)'
+              : 'circle(4px at 24px 50%)',
+          }}
           transition={{ duration: hovered ? 0.7 : 0.5, ease: EASE }}
           className={cn(
-            'absolute left-5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full transition-colors duration-500',
+            'absolute inset-0 transition-colors duration-500',
             hovered ? tokens.dotHover : tokens.dotIdle,
           )}
         />

@@ -13,6 +13,9 @@ interface RevealProps extends HTMLMotionProps<'div'> {
   overflowVisible?: boolean
 }
 
+/* Kill-switch: true = niente animazioni d'ingresso, render statico. */
+const DISABLED = false
+
 export const Reveal = ({
   children,
   width = 'fit-content',
@@ -34,6 +37,14 @@ export const Reveal = ({
     }
   }, [isInView, mainControls])
 
+  if (DISABLED) {
+    return (
+      <div style={{ position: 'relative', width, height }} className={className}>
+        <div style={{ height: height === '100%' ? '100%' : undefined }}>{children}</div>
+      </div>
+    )
+  }
+
   return (
     <div
       ref={ref}
@@ -53,6 +64,9 @@ export const Reveal = ({
         initial="hidden"
         animate={mainControls}
         transition={{ duration, delay, ease: 'easeOut' }}
+        // When the wrapper is asked to fill the grid cell, the animated inner
+        // div must fill it too, so h-full cards align across the row.
+        style={{ height: height === '100%' ? '100%' : undefined }}
         {...props}
       >
         {children}

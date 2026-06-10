@@ -10,6 +10,9 @@ if (!resendApiKey) {
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null
 
+/** True when Resend is fully configured and sendEmail will actually deliver. */
+export const isEmailEnabled = !!(resendApiKey && resendFrom)
+
 interface SendEmailParams {
   to: string
   subject: string

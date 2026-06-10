@@ -6,6 +6,8 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { LoadingProvider } from '@/context/loading-context'
 import { SmoothScroll } from '@/components/layout/smooth-scroll'
 import { CustomScrollbar } from '@/components/ui/custom-scrollbar'
+import { ScrollDebugger } from '@/components/dev/scroll-debugger'
+import { CheckDialogProvider } from '@/components/check/check-dialog'
 import { Header, type HeaderVariant } from '@/components/layout/header'
 import { Footer } from '@/components/sections/footer'
 import type { AppSession } from '@/lib/auth-utils'
@@ -32,14 +34,16 @@ export function SiteProviders({
   const showFooter = !isDashboard
 
   const chrome = (
-    <>
+    <CheckDialogProvider>
+      {/* TEMP: strumentazione per il debug dello scatto a fine scroll */}
+      {!isDashboard && <ScrollDebugger />}
       {!isDashboard && <CustomScrollbar />}
       <Header variant={variant} session={session} />
       <main className={isDashboard ? 'relative' : 'relative min-h-screen'}>
         {children}
       </main>
       {showFooter && <Footer />}
-    </>
+    </CheckDialogProvider>
   )
 
   return (

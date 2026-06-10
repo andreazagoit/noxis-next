@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { useLenis } from 'lenis/react'
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
@@ -19,12 +18,23 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { signOut } from '@/lib/auth-client'
-import { LanguageModal } from '@/components/layout/language-modal'
+import { LanguageSwitcher } from '@/components/layout/language-switcher'
 import { MenuButton } from '@/components/layout/menu-button'
-import { DotSlideButton } from '@/components/ui/dot-slide-button'
+import { glass } from '@/lib/styles'
 import type { AppSession } from '@/lib/auth-utils'
 
 const KNOWN_SUBS = ['development', 'talent']
+
+/** Due varianti animate a confronto: 'pill' (pillola flottante, blur che
+    appare allo scroll) o 'island' (barra larga che morfa in capsula). */
+const HEADER_DESIGN: 'pill' | 'island' = 'pill'
+
+const NAV_ITEMS = [
+  { href: '/#servizi', labelKey: 'header.services' },
+  { href: '/#pricing', labelKey: 'header.pricing' },
+  { href: '/#formazione', labelKey: 'header.formazione' },
+  { href: '/development', labelKey: 'header.development' },
+] as const
 
 function getInitials(value: string): string {
   return (
@@ -67,12 +77,19 @@ interface HeaderProps {
 }
 
 export function Header({ variant = 'contained', session }: HeaderProps) {
-  const lenis = useLenis()
   const pathname = usePathname()
   const router = useRouter()
   const t = useTranslations()
   const [homeHref, setHomeHref] = useState('/')
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 16)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const isAnimated = variant === 'default' || variant === 'contained'
 
@@ -84,7 +101,7 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
     if (!isAnimated) return
     if (homeHref !== '/' || pathname !== '/') return
     e.preventDefault()
-    lenis?.scrollTo(0)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const handleSignOut = async () => {
@@ -114,8 +131,7 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
         height={logoSize}
         priority
         className={cn(
-          variant === 'dashboard' ? '!h-4 !w-auto object-contain invert' : 'h-4 w-auto object-contain transition-[filter] duration-300',
-          variant !== 'dashboard' && menuOpen && 'invert md:invert-0',
+          variant === 'dashboard' ? '!h-4 !w-auto object-contain invert' : 'h-4 w-auto object-contain invert transition-[filter] duration-300',
         )}
       />
     </Link>
@@ -154,7 +170,7 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
   if (variant === 'dashboard') {
     return (
       <header className="fixed top-0 left-0 right-0 z-50 w-full bg-neutral-900 text-neutral-100">
-        <Container variant="default">
+        <Container>
           <div className="flex items-center justify-between h-16">
             {Logo}
             <div className="flex items-center gap-4">{AuthAction}</div>
@@ -164,33 +180,104 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
     )
   }
 
-  return (
-    <motion.header
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-0 left-0 right-0 z-[100] pt-6 pointer-events-none"
-    >
-      <Container>
-        <nav className="pointer-events-auto flex items-center justify-between gap-3 md:gap-6 w-full">
-          <div className="flex items-center h-[60px]">
-            {Logo}
-          </div>
+  const inner = (
+    <>
+      {Logo}
 
-          <div className="flex items-center gap-4 md:gap-6 h-[60px]">
-            <div className="relative z-[100] flex items-center gap-4 md:gap-6">
-              <div className="hidden md:inline-flex">
-                <LanguageModal />
-              </div>
-              <DotSlideButton variant="primary" intent="general" className="!py-0 h-11 !bg-[rgb(43,46,58)] hover:!bg-primary hidden md:inline-flex">
-                {t('header.lets_talk')}
-              </DotSlideButton>
-              <MenuButton open={menuOpen} onOpenChange={setMenuOpen} />
-            </div>
-            {AuthAction}
-          </div>
-        </nav>
+      <div className="flex items-center gap-3 md:gap-6">
+        {/* Voci a destra, testo puro */}
+        <ul className="hidden md:flex items-center gap-6">
+          {NAV_ITEMS.map((item) => {
+            const active =
+              !item.href.includes('#') &&
+              (pathname === item.href || pathname.startsWith(`${item.href}/`))
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={cn(
+                    'text-sm font-medium tracking-tight transition-colors',
+                    active ? 'text-foreground' : 'text-foreground/55 hover:text-foreground',
+                  )}
+                >
+                  {t(item.labelKey)}
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+
+        <span aria-hidden className="hidden md:block h-4 w-px bg-white/10" />
+
+        <LanguageSwitcher className="hidden md:inline-flex" />
+
+        <span className="md:hidden">
+          <MenuButton open={menuOpen} onOpenChange={setMenuOpen} />
+        </span>
+        {AuthAction}
+      </div>
+    </>
+  )
+
+  // ── Variante B: "island" — barra larga che allo scroll morfa in capsula ──
+  if (HEADER_DESIGN === 'island') {
+    return (
+      <header className="fixed top-0 left-0 right-0 z-[100] flex justify-center px-4 pointer-events-none">
+        <motion.nav
+          initial={{ y: -20, opacity: 0, maxWidth: 1240 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            maxWidth: scrolled ? 760 : 1240,
+            marginTop: scrolled ? 10 : 16,
+            height: scrolled ? 52 : 60,
+            paddingLeft: scrolled ? 20 : 0,
+            paddingRight: scrolled ? 20 : 0,
+          }}
+          transition={{ type: 'spring', stiffness: 220, damping: 28 }}
+          className="pointer-events-auto relative flex w-full items-center justify-between gap-4 rounded-full"
+        >
+          <motion.span
+            aria-hidden
+            initial={false}
+            animate={{ opacity: scrolled ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+            className={cn(glass, 'absolute inset-0 -z-10 rounded-full')}
+          />
+          {inner}
+        </motion.nav>
+      </header>
+    )
+  }
+
+  // ── Variante A: "pill" — a riposo il contenuto è allineato ai bordi del
+  // container; allo scroll la pillola appare e si restringe verso il centro ──
+  return (
+    <header className="fixed top-0 left-0 right-0 z-[100] pt-4 md:pt-5 pointer-events-none">
+      <Container>
+        <motion.nav
+          initial={{ y: -20, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            // Larghezza sempre = container: allo scroll cambiano solo i padding,
+            // così il contenuto rientra dentro la pillola.
+            paddingLeft: scrolled ? 24 : 0,
+            paddingRight: scrolled ? 24 : 0,
+          }}
+          transition={{ type: 'spring', stiffness: 220, damping: 28 }}
+          className="pointer-events-auto relative flex h-14 w-full items-center justify-between gap-4 rounded-full"
+        >
+          <motion.span
+            aria-hidden
+            initial={false}
+            animate={{ opacity: scrolled ? 1 : 0 }}
+            transition={{ duration: 0.35 }}
+            className={cn(glass, 'absolute inset-0 -z-10 rounded-full')}
+          />
+          {inner}
+        </motion.nav>
       </Container>
-    </motion.header>
+    </header>
   )
 }

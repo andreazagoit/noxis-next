@@ -1,6 +1,6 @@
 import { betterAuth } from 'better-auth'
 import { drizzleAdapter } from 'better-auth/adapters/drizzle'
-import { organization, emailOTP } from 'better-auth/plugins'
+import { emailOTP } from 'better-auth/plugins'
 import { db } from '@/lib/db'
 import * as authSchema from '@/lib/models'
 import { sendEmail, otpEmailHtml } from '@/lib/email'
@@ -26,12 +26,6 @@ export const auth = betterAuth({
   },
 
   plugins: [
-    organization({
-      allowUserToCreateOrganization: async (user) => {
-        return (user as { role?: string }).role === 'admin'
-      },
-    }),
-
     emailOTP({
       otpLength: 6,
       expiresIn: 600,
