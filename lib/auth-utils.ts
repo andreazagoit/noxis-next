@@ -1,31 +1,20 @@
-import { headers as nextHeaders } from 'next/headers'
 import { redirect } from 'next/navigation'
-import { auth } from '@/lib/auth'
+import { hasAdminSession } from '@/lib/auth'
 
-export type AppSession = Awaited<ReturnType<typeof auth.api.getSession>>
+/** L'unica sessione possibile è quella dell'admin (credenziali in env). */
+export type AppSession = { email: string } | null
 
 export async function getCurrentSession(): Promise<AppSession> {
-  return auth.api.getSession({ headers: await nextHeaders() })
+  if (await hasAdminSession()) {
+    return { email: process.env.ADMIN_EMAIL ?? 'admin' }
+  }
+  return null
 }
 
-export async function requireSession() {
-  const session = await getCurrentSession()
-  if (!session) redirect('/sign-in')
-  return session
+export async function requireAdmin(): Promise<void> {
+  if (!(await hasAdminSession())) redirect('/sign-in')
 }
 
-export async function requireAdmin() {
-  const session = await requireSession()
-  const role = (session.user as { role?: string }).role
-  if (role !== 'admin') redirect('/dashboard')
-  return session
-}
-
-export function getUserRole(session: { user: unknown } | null): string | null {
-  if (!session) return null
-  return (session.user as { role?: string }).role ?? null
-}
-
-export function isAdmin(session: { user: unknown } | null): boolean {
-  return getUserRole(session) === 'admin'
+export function isAdmin(session: AppSession): boolean {
+  return session !== null
 }

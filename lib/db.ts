@@ -1,12 +1,18 @@
-import { drizzle } from 'drizzle-orm/postgres-js'
-import postgres from 'postgres'
-import * as models from '@/lib/models'
+import { MongoClient } from 'mongodb'
 
-const connectionString = process.env.DATABASE_URL
+const uri = process.env.MONGODB_URI
 
-if (!connectionString) {
-  throw new Error('DATABASE_URL is not set')
+if (!uri) {
+  throw new Error('MONGODB_URI is not set')
 }
 
-const client = postgres(connectionString, { prepare: false })
-export const db = drizzle(client, { schema: models })
+/* Client cached su globalThis: in dev l'HMR ricarica i moduli e senza cache
+   si aprirebbe una connessione nuova a ogni modifica. */
+const globalForMongo = globalThis as unknown as { _mongoClient?: MongoClient }
+
+const client = globalForMongo._mongoClient ?? new MongoClient(uri)
+if (process.env.NODE_ENV !== 'production') {
+  globalForMongo._mongoClient = client
+}
+
+export const db = client.db('noxis')

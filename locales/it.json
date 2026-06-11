@@ -104,14 +104,7 @@
         "slogan_line1": "L'AI che lavora.",
         "slogan_line2": "Non quella che parla.",
         "get_in_touch": "Contattaci",
-        "office": "Ufficio",
-        "nav_title": "Esplora",
-        "nav_home": "Home",
-        "nav_pricing": "Servizi e prezzi",
-        "nav_check": "Check AI gratuito",
-        "nav_development": "Development",
-        "nav_talent": "Talent",
-        "nav_formazione": "Formazione"
+        "office": "Ufficio"
     },
     "services": {
         "title_line1": "Quello che",
@@ -395,44 +388,75 @@
         "eyebrow": "Check gratuito",
         "title_line1": "Cosa può automatizzare",
         "title_line2": "la tua azienda?",
-        "description": "10 domande, 3 minuti, nessuna registrazione per vedere il risultato. Alla fine ti diciamo da dove conviene partire — e se non conviene partire affatto.",
+        "description": "8 domande, 2 minuti, nessuna registrazione per vedere il risultato: la mappa di cosa potrebbe lavorare da solo nella tua azienda.",
         "start": "Inizia il check",
         "question_label": "Domanda {current} di {total}",
         "questions": [
-            "In azienda qualcuno usa già ChatGPT o strumenti simili per lavoro?",
             "Avete un gestionale, CRM o ERP usato tutti i giorni?",
-            "Ci sono attività dove si copiano dati a mano tra sistemi, email o fogli di calcolo?",
-            "Preparare un preventivo o un'offerta richiede ore (o giorni) di lavoro manuale?",
-            "Rispondete spesso alle stesse domande di clienti o colleghi?",
-            "Ci sono documenti ricorrenti (report, verbali, pratiche) scritti da zero ogni volta?",
             "Esiste documentazione interna (procedure, listini, manuali) abbastanza ordinata?",
-            "Ci sarebbe una persona interna disponibile a fare da referente per un progetto pilota?",
-            "In direzione si è già parlato di AI o automazione negli ultimi 6 mesi?",
-            "Sapete già quali incentivi 2026 potreste usare (iperammortamento, voucher, fondi formazione)?"
+            "Quanto tempo costa preparare preventivi e offerte?",
+            "Quanto tempo va via in email e richieste di clienti simili tra loro?",
+            "Quanto lavoro manuale richiedono report, pratiche e documenti ricorrenti?",
+            "Quanti dati vengono copiati a mano tra email, fogli di calcolo e gestionale?",
+            "Quanto spesso rispondete a domande le cui risposte stanno già in documenti interni?",
+            "Quanto lavoro manuale richiedono scadenze, promemoria e follow-up?"
         ],
         "answer_yes": "Sì",
         "answer_partial": "In parte",
         "answer_no": "No",
-        "result_title": "Il tuo risultato",
-        "result_score_label": "Potenziale di automazione",
-        "bands": [
-            {
-                "title": "Fondamenta da costruire",
-                "text": "C'è potenziale, ma mancano alcune basi (strumenti, dati o sponsor interno). Il punto di partenza giusto non è un progetto: è una sessione di formazione operativa sul tuo team e una mappatura leggera dei processi. Costo contenuto, spesso finanziabile."
+        "answer_area_high": "Parecchio",
+        "answer_area_some": "Un po'",
+        "answer_area_none": "Poco o niente",
+        "result_title": "La tua mappa",
+        "result_headline": "{count, plural, one {1 processo dove l'AI può lavorare al posto vostro} other {# processi dove l'AI può lavorare al posto vostro}}",
+        "result_none_title": "Nessun processo caldo — caso raro!",
+        "result_none_text": "Dalle tue risposte non emergono processi che pesano. O l'azienda è già molto efficiente, o vale la pena guardarci insieme con calma: a volte il tempo perso non si vede più, perché ci si è abituati.",
+        "result_badge_hot": "Qui perdete più tempo",
+        "result_badge_some": "Margine possibile",
+        "result_basics_note": "Nota: dalle risposte mancano alcune basi (gestionale o documentazione ordinata). Nessun problema — è il punto di partenza più comune, e si sistema per primo.",
+        "report_subject": "La tua mappa: cosa può lavorare da solo nella tua azienda",
+        "report_greeting": "Ciao {name},",
+        "report_intro": "grazie per aver fatto il Check AI. Questa è la tua mappa: i processi dove — stando alle tue risposte — l'AI può togliere lavoro manuale alla tua azienda.",
+        "report_hot_label": "Qui perdete più tempo",
+        "report_some_label": "Margine possibile",
+        "report_basics_note": "Nota: dalle risposte sembrano mancare alcune basi (gestionale o documentazione ordinata). È il punto di partenza più comune — si sistema per primo.",
+        "report_next_title": "E adesso?",
+        "report_outro": "In una call di 20 minuti, senza impegno, quantifichiamo la mappa sulla tua azienda: quali processi convengono davvero, in che ordine e con che prezzi — chiari, prima di iniziare.",
+        "report_cta": "Prenota 20 minuti",
+        "report_cta_subject": "Call di 20 minuti — la mia mappa AI",
+        "report_footer": "Ricevi questa email perché hai completato il Check AI su noxis.agency e ci hai lasciato i tuoi contatti. Usiamo i tuoi dati solo per risponderti: informativa completa su noxis.agency/privacy.",
+        "areas": {
+            "quotes": {
+                "title": "Preventivi e offerte",
+                "text": "L'AI prepara la bozza partendo da email e allegati, con listini e storico alla mano. Voi controllate e approvate."
             },
-            {
-                "title": "Pronti per il primo passo",
-                "text": "La tua azienda ha almeno un processo che si può automatizzare con beneficio immediato. Il punto di partenza giusto è la Prima Automazione: un processo, da 2.900 €, due settimane, saldo a risultato funzionante."
+            "email": {
+                "title": "Email e richieste clienti",
+                "text": "Le richieste simili ricevono una bozza di risposta già pronta, e lo smistamento verso la persona giusta avviene da solo."
             },
-            {
-                "title": "Terreno fertile",
-                "text": "Ci sono più processi automatizzabili e le condizioni per farlo bene. Il punto di partenza giusto è l'AI Audit: la mappa completa di dove recuperare ore, con priorità, costi e incentivi applicabili."
+            "documents": {
+                "title": "Documenti ricorrenti",
+                "text": "Report, pratiche e verbali si preparano da soli a partire dai dati che avete già nei vostri sistemi."
+            },
+            "data_entry": {
+                "title": "Dati copiati a mano",
+                "text": "Email, PDF e fogli di calcolo entrano nel gestionale senza doppio inserimento — e senza errori di battitura."
+            },
+            "knowledge": {
+                "title": "Domande ripetitive",
+                "text": "Un assistente risponde a colleghi e clienti usando le vostre procedure e i vostri listini, senza inventare."
+            },
+            "planning": {
+                "title": "Scadenze e follow-up",
+                "text": "Promemoria, solleciti e pianificazioni si generano da soli dai vostri calendari e dai dati del gestionale."
             }
-        ],
-        "form_title": "Ricevi il risultato dettagliato",
-        "form_text": "Lasciaci i contatti e ti mandiamo l'analisi del tuo punteggio con i suggerimenti per il tuo caso. Niente spam, niente telefonate a freddo.",
+        },
+        "form_title": "Ricevi la tua mappa via email",
+        "form_text": "Lasciaci i contatti e ti mandiamo la mappa delle tue aree, con cosa conviene automatizzare per primo. In una call di 20 minuti la quantifichiamo insieme sulla tua azienda. Niente spam, niente telefonate a freddo.",
         "form_name": "Nome e cognome",
         "form_email": "Email aziendale",
+        "form_phone": "Telefono",
+        "form_phone_error": "Inserisci un numero di telefono valido.",
         "form_company": "Azienda",
         "form_sector": "Settore",
         "form_sector_options": {
@@ -451,9 +475,10 @@
         "form_submit": "Inviami il risultato",
         "form_sending": "Invio in corso...",
         "form_privacy": "Usiamo questi dati solo per risponderti. Nessuna lista, nessuna cessione a terzi.",
+        "form_privacy_link": "Informativa privacy",
         "form_error": "Qualcosa è andato storto. Riprova, o scrivici a hello@noxis.agency.",
-        "success_title": "Fatto. Ti rispondiamo entro un giorno lavorativo.",
-        "success_text": "Se vuoi accorciare i tempi, prenota direttamente 20 minuti: ci racconti come lavorate e ti diciamo subito cosa conviene automatizzare.",
+        "success_title": "Fatto. La tua mappa è in viaggio verso la tua casella.",
+        "success_text": "Ti abbiamo inviato il report via email (se non lo vedi, controlla lo spam). Se vuoi accorciare i tempi, prenota direttamente 20 minuti: ci racconti come lavorate e quantifichiamo la mappa insieme.",
         "success_cta": "Scrivici ora"
     },
     "methodology": {
@@ -768,21 +793,14 @@
         }
     },
     "sign_in": {
-        "eyebrow": "Bentornato",
+        "eyebrow": "Area riservata",
         "title": "Accedi a Noxis",
-        "subtitle": "Ti inviamo un codice via email. Nessuna password.",
-        "code_subtitle": "Inserisci il codice di 6 cifre inviato a {{email}}.",
+        "subtitle": "Accesso riservato all'amministrazione.",
         "email": "Email",
-        "code": "Codice di verifica",
-        "send_code": "Invia codice",
-        "sending": "Invio in corso...",
+        "password": "Password",
         "submit": "Accedi",
-        "verifying": "Accesso in corso...",
-        "use_different_email": "Usa un'altra email",
-        "error_send": "Impossibile inviare il codice. Riprova.",
-        "error_generic": "Codice non valido o scaduto. Riprova.",
-        "no_account": "Non hai un account?",
-        "request_demo": "Richiedi una demo"
+        "signing_in": "Accesso in corso...",
+        "error_invalid": "Credenziali non valide."
     },
     "language": {
         "title": "Seleziona Lingua",
@@ -814,9 +832,54 @@
             "body": "Ciao team Noxis,\n\nMi piacerebbe essere preso/a in considerazione per il vostro roster di creator.\n\nSu di me:\n— Nome & handle: \n— Piattaforme principali: \n— Nicchia / temi: \n— Audience / engagement: \n— Collaborazioni passate: \n\nLink ai miei social/portfolio:\n— \n— \n\nGrazie!"
         }
     },
+    "privacy": {
+        "title": "Privacy policy",
+        "updated": "Ultimo aggiornamento: giugno 2026",
+        "intro": "Questa informativa descrive come vengono trattati i dati personali raccolti attraverso il sito noxis.agency, ai sensi del Regolamento (UE) 2016/679 (GDPR).",
+        "sections": [
+            {
+                "title": "Titolare del trattamento",
+                "body": "Andrea Zago — Noxis\nVia G. Mazzini 5a, 35010 Trebaseleghe (PD), Italia\nP.IVA 05668260283\nEmail: hello@noxis.agency"
+            },
+            {
+                "title": "Quali dati raccogliamo",
+                "body": "Trattiamo i dati che ci fornisci compilando il Check AI o scrivendoci via email: nome, indirizzo email, numero di telefono, nome dell'azienda, settore, dimensione aziendale, le risposte al questionario e la lingua di navigazione. Il sito non utilizza strumenti di analytics o di profilazione. I fornitori di hosting possono registrare log tecnici (ad esempio indirizzi IP) per finalità di sicurezza."
+            },
+            {
+                "title": "Perché li trattiamo e su quale base",
+                "body": "I dati sono trattati per: (a) rispondere alla tua richiesta e ricontattarti con l'esito del check o le informazioni che hai chiesto — base giuridica: misure precontrattuali adottate su tua richiesta (art. 6.1.b GDPR); (b) eventuali comunicazioni di follow-up direttamente collegate alla tua richiesta — base giuridica: legittimo interesse (art. 6.1.f GDPR).\nNon inviamo newsletter, non facciamo marketing massivo e non cediamo i dati a terzi per fini commerciali."
+            },
+            {
+                "title": "Per quanto li conserviamo",
+                "body": "I dati sono conservati per il tempo necessario a gestire la richiesta e comunque non oltre 24 mesi dall'ultimo contatto, dopodiché vengono cancellati. Puoi chiederne la cancellazione in qualsiasi momento scrivendo a hello@noxis.agency."
+            },
+            {
+                "title": "Chi può accedere ai dati",
+                "body": "I dati non vengono venduti né ceduti. Sono trattati dal titolare e dai fornitori tecnici che agiscono come responsabili del trattamento: hosting del sito (Vercel Inc.), database gestito e servizio di invio email (Resend Inc.). Alcuni fornitori hanno sede negli Stati Uniti: l'eventuale trasferimento avviene sulla base delle garanzie previste dal GDPR (clausole contrattuali standard e/o EU-US Data Privacy Framework)."
+            },
+            {
+                "title": "Cookie",
+                "body": "Il sito utilizza un solo cookie tecnico di sessione, necessario per l'accesso all'area riservata di amministrazione ed esente da consenso. Non utilizziamo cookie di profilazione, marketing o analytics: per questo non è presente alcun banner cookie."
+            },
+            {
+                "title": "I tuoi diritti",
+                "body": "Hai diritto di ottenere l'accesso ai tuoi dati, la rettifica, la cancellazione, la limitazione del trattamento, la portabilità e di opporti al trattamento (artt. 15-22 GDPR). Puoi esercitarli scrivendo a hello@noxis.agency. Hai inoltre il diritto di proporre reclamo al Garante per la Protezione dei Dati Personali (www.garanteprivacy.it)."
+            },
+            {
+                "title": "Aggiornamenti",
+                "body": "Questa informativa può essere aggiornata nel tempo: fa fede la versione pubblicata su questa pagina."
+            }
+        ]
+    },
     "seo": {
         "site_name": "Noxis",
         "url": "https://noxis.agency",
+        "privacy": {
+            "title": "Privacy policy · Noxis",
+            "description": "Informativa sul trattamento dei dati personali raccolti dal sito noxis.agency: quali dati, perché, per quanto tempo e i tuoi diritti.",
+            "og_title": "Privacy policy — Noxis",
+            "og_description": "Come trattiamo i dati raccolti dal sito: finalità, conservazione e diritti."
+        },
         "title": "Noxis — Automazioni AI per PMI · Prezzi chiari",
         "description": "Integriamo l'AI negli strumenti che la tua azienda usa già: preventivi, documenti, email e gestionale. Prezzi chiari fin dall'inizio, incentivi 2026. Sviluppo web e AI su misura.",
         "keywords": "automazione AI PMI, intelligenza artificiale aziende, integrazione AI gestionale, consulenza AI Italia, automazione processi aziendali, agenzia AI, sviluppo software AI, automazioni n8n, assistente AI aziendale, AI Lombardia",

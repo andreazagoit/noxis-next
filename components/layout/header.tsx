@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { Container } from '@/components/layout/container'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,13 +17,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { signOut } from '@/lib/auth-client'
+import { signOutAction } from '@/app/sign-in/actions'
 import { LanguageSwitcher } from '@/components/layout/language-switcher'
 import { MenuButton } from '@/components/layout/menu-button'
 import { glass } from '@/lib/styles'
 import type { AppSession } from '@/lib/auth-utils'
 
-const KNOWN_SUBS = ['development', 'talent']
+const KNOWN_SUBS = ['development']
 
 /** Due varianti animate a confronto: 'pill' (pillola flottante, blur che
     appare allo scroll) o 'island' (barra larga che morfa in capsula). */
@@ -105,16 +105,15 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
   }
 
   const handleSignOut = async () => {
-    await signOut()
-    router.push('/sign-in')
+    // Il redirect lo fa la server action; il refresh allinea l'header.
+    await signOutAction()
     router.refresh()
   }
 
   const isAuthed = !!session
-  const userName = session?.user.name ?? ''
-  const userEmail = session?.user.email ?? ''
-  const userImage = session?.user.image ?? null
-  const initials = getInitials(userName || userEmail)
+  const userName = 'Admin'
+  const userEmail = session?.email ?? ''
+  const initials = getInitials(userEmail || userName)
 
   const logoSize = 120
 
@@ -145,7 +144,6 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
           className="rounded-full focus:outline-none focus:ring-2 focus:ring-primary/40 transition-transform hover:scale-105 active:scale-95"
         >
           <Avatar className="h-9 w-9">
-            {userImage && <AvatarImage src={userImage} alt={userName} />}
             <AvatarFallback>{initials}</AvatarFallback>
           </Avatar>
         </button>

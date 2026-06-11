@@ -1,9 +1,10 @@
 import { randomUUID } from 'node:crypto'
 import { NextResponse } from 'next/server'
-import { db } from '@/lib/db'
-import { lead } from '@/lib/models'
+import { leadsCollection } from '@/lib/models/lead/schema'
 import { LeadCreateSchema } from '@/lib/models/lead/validator'
 import { sendEmail, isEmailEnabled } from '@/lib/email'
+import { buildCheckReportEmail } from '@/lib/emails/check-report'
+import { CHECK_QUESTIONS } from '@/components/check/config'
 
 export async function POST(request: Request) {
   let body: unknown
@@ -27,17 +28,21 @@ export async function POST(request: Request) {
 
   let stored = false
   try {
-    await db.insert(lead).values({
-      id: randomUUID(),
+    await leadsCollection().insertOne({
+      _id: randomUUID(),
       name: data.name,
       email: data.email,
+      phone: data.phone ?? null,
       company: data.company ?? null,
       sector: data.sector ?? null,
       employees: data.employees ?? null,
       score: data.score ?? null,
-      answers: data.answers ? JSON.stringify(data.answers) : null,
+      answers: data.answers ?? null,
+      areas: data.areas ?? null,
       locale: data.locale ?? null,
       source: 'ai-check',
+      status: 'new',
+      createdAt: new Date(),
     })
     stored = true
   } catch (err) {
@@ -56,6 +61,29 @@ export async function POST(request: Request) {
     } catch (err) {
       console.error('[leads] notification email failed', err)
     }
+
+    // Mini-report all'utente con la sua mappa (best-effort: non blocca la risposta).
+    try {
+      const weakBasics = CHECK_QUESTIONS.every(
+        (q, i) => q.kind !== 'context' || (data.answers?.[i] ?? 0) === 0,
+      )
+      const report = await buildCheckReportEmail({
+        locale: data.locale,
+        name: data.name,
+        areas: data.areas ?? [],
+        weakBasics,
+      })
+      if (report) {
+        await sendEmail({
+          to: data.email,
+          subject: report.subject,
+          html: report.html,
+          replyTo: 'hello@noxis.agency',
+        })
+      }
+    } catch (err) {
+      console.error('[leads] report email failed', err)
+    }
   }
 
   if (!stored && !notified) {
@@ -68,20 +96,26 @@ export async function POST(request: Request) {
 function leadEmailHtml(data: {
   name: string
   email: string
+  phone?: string
   company?: string
   sector?: string
   employees?: string
   score?: number
   answers?: number[]
+  areas?: { key: string; value: number }[]
   locale?: string
 }) {
+  const hotAreas = (data.areas ?? []).filter((a) => a.value === 2).map((a) => a.key)
+  const warmAreas = (data.areas ?? []).filter((a) => a.value === 1).map((a) => a.key)
   const rows = [
     ['Nome', data.name],
     ['Email', data.email],
+    ['Telefono', data.phone ?? '—'],
     ['Azienda', data.company ?? '—'],
     ['Settore', data.sector ?? '—'],
     ['Dimensione', data.employees ?? '—'],
-    ['Punteggio', data.score != null ? `${data.score}/20` : '—'],
+    ['Aree calde', hotAreas.length ? hotAreas.join(', ') : '—'],
+    ['Aree tiepide', warmAreas.length ? warmAreas.join(', ') : '—'],
     ['Risposte', data.answers ? data.answers.join(', ') : '—'],
     ['Lingua', data.locale ?? '—'],
   ]

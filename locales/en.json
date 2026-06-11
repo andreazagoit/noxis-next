@@ -104,14 +104,7 @@
         "slogan_line1": "AI that works.",
         "slogan_line2": "Not AI that talks.",
         "get_in_touch": "Get in touch",
-        "office": "Office",
-        "nav_title": "Explore",
-        "nav_home": "Home",
-        "nav_pricing": "Services & pricing",
-        "nav_check": "Free AI check",
-        "nav_development": "Development",
-        "nav_talent": "Talent",
-        "nav_formazione": "Training"
+        "office": "Office"
     },
     "services": {
         "title_line1": "What we",
@@ -395,44 +388,75 @@
         "eyebrow": "Free check",
         "title_line1": "What could your company",
         "title_line2": "automate?",
-        "description": "10 questions, 3 minutes, no sign-up needed to see your result. At the end we'll tell you where it makes sense to start — and whether it makes sense at all.",
+        "description": "8 questions, 2 minutes, no sign-up needed to see your result: the map of what could run on its own in your company.",
         "start": "Start the check",
         "question_label": "Question {current} of {total}",
         "questions": [
-            "Does anyone in your company already use ChatGPT or similar tools for work?",
             "Do you have a management system, CRM or ERP used every day?",
-            "Are there tasks where data is copied by hand between systems, emails or spreadsheets?",
-            "Does preparing a quote or proposal take hours (or days) of manual work?",
-            "Do you often answer the same questions from customers or colleagues?",
-            "Are there recurring documents (reports, minutes, files) written from scratch every time?",
             "Is there reasonably organised internal documentation (procedures, price lists, manuals)?",
-            "Would there be someone internally available to act as the contact for a pilot project?",
-            "Has management discussed AI or automation in the last 6 months?",
-            "Do you already know which 2026 incentives you could use (super-depreciation, vouchers, training funds)?"
+            "How much time does preparing quotes and proposals cost you?",
+            "How much time goes into emails and similar customer requests?",
+            "How much manual work do reports, files and recurring documents require?",
+            "How much data is copied by hand between emails, spreadsheets and your management system?",
+            "How often do you answer questions whose answers already sit in internal documents?",
+            "How much manual work do deadlines, reminders and follow-ups require?"
         ],
         "answer_yes": "Yes",
         "answer_partial": "Partly",
         "answer_no": "No",
-        "result_title": "Your result",
-        "result_score_label": "Automation potential",
-        "bands": [
-            {
-                "title": "Foundations to build",
-                "text": "There's potential, but some basics are missing (tools, data or an internal sponsor). The right starting point isn't a project: it's a hands-on training session for your team and a light process mapping. Low cost, often fundable."
+        "answer_area_high": "A lot",
+        "answer_area_some": "Some",
+        "answer_area_none": "Little or none",
+        "result_title": "Your map",
+        "result_headline": "{count, plural, one {1 process where AI could work for you} other {# processes where AI could work for you}}",
+        "result_none_title": "No hot processes — a rare case!",
+        "result_none_text": "Your answers don't surface any heavy processes. Either the company is already very efficient, or it's worth taking a calm look together: sometimes lost time becomes invisible once you're used to it.",
+        "result_badge_hot": "Where you lose most time",
+        "result_badge_some": "Possible margin",
+        "result_basics_note": "Note: some basics seem to be missing (a management system or organised documentation). No problem — it's the most common starting point, and it gets fixed first.",
+        "report_subject": "Your map: what could run on its own in your company",
+        "report_greeting": "Hi {name},",
+        "report_intro": "thanks for taking the AI Check. This is your map: the processes where — based on your answers — AI can take manual work off your company's plate.",
+        "report_hot_label": "Where you lose most time",
+        "report_some_label": "Possible margin",
+        "report_basics_note": "Note: some basics seem to be missing (a management system or organised documentation). It's the most common starting point — it gets fixed first.",
+        "report_next_title": "What now?",
+        "report_outro": "In a free 20-minute call we quantify the map on your company: which processes are truly worth it, in what order, and at what prices — clear, before we start.",
+        "report_cta": "Book 20 minutes",
+        "report_cta_subject": "20-minute call — my AI map",
+        "report_footer": "You're receiving this email because you completed the AI Check on noxis.agency and left us your details. We use your data only to reply to you: full notice at noxis.agency/privacy.",
+        "areas": {
+            "quotes": {
+                "title": "Quotes and proposals",
+                "text": "The AI drafts them from emails and attachments, with price lists and history at hand. You review and approve."
             },
-            {
-                "title": "Ready for the first step",
-                "text": "Your company has at least one process that can be automated with immediate benefit. The right starting point is the First Automation: one process, from €2,900, two weeks, balance due on working delivery."
+            "email": {
+                "title": "Emails and customer requests",
+                "text": "Similar requests get a ready-made draft reply, and routing to the right person happens on its own."
             },
-            {
-                "title": "Fertile ground",
-                "text": "There are multiple automatable processes and the conditions to do it well. The right starting point is the AI Audit: the full map of where to recover hours, with priorities, costs and applicable incentives."
+            "documents": {
+                "title": "Recurring documents",
+                "text": "Reports, files and minutes prepare themselves from the data you already have in your systems."
+            },
+            "data_entry": {
+                "title": "Data copied by hand",
+                "text": "Emails, PDFs and spreadsheets enter your management system without double entry — and without typos."
+            },
+            "knowledge": {
+                "title": "Repetitive questions",
+                "text": "An assistant answers colleagues and customers using your procedures and price lists, without making things up."
+            },
+            "planning": {
+                "title": "Deadlines and follow-ups",
+                "text": "Reminders, chasers and planning generate themselves from your calendars and management system data."
             }
-        ],
-        "form_title": "Get your detailed result",
-        "form_text": "Leave your details and we'll send you the analysis of your score with suggestions for your case. No spam, no cold calls.",
+        },
+        "form_title": "Get your map by email",
+        "form_text": "Leave your details and we'll send you your areas map, with what's worth automating first. In a 20-minute call we'll quantify it together on your company. No spam, no cold calls.",
         "form_name": "Full name",
         "form_email": "Work email",
+        "form_phone": "Phone",
+        "form_phone_error": "Please enter a valid phone number.",
         "form_company": "Company",
         "form_sector": "Sector",
         "form_sector_options": {
@@ -451,9 +475,10 @@
         "form_submit": "Send me the result",
         "form_sending": "Sending...",
         "form_privacy": "We use this data only to reply to you. No lists, no sharing with third parties.",
+        "form_privacy_link": "Privacy notice",
         "form_error": "Something went wrong. Try again, or write to hello@noxis.agency.",
-        "success_title": "Done. We'll reply within one business day.",
-        "success_text": "Want to skip ahead? Book 20 minutes directly: tell us how you work and we'll tell you right away what's worth automating.",
+        "success_title": "Done. Your map is on its way to your inbox.",
+        "success_text": "We've sent you the report by email (check your spam folder if you don't see it). Want to skip ahead? Book 20 minutes directly: tell us how you work and we'll quantify the map together.",
         "success_cta": "Write to us now"
     },
     "methodology": {
@@ -768,21 +793,14 @@
         }
     },
     "sign_in": {
-        "eyebrow": "Welcome back",
+        "eyebrow": "Restricted area",
         "title": "Sign in to Noxis",
-        "subtitle": "We'll email you a code. No password needed.",
-        "code_subtitle": "Enter the 6-digit code sent to {{email}}.",
+        "subtitle": "Admin access only.",
         "email": "Email",
-        "code": "Verification code",
-        "send_code": "Send code",
-        "sending": "Sending...",
+        "password": "Password",
         "submit": "Sign in",
-        "verifying": "Signing in...",
-        "use_different_email": "Use a different email",
-        "error_send": "Could not send the code. Please try again.",
-        "error_generic": "Invalid or expired code. Please try again.",
-        "no_account": "No account yet?",
-        "request_demo": "Request a demo"
+        "signing_in": "Signing in...",
+        "error_invalid": "Invalid credentials."
     },
     "language": {
         "title": "Select Language",
@@ -814,9 +832,54 @@
             "body": "Hi Noxis team,\n\nI'd love to be considered for your creator roster.\n\nAbout me:\n— Name & handle: \n— Main platforms: \n— Niche / topics: \n— Audience / engagement: \n— Past collaborations: \n\nLinks to my socials/portfolio:\n— \n— \n\nThanks!"
         }
     },
+    "privacy": {
+        "title": "Privacy policy",
+        "updated": "Last updated: June 2026",
+        "intro": "This notice describes how personal data collected through noxis.agency is processed, pursuant to Regulation (EU) 2016/679 (GDPR).",
+        "sections": [
+            {
+                "title": "Data controller",
+                "body": "Andrea Zago — Noxis\nVia G. Mazzini 5a, 35010 Trebaseleghe (PD), Italy\nVAT no. (P.IVA) 05668260283\nEmail: hello@noxis.agency"
+            },
+            {
+                "title": "What data we collect",
+                "body": "We process the data you provide when completing the AI Check or writing to us by email: name, email address, phone number, company name, sector, company size, your questionnaire answers and browsing language. The site does not use analytics or profiling tools. Hosting providers may record technical logs (e.g. IP addresses) for security purposes."
+            },
+            {
+                "title": "Why we process it and on what basis",
+                "body": "Data is processed to: (a) reply to your request and get back to you with the check results or the information you asked for — legal basis: pre-contractual measures taken at your request (art. 6.1.b GDPR); (b) follow-up communications directly related to your request — legal basis: legitimate interest (art. 6.1.f GDPR).\nWe don't send newsletters, we don't do mass marketing and we don't hand data over to third parties for commercial purposes."
+            },
+            {
+                "title": "How long we keep it",
+                "body": "Data is kept for as long as needed to handle your request and in any case no longer than 24 months from the last contact, after which it is deleted. You can request deletion at any time by writing to hello@noxis.agency."
+            },
+            {
+                "title": "Who can access the data",
+                "body": "Data is never sold or handed over. It is processed by the controller and by technical suppliers acting as data processors: website hosting (Vercel Inc.), managed database and email delivery (Resend Inc.). Some suppliers are based in the United States: any transfer takes place under the safeguards provided by the GDPR (standard contractual clauses and/or the EU-US Data Privacy Framework)."
+            },
+            {
+                "title": "Cookies",
+                "body": "The site uses a single technical session cookie, required to access the restricted admin area and exempt from consent. We use no profiling, marketing or analytics cookies — which is why there is no cookie banner."
+            },
+            {
+                "title": "Your rights",
+                "body": "You have the right to access your data, rectify it, erase it, restrict its processing, port it and object to its processing (arts. 15-22 GDPR). You can exercise these rights by writing to hello@noxis.agency. You also have the right to lodge a complaint with the Italian Data Protection Authority (www.garanteprivacy.it)."
+            },
+            {
+                "title": "Updates",
+                "body": "This notice may be updated over time: the version published on this page is the one in force."
+            }
+        ]
+    },
     "seo": {
         "site_name": "Noxis",
         "url": "https://noxis.agency",
+        "privacy": {
+            "title": "Privacy policy · Noxis",
+            "description": "How personal data collected through noxis.agency is processed: what data, why, for how long, and your rights.",
+            "og_title": "Privacy policy — Noxis",
+            "og_description": "How we handle the data collected through the site: purposes, retention and your rights."
+        },
         "title": "Noxis — AI Automation for SMBs · Clear pricing",
         "description": "We integrate AI into the tools your company already uses: quotes, documents, email and your management software. Clear pricing from the start, 2026 incentives. Custom web and AI development.",
         "keywords": "AI automation SMB, AI for business, ERP AI integration, AI consulting Italy, business process automation, AI agency, AI software development, n8n automation, company AI assistant",

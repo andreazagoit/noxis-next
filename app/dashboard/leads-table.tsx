@@ -5,18 +5,21 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronDown, Trash2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { updateLeadStatus, deleteLead } from '@/lib/models/lead/operations'
-import { LEAD_STATUSES, type LeadStatus } from '@/lib/models/lead/config'
+import { LEAD_STATUSES, type LeadStatus, type LeadAreaEntry } from '@/lib/models/lead/config'
+import { CHECK_QUESTIONS } from '@/components/check/config'
 import { cn } from '@/lib/utils'
 
 interface LeadRow {
   id: string
   name: string
   email: string
+  phone: string | null
   company: string | null
   sector: string | null
   employees: string | null
   score: number | null
-  answers: string | null
+  answers: number[] | null
+  areas: LeadAreaEntry[] | null
   locale: string | null
   source: string
   status: LeadStatus
@@ -29,40 +32,38 @@ const STATUS_STYLES: Record<LeadStatus, string> = {
   closed: 'bg-emerald-500/15 text-emerald-400',
 }
 
-const ANSWER_VALUE_KEYS = ['answer_no', 'answer_partial', 'answer_yes'] as const
+const CONTEXT_ANSWER_KEYS = ['answer_no', 'answer_partial', 'answer_yes'] as const
+const AREA_ANSWER_KEYS = ['answer_area_none', 'answer_area_some', 'answer_area_high'] as const
 
-function QuestionnairePanel({ answersJson }: { answersJson: string | null }) {
+function QuestionnairePanel({ answers }: { answers: number[] | null }) {
   const t = useTranslations()
   const questions = t.raw('check.questions') as string[]
-  let answers: number[] = []
-  try {
-    answers = answersJson ? (JSON.parse(answersJson) as number[]) : []
-  } catch {
-    answers = []
-  }
-  if (answers.length === 0) {
+  if (!answers || answers.length === 0) {
     return <p className="text-sm text-muted-foreground">{t('admin.no_questionnaire')}</p>
   }
   return (
     <ol className="flex flex-col gap-2.5">
-      {answers.map((value, i) => (
-        <li key={i} className="flex items-start justify-between gap-6 text-sm">
-          <span className="text-foreground/80">
-            <span className="text-muted-foreground mr-2">{i + 1}.</span>
-            {questions[i] ?? '—'}
-          </span>
-          <span
-            className={cn(
-              'shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold',
-              value === 2 && 'bg-emerald-500/15 text-emerald-400',
-              value === 1 && 'bg-amber-400/15 text-amber-300',
-              value === 0 && 'bg-white/[0.06] text-foreground/60',
-            )}
-          >
-            {t(`check.${ANSWER_VALUE_KEYS[value] ?? 'answer_no'}`)}
-          </span>
-        </li>
-      ))}
+      {answers.map((value, i) => {
+        const keys = CHECK_QUESTIONS[i]?.kind === 'area' ? AREA_ANSWER_KEYS : CONTEXT_ANSWER_KEYS
+        return (
+          <li key={i} className="flex items-start justify-between gap-6 text-sm">
+            <span className="text-foreground/80">
+              <span className="text-muted-foreground mr-2">{i + 1}.</span>
+              {questions[i] ?? '—'}
+            </span>
+            <span
+              className={cn(
+                'shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold',
+                value === 2 && 'bg-emerald-500/15 text-emerald-400',
+                value === 1 && 'bg-amber-400/15 text-amber-300',
+                value === 0 && 'bg-white/[0.06] text-foreground/60',
+              )}
+            >
+              {t(`check.${keys[value] ?? keys[0]}`)}
+            </span>
+          </li>
+        )
+      })}
     </ol>
   )
 }
@@ -98,16 +99,30 @@ function LeadCard({ lead }: { lead: LeadRow }) {
             <a href={`mailto:${lead.email}`} className="hover:underline">
               {lead.email}
             </a>
+            {lead.phone && (
+              <>
+                {' · '}
+                <a href={`tel:${lead.phone}`} className="hover:underline">
+                  {lead.phone}
+                </a>
+              </>
+            )}
             {lead.sector && <> · {t(`check.form_sector_options.${lead.sector}`)}</>}
             {lead.employees && <> · {t(`check.form_employees_options.${lead.employees}`)}</>}
           </p>
         </div>
 
-        {lead.score != null && (
-          <span className="shrink-0 rounded-full bg-white/[0.06] px-2.5 py-1 text-xs font-semibold text-foreground/80">
-            {Math.round((lead.score / 20) * 100)}%
-          </span>
-        )}
+        {(lead.areas ?? [])
+          .filter((a) => a.value === 2)
+          .slice(0, 2)
+          .map((a) => (
+            <span
+              key={a.key}
+              className="shrink-0 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary"
+            >
+              {t(`check.areas.${a.key}.title`)}
+            </span>
+          ))}
 
         <span className="shrink-0 text-xs text-muted-foreground">{dateLabel}</span>
 
@@ -168,7 +183,7 @@ function LeadCard({ lead }: { lead: LeadRow }) {
             className="overflow-hidden"
           >
             <div className="border-t border-white/[0.06] px-5 py-4">
-              <QuestionnairePanel answersJson={lead.answers} />
+              <QuestionnairePanel answers={lead.answers} />
             </div>
           </motion.div>
         )}

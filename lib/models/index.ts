@@ -1,5 +1,1 @@
-export * from '@/lib/models/user/schema'
-export * from '@/lib/models/session/schema'
-export * from '@/lib/models/account/schema'
-export * from '@/lib/models/verification/schema'
 export * from '@/lib/models/lead/schema'

@@ -1,26 +1,22 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useLocale, useTranslations } from 'next-intl'
 import { CleanButton } from '@/components/ui/clean-button'
+import type { CheckArea, LeadAreaEntry } from '@/lib/models/lead/config'
+import { CHECK_QUESTIONS } from '@/components/check/config'
 import { cardStatic, darkPanel } from '@/lib/styles'
 import { mailtoHref } from '@/lib/mailto'
 import { cn } from '@/lib/utils'
 
-const TOTAL_QUESTIONS = 10
-const MAX_SCORE = TOTAL_QUESTIONS * 2
+const TOTAL_QUESTIONS = CHECK_QUESTIONS.length
 
 const SECTOR_KEYS = ['services', 'manufacturing', 'retail', 'other'] as const
 const EMPLOYEE_KEYS = ['micro', 'small', 'medium', 'large'] as const
 
 type Phase = 'quiz' | 'result' | 'done'
-
-function bandIndex(score: number): number {
-  if (score <= 7) return 0
-  if (score <= 14) return 1
-  return 2
-}
 
 /** La macchina a stati del check (quiz → risultato+form → fatto), senza chrome
     di pagina: vive dentro il CheckDialog. */
@@ -28,7 +24,7 @@ export function CheckFlow() {
   const t = useTranslations()
   const locale = useLocale()
   const questions = t.raw('check.questions') as string[]
-  const bands = t.raw('check.bands') as { title: string; text: string }[]
+  const areaCopy = t.raw('check.areas') as Record<CheckArea, { title: string; text: string }>
 
   const [phase, setPhase] = useState<Phase>('quiz')
   const [step, setStep] = useState(0)
@@ -36,22 +32,47 @@ export function CheckFlow() {
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
   const [company, setCompany] = useState('')
   const [sector, setSector] = useState<string>('')
   const [employees, setEmployees] = useState<string>('')
   const [website, setWebsite] = useState('')
   const [sending, setSending] = useState(false)
   const [error, setError] = useState(false)
+  const [phoneError, setPhoneError] = useState(false)
 
   const score = useMemo(() => answers.reduce((sum, a) => sum + a, 0), [answers])
-  const band = bands[bandIndex(score)]
-  const percent = Math.round((score / MAX_SCORE) * 100)
 
-  const answerOptions = [
-    { value: 2, label: t('check.answer_yes') },
-    { value: 1, label: t('check.answer_partial') },
-    { value: 0, label: t('check.answer_no') },
-  ]
+  /* La mappa: una voce per area, col peso che l'utente stesso le ha dato. */
+  const areas = useMemo<LeadAreaEntry[]>(
+    () =>
+      CHECK_QUESTIONS.flatMap((q, i) =>
+        q.kind === 'area' && answers[i] != null ? [{ key: q.area, value: answers[i] }] : [],
+      ),
+    [answers],
+  )
+  const sortedAreas = useMemo(
+    () => [...areas].filter((a) => a.value > 0).sort((a, b) => b.value - a.value),
+    [areas],
+  )
+  /* Contesto debole (niente gestionale né documentazione): nota onesta nel risultato. */
+  const weakBasics = CHECK_QUESTIONS.every(
+    (q, i) => q.kind !== 'context' || (answers[i] ?? 0) === 0,
+  )
+
+  const currentKind = CHECK_QUESTIONS[step]?.kind ?? 'context'
+  const answerOptions =
+    currentKind === 'area'
+      ? [
+          { value: 2, label: t('check.answer_area_high') },
+          { value: 1, label: t('check.answer_area_some') },
+          { value: 0, label: t('check.answer_area_none') },
+        ]
+      : [
+          { value: 2, label: t('check.answer_yes') },
+          { value: 1, label: t('check.answer_partial') },
+          { value: 0, label: t('check.answer_no') },
+        ]
 
   const handleAnswer = (value: number) => {
     const next = [...answers, value]
@@ -65,6 +86,12 @@ export function CheckFlow() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    const phoneDigits = phone.replace(/\D/g, '')
+    if (phoneDigits.length < 8 || phoneDigits.length > 15) {
+      setPhoneError(true)
+      return
+    }
+    setPhoneError(false)
     setSending(true)
     setError(false)
     try {
@@ -74,11 +101,13 @@ export function CheckFlow() {
         body: JSON.stringify({
           name,
           email,
+          phone,
           company: company || undefined,
           sector: sector || undefined,
           employees: employees || undefined,
           score,
           answers,
+          areas,
           locale,
           website: website || undefined,
         }),
@@ -147,22 +176,48 @@ export function CheckFlow() {
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/60 block mb-4">
               {t('check.result_title')}
             </span>
-            <div className="flex items-end gap-3 mb-2">
-              <span className="font-display text-6xl md:text-7xl leading-none">{percent}%</span>
-              <span className="text-xs uppercase tracking-wider text-foreground/60 pb-1.5">
-                {t('check.result_score_label')}
-              </span>
-            </div>
-            <div className="h-1.5 rounded-full bg-white/15 overflow-hidden mb-6">
-              <div
-                className="h-full bg-primary rounded-full transition-all duration-700"
-                style={{ width: `${percent}%` }}
-              />
-            </div>
-            <h3 className="mb-2 text-lg font-semibold tracking-tight text-foreground">
-              {band.title}
+            <h3 className="mb-6 text-xl md:text-2xl font-semibold tracking-tight text-foreground">
+              {sortedAreas.length > 0
+                ? t('check.result_headline', { count: sortedAreas.length })
+                : t('check.result_none_title')}
             </h3>
-            <p className="text-sm leading-relaxed text-foreground/75">{band.text}</p>
+            {sortedAreas.length === 0 && (
+              <p className="text-sm leading-relaxed text-foreground/75">
+                {t('check.result_none_text')}
+              </p>
+            )}
+            <div className="flex flex-col gap-3">
+              {sortedAreas.map(({ key, value }) => (
+                <div
+                  key={key}
+                  className="rounded-xl border border-white/[0.08] bg-background/40 p-4"
+                >
+                  <div className="mb-1.5 flex items-center justify-between gap-4">
+                    <h4 className="text-sm font-semibold tracking-tight text-foreground">
+                      {areaCopy[key].title}
+                    </h4>
+                    <span
+                      className={cn(
+                        'shrink-0 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider',
+                        value === 2
+                          ? 'bg-primary/15 text-primary'
+                          : 'bg-white/[0.07] text-foreground/60',
+                      )}
+                    >
+                      {value === 2 ? t('check.result_badge_hot') : t('check.result_badge_some')}
+                    </span>
+                  </div>
+                  <p className="text-[13px] leading-relaxed text-foreground/70">
+                    {areaCopy[key].text}
+                  </p>
+                </div>
+              ))}
+            </div>
+            {weakBasics && sortedAreas.length > 0 && (
+              <p className="mt-5 text-xs leading-relaxed text-foreground/55">
+                {t('check.result_basics_note')}
+              </p>
+            )}
           </div>
 
           <form onSubmit={handleSubmit} className={cn(cardStatic, 'rounded-2xl p-6 md:p-8')}>
@@ -201,6 +256,19 @@ export function CheckFlow() {
                 className={inputClass}
               />
               <input
+                type="tel"
+                required
+                value={phone}
+                onChange={(e) => {
+                  setPhone(e.target.value)
+                  setPhoneError(false)
+                }}
+                placeholder={t('check.form_phone')}
+                autoComplete="tel"
+                aria-invalid={phoneError}
+                className={cn(inputClass, phoneError && 'border-red-500/60 focus:ring-red-500/40')}
+              />
+              <input
                 type="text"
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
@@ -233,6 +301,7 @@ export function CheckFlow() {
               </select>
             </div>
 
+            {phoneError && <p className="text-sm text-red-500 mb-4">{t('check.form_phone_error')}</p>}
             {error && <p className="text-sm text-red-500 mb-4">{t('check.form_error')}</p>}
 
             <div className="flex flex-wrap items-center gap-4">
@@ -243,7 +312,16 @@ export function CheckFlow() {
               >
                 {sending ? t('check.form_sending') : t('check.form_submit')}
               </CleanButton>
-              <p className="text-xs text-muted-foreground max-w-xs">{t('check.form_privacy')}</p>
+              <p className="text-xs text-muted-foreground max-w-xs">
+                {t('check.form_privacy')}{' '}
+                <Link
+                  href="/privacy"
+                  target="_blank"
+                  className="underline underline-offset-2 hover:text-foreground transition-colors"
+                >
+                  {t('check.form_privacy_link')}
+                </Link>
+              </p>
             </div>
           </form>
         </motion.div>

@@ -1,11 +1,10 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist_Mono, Inter, Instrument_Serif } from 'next/font/google'
-import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages, getTranslations } from 'next-intl/server'
 import './globals.css'
 import { cn } from '@/lib/utils'
-import { auth } from '@/lib/auth'
+import { getCurrentSession } from '@/lib/auth-utils'
 import { SiteProviders } from '@/components/providers/site-providers'
 import { OrganizationJsonLd } from '@/components/seo/organization-jsonld'
 import { SITE_URL } from '@/lib/seo'
@@ -89,7 +88,7 @@ export const viewport: Viewport = {
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const session = await auth.api.getSession({ headers: await headers() })
+  const session = await getCurrentSession()
   const locale = await getLocale()
   const messages = await getMessages()
 

@@ -71,8 +71,8 @@ export function CTAButton({
         else setDisplayState(isHovered ? 'email' : 'default')
         setTransitionKey((prev) => prev + 1)
       }, 2000)
-    } catch (err) {
-      console.error('Failed to copy:', err)
+    } catch {
+      // clipboard non disponibile: il bottone resta com'è
     }
   }
 

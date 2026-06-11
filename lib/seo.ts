@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import { getTranslations, getLocale } from 'next-intl/server'
 
-type Page = 'home' | 'development' | 'talent'
+type Page = 'home' | 'development' | 'privacy'
 
 const PATH_BY_PAGE: Record<Page, string> = {
   home: '/',
   development: '/development',
-  talent: '/talent',
+  privacy: '/privacy',
 }
 
 export const SITE_URL = 'https://noxis.agency'
