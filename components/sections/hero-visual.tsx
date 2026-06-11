@@ -114,6 +114,18 @@ function MorphPill({
   style?: React.CSSProperties
   children: React.ReactNode
 }) {
+  /* Stato nascosto esplicito: serve anche come `initial`, così l'HTML
+     server-side esce già con opacity 0 e niente flash prima dell'idratazione. */
+  const hidden = {
+    x: from.x,
+    y: from.y,
+    opacity: 0,
+    maxWidth: DOT,
+    height: DOT,
+    backgroundColor: ORANGE,
+    boxShadow: NO_GLOW,
+  }
+
   const anim =
     mode === 'in'
       ? {
@@ -145,15 +157,7 @@ function MorphPill({
               backgroundColor: [ORANGE, ORANGE, PILL_BG, PILL_BG, ORANGE, ORANGE, ORANGE],
               boxShadow: [DOT_GLOW, DOT_GLOW, NO_GLOW, NO_GLOW, DOT_GLOW, DOT_GLOW, DOT_GLOW],
             }
-          : {
-              x: from.x,
-              y: from.y,
-              opacity: 0,
-              maxWidth: DOT,
-              height: DOT,
-              backgroundColor: ORANGE,
-              boxShadow: NO_GLOW,
-            }
+          : hidden
 
   const transition =
     mode === 'hidden'
@@ -181,6 +185,7 @@ function MorphPill({
 
   return (
     <motion.span
+      initial={hidden}
       animate={anim}
       transition={transition}
       style={style}
@@ -190,6 +195,7 @@ function MorphPill({
       )}
     >
       <motion.span
+        initial={{ opacity: 0 }}
         animate={contentAnim}
         transition={transition}
         className="flex items-center gap-1.5 px-3"
@@ -286,7 +292,7 @@ export function HeroVisual() {
       </Depth>
 
       {/* ── 2 · Dati estratti: il badge È il pallino (email → slot → modello) ── */}
-      <Depth x={smx} y={smy} factor={0.85} enter={0.6} state={stepState(1)} className="left-0 top-0 w-[185px] z-[5]">
+      <Depth x={smx} y={smy} factor={0.85} enter={0.42} state={stepState(1)} className="left-0 top-0 w-[185px] z-[5]">
         <div className="flex flex-col gap-2">
           {chips.slice(0, 3).map((chip, i) => (
             <div key={chip} className="flex h-[30px] items-center">
@@ -312,7 +318,7 @@ export function HeroVisual() {
 
 
       {/* ── 3 · Elaborazione col modello (nodo centrale) ── */}
-      <Depth x={smx} y={smy} factor={0.6} enter={0.75} state={stepState(2)} className="left-[173px] top-[128px] w-[225px] z-20">
+      <Depth x={smx} y={smy} factor={0.6} enter={0.48} state={stepState(2)} className="left-[173px] top-[128px] w-[225px] z-20">
         <div className={cn(glass, 'rounded-2xl px-4 py-3', glow(phase === 2))}>
           <div className="flex items-center gap-3">
             <motion.span
@@ -345,7 +351,7 @@ export function HeroVisual() {
       </Depth>
 
       {/* ── Output: il preventivo si costruisce (centro-basso) ── */}
-      <Depth x={smx} y={smy} factor={0.3} enter={0.5} state={stepState(3)} className="left-[128px] top-[259px] w-[315px] z-10">
+      <Depth x={smx} y={smy} factor={0.3} enter={0.38} state={stepState(3)} className="left-[128px] top-[259px] w-[315px] z-10">
         <div className={cn(glass, 'rounded-2xl p-4', glow(phase === 3))}>
           <div className="mb-3 flex items-center gap-2.5">
             <FileText size={14} className="text-primary" strokeWidth={1.75} />
@@ -355,6 +361,7 @@ export function HeroVisual() {
             {/* Stato del documento: Bozza, poi un cursore la clicca → Approvato */}
             <span className="relative ml-auto inline-grid">
               <motion.span
+                initial={{ opacity: 0, scale: 0.9 }}
                 animate={
                   phase === 4
                     ? { opacity: [1, 1, 0], scale: [1, 0.92, 0.85] }
@@ -374,6 +381,7 @@ export function HeroVisual() {
                 {t('badge_draft')}
               </motion.span>
               <motion.span
+                initial={{ opacity: 0, scale: 0.8 }}
                 animate={
                   phase === 4
                     ? { opacity: [0, 0, 1, 1], scale: [0.8, 0.8, 1.18, 1] }
@@ -432,6 +440,7 @@ export function HeroVisual() {
             {rows.map((row, i) => (
               <div key={row} className="flex items-center justify-between gap-3">
                 <motion.span
+                  initial={{ opacity: 0, x: -6 }}
                   animate={phase >= 3 ? { opacity: 1, x: 0 } : { opacity: 0, x: -6 }}
                   transition={{ delay: phase === 3 ? 1.3 + i * 0.18 : 0, duration: 0.35, ease: EASE }}
                   className="text-[11px] text-foreground/75"
@@ -454,6 +463,7 @@ export function HeroVisual() {
             ))}
           </div>
           <motion.p
+            initial={{ opacity: 0, y: 6 }}
             animate={phase >= 3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 6 }}
             transition={{ delay: phase === 3 ? 2 : 0, duration: 0.45, ease: EASE }}
             className="mt-2.5 text-right font-display text-lg text-foreground"

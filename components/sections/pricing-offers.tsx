@@ -63,11 +63,12 @@ function OfferCard({ offerKey, highlighted }: { offerKey: OfferKey; highlighted:
         {t(`pricing.${offerKey}.terms`)}
       </p>
 
+      {/* Stesso bottone grande dell'hero, identico su tutte e tre le card. */}
       <CleanButton
         href={mailtoHref(t, 'development')}
         variant={highlighted ? 'primary' : 'outline'}
-        arrow={highlighted}
-        className="w-full !py-3 text-sm"
+        arrow
+        className="w-full"
       >
         {t('pricing.card_cta')}
       </CleanButton>

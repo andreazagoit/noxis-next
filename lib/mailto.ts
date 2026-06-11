@@ -1,4 +1,5 @@
-import type { CTAIntent } from '@/components/ui/cta-button'
+/** Intent del mailto: seleziona subject/body dal namespace email.<intent>. */
+export type CTAIntent = 'general' | 'development' | 'development_portfolio'
 
 type Translator = (key: string) => string
 
