@@ -98,13 +98,18 @@ function AnimatedText({
 }) {
   const words = text.split(' ')
   const totalChars = text.length
-  let charIndex = 0
+  // Indici di partenza precalcolati: niente riassegnazioni dentro le closure del map.
+  const wordStarts: number[] = []
+  let offset = 0
+  for (const word of words) {
+    wordStarts.push(offset)
+    offset += word.length + 1
+  }
 
   return (
     <span className="inline">
       {words.map((word, i) => {
-        const currentStartIndex = charIndex
-        charIndex += word.length + 1
+        const currentStartIndex = wordStarts[i]
 
         return (
           <span key={i}>

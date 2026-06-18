@@ -8,8 +8,7 @@
         "check": "AI Check",
         "cta_check": "Free AI check",
         "lets_talk": "Let's Talk",
-        "sign_in": "Sign in",
-        "formazione": "Training"
+        "sign_in": "Sign in"
     },
     "hero": {
         "eyebrow": "AI automation for SMBs",
@@ -137,8 +136,8 @@
             "description": "Your ERP, CRM, spreadsheets and inboxes connected to AI. No new software to learn: the tools you've always used, with much less drudgery inside."
         },
         "marketing": {
-            "title": "Hands-on training",
-            "description": "Practical workshops on your team's real processes — not theory. Covers the AI literacy obligation under the EU AI Act and is often fundable up to 100% through training funds."
+            "title": "AI Act compliance",
+            "description": "When we bring AI into your processes, we get your team compliant with the AI literacy obligation (EU AI Act): usage rules and training on real cases, as part of adoption."
         }
     },
     "partnership": {
@@ -156,6 +155,9 @@
             "ONE PROCESS FIRST, THEN SCALE"
         ]
     },
+    "brands": {
+        "label": "Companies we've worked with"
+    },
     "stats": {
         "items": [
             {
@@ -169,14 +171,14 @@
                 "label": "recoverable hours/month: the minimum target of every audit"
             },
             {
-                "value": 43,
+                "value": 70,
                 "suffix": "%",
-                "label": "maximum tax benefit with the 2026 super-depreciation"
+                "label": "possible coverage from chamber AI vouchers on consulting and automation"
             },
             {
-                "value": 100,
+                "value": 77,
                 "suffix": "%",
-                "label": "of training often covered by public funds"
+                "label": "of AI projects in Italy are custom integration, not off-the-shelf software"
             }
         ]
     },
@@ -184,7 +186,7 @@
         "eyebrow": "Services & pricing",
         "title_line1": "Clear prices,",
         "title_line2": "from the start.",
-        "description": "No black-box \"contact us for a quote\": three ways to work together, with indicative prices and terms already written — plus training for your team.",
+        "description": "No black-box \"contact us for a quote\": three ways to work together, with indicative prices and terms already written.",
         "cta_all": "All details and terms",
         "badge_start": "Start here",
         "automation": {
@@ -203,13 +205,7 @@
             "name": "Complete Project",
             "price": "from €8,500",
             "price_note": "+ monthly care",
-            "summary": "The custom project your company needs — a CRM, client portal, platform or app — built turnkey, integrated into your systems and managed month after month. The software may qualify for the 180% super-depreciation."
-        },
-        "training": {
-            "name": "Hands-on training",
-            "price": "from €900",
-            "price_note": "often 100% fundable",
-            "summary": "Half day or full day on site, on your real processes. Covers the AI literacy obligation (EU AI Act) and is often reimbursable through interprofessional training funds."
+            "summary": "The custom project your company needs — a CRM, client portal, platform or app — built turnkey, integrated into your systems and managed month after month."
         },
         "cta_more": "Learn more"
     },
@@ -268,7 +264,7 @@
                 "Process mapping with an estimate of hours/month trapped in repetitive tasks",
                 "3–5 priority automations, ranked by return and difficulty, each with a cost estimate",
                 "90-day roadmap: what to do first, what later, what NOT to automate",
-                "\"Public coverage\" overview for your province: chamber grants, super-depreciation, training funds",
+                "\"Public coverage\" overview for your province: chamber AI grants and vouchers, training funds",
                 "Final report presented in person to management",
                 "The report is yours: implement with us or with whoever you prefer"
             ],
@@ -288,9 +284,9 @@
                 "Automations and AI assistants where they pay off",
                 "Team training and documentation",
                 "Monthly care: monitoring and improvements",
-                "Support on incentives and tax relief"
+                "Support on chamber vouchers and training funds"
             ],
-            "note": "The software we build can be documented as an intangible asset for Italy's 180% super-depreciation (effective benefit up to ~43%): we work with a subsidised-finance firm on the paperwork.",
+            "note": "Consulting, automation and training often qualify for chamber-of-commerce AI vouchers and interprofessional funds: we work with a subsidised-finance firm to find the calls active in your province.",
             "details_list": [
                 "A complete project built around your processes: a custom CRM, client portal, internal platform, mobile app or a suite of automations",
                 "Deep integration with what's already there: ERP, management software, CRM, shared inboxes, spreadsheets",
@@ -298,40 +294,18 @@
                 "Flows with quality controls and audit trail: you see what the AI did and when",
                 "Team training and usage documentation",
                 "Ongoing care: monitoring, fixes, improvements and new features every month",
-                "Software documentable as an intangible asset for Italy's 180% super-depreciation (effective benefit up to ~43%)",
+                "Chamber AI vouchers and training funds identified and applied to the project where possible",
                 "Incentive paperwork handled with a partner subsidised-finance firm"
             ],
             "details_tagline": "When you need more than an automation, you need a project: we build it around your processes and integrate it properly into the systems you use. In Italy 77% of AI projects are custom integration, not off-the-shelf software — this is that work, done well.",
             "terms": "4–8 weeks · then monthly care"
         },
-        "training": {
-            "name": "Hands-on training",
-            "tagline": "Your team learns to use AI on the company's real processes.",
-            "price": "from €900 half day · from €1,500 full day",
-            "timing_value": "On site, scheduled",
-            "payment_value": "Upfront",
-            "for_whom_value": "Teams that already use (or endure) AI and want method, use cases and clear rules.",
-            "deliverables_list": [
-                "Practical session on your processes, not textbook examples",
-                "Covers the AI literacy obligation (art. 4 EU AI Act, in force since February 2025)",
-                "Often fundable up to 100% through interprofessional training funds",
-                "Internal usage rules: what to use, what to avoid, how to handle data"
-            ],
-            "note": "It's also the format we offer free of charge to professional firms and trade associations for their clients: ask us how."
-        },
-        "training_section": {
-            "eyebrow": "Training",
-            "title": "Your team learns",
-            "accent": "on real work.",
-            "description": "Hands-on workshops at your company, on your processes — not theory. They cover the AI literacy obligation under the EU AI Act and are often fundable up to 100% through interprofessional funds.",
-            "cta": "Go to the training page"
-        },
         "incentives_title": "What public incentives cover in 2026",
         "incentives_description": "Incentives vary by province and run out, but in 2026 there are several ways to cover part of the investment. These are the main ones active today:",
         "incentives": [
             {
-                "title": "180% super-depreciation",
-                "text": "For software and AI platforms interconnected with company systems: effective tax benefit up to ~43% of the investment (Italian Law 199/2025, investments 2026–2028)."
+                "title": "New Skills Fund (FNC)",
+                "text": "In 2026 the FNC reimburses the labour cost of the hours staff spend in AI and digital-skills training — stackable with interprofessional funds that cover the course itself."
             },
             {
                 "title": "Funded training",
@@ -596,7 +570,7 @@
                     },
                     "ai": {
                         "title": "2026 incentives",
-                        "description": "Super-depreciation, chamber vouchers and training funds: in 2026 there are several ways to cover part of the investment."
+                        "description": "Chamber AI vouchers, training funds and the New Skills Fund: in 2026 there are several ways to cover part of the investment in consulting, automation and training."
                     }
                 },
                 "description": "Closed scope, clear price, balance due on working delivery."
@@ -832,6 +806,38 @@
             "body": "Hi Noxis team,\n\nI'd love to be considered for your creator roster.\n\nAbout me:\n— Name & handle: \n— Main platforms: \n— Niche / topics: \n— Audience / engagement: \n— Past collaborations: \n\nLinks to my socials/portfolio:\n— \n— \n\nThanks!"
         }
     },
+    "contact": {
+        "title": "Let's talk —",
+        "subtitle_automation": "Tell us where you lose time: we'll reply within one business day with a concrete proposal.",
+        "subtitle_audit": "Two details about your company and we'll get back to you to set up the audit.",
+        "subtitle_sprint": "Tell us what project you have in mind: we'll reply with a first feasibility and price assessment.",
+        "form_name": "Full name",
+        "form_email": "Work email",
+        "form_phone": "Phone",
+        "form_phone_error": "Please enter a valid phone number.",
+        "form_company": "Company",
+        "need_label_automation": "Which process steals the most hours?",
+        "need_label_sprint": "What kind of project?",
+        "employees_label": "How many people are you?",
+        "need_other": "Other",
+        "project_options": {
+            "crm": "Custom CRM",
+            "portal": "Client portal",
+            "platform": "Internal platform",
+            "app": "Mobile app",
+            "automations": "Automation suite",
+            "unsure": "We don't know yet"
+        },
+        "message_placeholder": "Add a couple of lines of context (optional)",
+        "message_placeholder_sprint": "Tell us about the project in a couple of lines (optional)",
+        "submit": "Send the request",
+        "sending": "Sending...",
+        "error": "Something went wrong. Try again or write to hello@noxis.agency.",
+        "privacy": "We use this data only to reply to you.",
+        "privacy_link": "Privacy notice",
+        "success_title": "Request sent.",
+        "success_text": "We'll reply within one business day — usually sooner."
+    },
     "privacy": {
         "title": "Privacy policy",
         "updated": "Last updated: June 2026",
@@ -917,13 +923,6 @@
             "keywords": "influencer marketing, creator management, talent agency, brand campaigns, creator economy, social media marketing, performance marketing",
             "og_title": "Talent — Noxis",
             "og_description": "Influencer marketing done right. Strategy, briefs, production, distribution and tracked attribution end-to-end."
-        },
-        "formazione": {
-            "title": "In-company AI Training — workshops on your processes · Noxis",
-            "description": "Hands-on AI workshops at your company, on the team's real processes. They cover the EU AI Act obligation and are often 100% fundable through training funds. From €900.",
-            "keywords": "AI training companies, corporate AI course, AI Act training, AI literacy, AI workshop",
-            "og_title": "In-company AI Training — Noxis",
-            "og_description": "Workshops on your real processes. AI Act obligation covered, often 100% fundable."
         }
     },
     "selected_work": {
@@ -931,64 +930,6 @@
         "title_line1": "From first commit",
         "title_line2": "to global scale.",
         "placeholder": "Coming soon"
-    },
-    "trainingPage": {
-        "eyebrow": "Noxis Training",
-        "title": "Your team working with AI,",
-        "accent": "in one day.",
-        "description": "On-site workshops built on your real processes: no textbook theory, only your cases. They cover the AI literacy obligation under the EU AI Act and are often reimbursable up to 100% through interprofessional training funds.",
-        "cta_primary": "Request the programme",
-        "cta_secondary": "Take the free check",
-        "formats_title": "Two formats,",
-        "formats_accent": "one goal.",
-        "formats_description": "We always start from your processes: we collect real examples first (emails, quotes, documents) and build the day around them.",
-        "formats": [
-            {
-                "name": "Half day — Operational awareness",
-                "duration": "4 hours · on site",
-                "price": "from €900",
-                "bullets": [
-                    "What AI can really do today (and what it can't), no hype",
-                    "Live demos on your cases: emails, quotes, documents",
-                    "Internal usage rules: data, privacy, what to avoid",
-                    "Covers the AI literacy obligation (art. 4 EU AI Act)"
-                ]
-            },
-            {
-                "name": "Full day — Hands-on",
-                "duration": "8 hours · on site",
-                "price": "from €1,500",
-                "bullets": [
-                    "Morning: fundamentals, use cases and demos on your processes",
-                    "Afternoon: practical lab — everyone works on their real tasks",
-                    "Prompts and flows ready to reuse from the next day",
-                    "Map of automatable processes surfaced during the lab"
-                ]
-            }
-        ],
-        "funding_title": "Often you don't pay for it:",
-        "funding_accent": "the funds do.",
-        "funding_description": "If your company is enrolled in an interprofessional fund (Fondimpresa, Fondirigenti and similar), training is often reimbursable up to 100%. The path is simple:",
-        "funding_steps": [
-            {
-                "title": "Check your enrolment",
-                "text": "With your payroll consultant you check which fund the company belongs to — enrolment is free and handled through payroll."
-            },
-            {
-                "title": "Training plan",
-                "text": "We prepare the programme and the course documentation in the format the fund requires."
-            },
-            {
-                "title": "Delivery and reimbursement",
-                "text": "The workshop takes place, it's reported, and the fund reimburses the company — often the full amount."
-            }
-        ],
-        "funding_note": "Reporting depends on the fund and the active call: we verify it together before starting, without promising anything that isn't written down.",
-        "aiact_title": "The obligation almost nobody is handling",
-        "aiact_text": "Since 2 February 2025, art. 4 of the EU AI Act requires companies using AI systems to ensure adequate AI literacy of their staff. The workshop covers the obligation and leaves you with documentation of the completed training.",
-        "takeaway_title": "What you take home",
-        "final_title": "Shall we talk about your team?",
-        "final_text": "Tell us about the company and the processes you run: we'll suggest the right format. And if the company is signed up to an interprofessional training fund, the training is often reimbursable."
     },
     "bands": {
         "integration": {
@@ -1007,6 +948,8 @@
         },
         "toggle_questionnaire": "Show questionnaire",
         "no_questionnaire": "No questionnaire attached to this request.",
+        "need": "Need:",
+        "no_message": "No message attached.",
         "delete": "Delete request",
         "delete_confirm": "Permanently delete this request?"
     }

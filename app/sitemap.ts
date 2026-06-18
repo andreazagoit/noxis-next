@@ -4,9 +4,8 @@ import { SITE_URL } from '@/lib/seo'
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
   const routes = [
-    { path: '/',            priority: 1.0, changeFrequency: 'weekly' as const },
-    { path: '/development', priority: 0.8, changeFrequency: 'monthly' as const },
-    { path: '/privacy',     priority: 0.2, changeFrequency: 'yearly' as const },
+    { path: '/',        priority: 1.0, changeFrequency: 'weekly' as const },
+    { path: '/privacy', priority: 0.2, changeFrequency: 'yearly' as const },
   ]
   return routes.map((r) => ({
     url: `${SITE_URL}${r.path}`,

@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
 import { getTranslations, getLocale } from 'next-intl/server'
 
-type Page = 'home' | 'development' | 'privacy'
+type Page = 'home' | 'privacy'
 
 const PATH_BY_PAGE: Record<Page, string> = {
   home: '/',
-  development: '/development',
   privacy: '/privacy',
 }
 

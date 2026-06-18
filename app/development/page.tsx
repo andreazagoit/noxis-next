@@ -1,11 +1,7 @@
-import type { Metadata } from 'next'
-import { DevelopmentContent } from '@/components/pages/development-content'
-import { buildMetadata } from '@/lib/seo'
+import { redirect } from 'next/navigation'
 
-export async function generateMetadata(): Promise<Metadata> {
-  return buildMetadata('development')
-}
-
+// La pagina Development è stata assorbita dalla landing; il path resta
+// come deep-link stabile per vecchi link e segnalibri.
 export default function DevelopmentPage() {
-  return <DevelopmentContent />
+  redirect('/#servizi')
 }

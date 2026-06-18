@@ -39,8 +39,11 @@ export async function POST(request: Request) {
       score: data.score ?? null,
       answers: data.answers ?? null,
       areas: data.areas ?? null,
+      offer: data.offer ?? null,
+      need: data.need ?? null,
+      message: data.message ?? null,
       locale: data.locale ?? null,
-      source: 'ai-check',
+      source: data.source ?? 'ai-check',
       status: 'new',
       createdAt: new Date(),
     })
@@ -52,9 +55,13 @@ export async function POST(request: Request) {
   let notified = false
   if (isEmailEnabled) {
     try {
+      const who = `${data.name}${data.company ? ` (${data.company})` : ''}`
       await sendEmail({
         to: 'hello@noxis.agency',
-        subject: `Nuovo lead AI Check: ${data.name}${data.company ? ` (${data.company})` : ''}`,
+        subject:
+          data.source === 'contact'
+            ? `Nuova richiesta${data.offer ? ` ${data.offer}` : ''}: ${who}`
+            : `Nuovo lead AI Check: ${who}`,
         html: leadEmailHtml(data),
       })
       notified = true
@@ -103,6 +110,9 @@ function leadEmailHtml(data: {
   score?: number
   answers?: number[]
   areas?: { key: string; value: number }[]
+  offer?: string
+  need?: string
+  message?: string
   locale?: string
 }) {
   const hotAreas = (data.areas ?? []).filter((a) => a.value === 2).map((a) => a.key)
@@ -114,6 +124,9 @@ function leadEmailHtml(data: {
     ['Azienda', data.company ?? '—'],
     ['Settore', data.sector ?? '—'],
     ['Dimensione', data.employees ?? '—'],
+    ['Offerta', data.offer ?? '—'],
+    ['Esigenza', data.need ?? '—'],
+    ['Messaggio', data.message ?? '—'],
     ['Aree calde', hotAreas.length ? hotAreas.join(', ') : '—'],
     ['Aree tiepide', warmAreas.length ? warmAreas.join(', ') : '—'],
     ['Risposte', data.answers ? data.answers.join(', ') : '—'],

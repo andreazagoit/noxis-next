@@ -1,15 +1,18 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 import { useLenis } from 'lenis/react'
 
-export function CustomScrollbar() {
-  const [isMounted, setIsMounted] = useState(false)
+const emptySubscribe = () => () => {}
 
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
+export function CustomScrollbar() {
+  // true solo dopo l'idratazione, senza setState in effect.
+  const isMounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false,
+  )
 
   if (!isMounted) return null
 

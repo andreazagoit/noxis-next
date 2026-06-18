@@ -5,15 +5,15 @@ import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState, useSyncExternalStore } from 'react'
 import { createPortal } from 'react-dom'
 import { cn } from '@/lib/utils'
 import { useCheckDialog } from '@/components/check/check-dialog'
 
 const ITEMS = [
   { href: '/', labelKey: 'header.home' },
+  { href: '/#servizi', labelKey: 'header.services' },
   { href: '/#pricing', labelKey: 'header.pricing' },
-  { href: '/development', labelKey: 'header.development' },
 ] as const
 
 interface MenuButtonProps {
@@ -21,6 +21,8 @@ interface MenuButtonProps {
   open?: boolean
   onOpenChange?: (open: boolean) => void
 }
+
+const emptySubscribe = () => () => {}
 
 function isActive(pathname: string, href: string) {
   if (href === '/') return pathname === '/' || pathname === ''
@@ -45,17 +47,23 @@ const cardVariantsReverse = {
 export function MenuButton({ className, open: openProp, onOpenChange }: MenuButtonProps) {
   const [internalOpen, setInternalOpen] = useState(false)
   const open = openProp ?? internalOpen
-  const setOpen = (value: boolean | ((v: boolean) => boolean)) => {
-    const next = typeof value === 'function' ? value(open) : value
-    if (onOpenChange) onOpenChange(next)
-    else setInternalOpen(next)
-  }
-  const [mounted, setMounted] = useState(false)
+  const setOpen = useCallback(
+    (value: boolean | ((v: boolean) => boolean)) => {
+      const next = typeof value === 'function' ? value(open) : value
+      if (onOpenChange) onOpenChange(next)
+      else setInternalOpen(next)
+    },
+    [open, onOpenChange],
+  )
+  // true solo dopo l'idratazione (serve per il portal), senza setState in effect.
+  const mounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false,
+  )
   const pathname = usePathname()
   const t = useTranslations()
   const { openCheck } = useCheckDialog()
-
-  useEffect(() => setMounted(true), [])
 
   useEffect(() => {
     if (!open) return
@@ -64,7 +72,7 @@ export function MenuButton({ className, open: openProp, onOpenChange }: MenuButt
     }
     document.addEventListener('keydown', handleKey)
     return () => document.removeEventListener('keydown', handleKey)
-  }, [open])
+  }, [open, setOpen])
 
   const handleLetsTalk = () => {
     const subject = encodeURIComponent(t('email.general.subject'))

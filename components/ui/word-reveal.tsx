@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView, type Variants } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { cn } from '@/lib/utils'
 
@@ -10,7 +10,6 @@ interface WordRevealProps {
   delay?: number
   stagger?: number
   duration?: number
-  yOffset?: number
   /** preserves newlines in the source string as line breaks */
   preserveLineBreaks?: boolean
   /** Wrapper element (default: span). Use 'div' or 'h2' if needed semantically */
@@ -31,7 +30,6 @@ export function WordReveal({
   delay = 0,
   stagger = 0.04,
   duration = 0.6,
-  yOffset = 24,
   preserveLineBreaks = false,
   as = 'span',
   eager = false,

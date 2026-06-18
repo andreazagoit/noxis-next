@@ -28,6 +28,10 @@ export interface DbLead {
   answers: number[] | null
   /** Mappa delle aree di processo: quanto pesa ciascuna secondo l'utente. */
   areas: LeadAreaEntry[] | null
+  /** Per i lead da contatto: offerta di partenza, esigenza dichiarata, messaggio. */
+  offer: string | null
+  need: string | null
+  message: string | null
   locale: string | null
   source: LeadSource
   status: LeadStatus

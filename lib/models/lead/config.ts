@@ -35,3 +35,13 @@ export interface LeadAreaEntry {
   key: CheckArea
   value: number
 }
+
+/** Offerta da cui parte una richiesta di contatto (card della sezione prezzi). */
+export const LEAD_OFFERS = ['automation', 'audit', 'sprint'] as const
+
+export type LeadOffer = (typeof LEAD_OFFERS)[number]
+
+/** Tipo di progetto dichiarato nel form del Progetto Completo. */
+export const PROJECT_TYPES = ['crm', 'portal', 'platform', 'app', 'automations', 'unsure'] as const
+
+export type ProjectType = (typeof PROJECT_TYPES)[number]

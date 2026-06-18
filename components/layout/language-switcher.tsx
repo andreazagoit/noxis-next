@@ -15,6 +15,10 @@ import { cn } from '@/lib/utils'
 const COOKIE = 'NEXT_LOCALE'
 const LOCALES = ['it', 'en'] as const
 
+function setLocaleCookie(locale: string) {
+  document.cookie = `${COOKIE}=${locale}; path=/; max-age=${60 * 60 * 24 * 365}`
+}
+
 /** Selettore lingua a finestrella: trigger compatto, dropdown con le lingue. */
 export function LanguageSwitcher({ className }: { className?: string }) {
   const router = useRouter()
@@ -24,7 +28,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
 
   const change = (locale: (typeof LOCALES)[number]) => {
     if (locale === current) return
-    document.cookie = `${COOKIE}=${locale}; path=/; max-age=${60 * 60 * 24 * 365}`
+    setLocaleCookie(locale)
     startTransition(() => {
       router.refresh()
     })

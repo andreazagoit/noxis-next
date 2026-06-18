@@ -1,11 +1,7 @@
-'use client'
-
-import FastMarquee from 'react-fast-marquee'
+import { Fragment } from 'react'
 import { Container } from '@/components/layout/container'
 import { Typography } from '@/components/ui/typography'
 import { cn } from '@/lib/utils'
-
-const Marquee = (FastMarquee as any).default || FastMarquee
 
 const BRANDS = [
   { name: 'Accenture', logo: '/assets/accenture.png', className: 'h-20' },
@@ -13,29 +9,52 @@ const BRANDS = [
   { name: 'Generali', logo: '/assets/generali.png', className: 'h-6 translate-y-[8px]' },
 ]
 
-export function BrandSlider() {
-  return (
-    <div className="w-full py-16 overflow-hidden relative">
-      <Container className="mb-12">
-        <Typography variant="caption">TRUSTED BY</Typography>
-      </Container>
+// Repeat the brands so a single copy fills the viewport: with only three logos
+// the track would be far shorter than the quotes marquee below, so at the same
+// 45s/-50% animation it would crawl and leave gaps. A wider track matches the
+// quotes slider's perceived speed and keeps the loop seamless.
+const TRACK = [...BRANDS, ...BRANDS, ...BRANDS]
 
-      <Marquee gradient={false} speed={50} pauseOnHover className="flex items-center">
-        <div className="flex items-center gap-2 md:gap-40 pr-2 md:pr-40">
-          {[...BRANDS, ...BRANDS, ...BRANDS, ...BRANDS].map((brand, i) => (
-            <div key={i} className="flex-shrink-0 flex items-center justify-center">
-              <img
-                src={brand.logo}
-                alt={brand.name}
-                className={cn(
-                  'w-auto object-contain opacity-70 dark:invert transition-all duration-500 hover:opacity-100',
-                  brand.className,
-                )}
-              />
-            </div>
+interface BrandSliderProps {
+  label?: string
+  className?: string
+}
+
+export function BrandSlider({ label, className }: BrandSliderProps) {
+  return (
+    <div className={cn('w-full overflow-hidden py-10 md:py-14', className)}>
+      {label && (
+        <Container className="mb-12">
+          <Typography variant="caption">{label}</Typography>
+        </Container>
+      )}
+
+      <div
+        aria-hidden
+        className="relative overflow-hidden select-none [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]"
+      >
+        <div className="flex w-max items-center will-change-transform animate-[marquee_45s_linear_infinite] motion-reduce:animate-none">
+          {[0, 1].map((copy) => (
+            <Fragment key={copy}>
+              {TRACK.map((brand, i) => (
+                <div
+                  key={`${copy}-${i}`}
+                  className="flex shrink-0 items-center justify-center px-10 md:px-20"
+                >
+                  <img
+                    src={brand.logo}
+                    alt={brand.name}
+                    className={cn(
+                      'w-auto object-contain opacity-40 brightness-0 invert transition-opacity duration-500 hover:opacity-100',
+                      brand.className,
+                    )}
+                  />
+                </div>
+              ))}
+            </Fragment>
           ))}
         </div>
-      </Marquee>
+      </div>
     </div>
   )
 }

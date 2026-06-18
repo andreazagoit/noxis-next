@@ -8,8 +8,7 @@
         "check": "Check AI",
         "cta_check": "Check AI gratuito",
         "lets_talk": "Parliamone",
-        "sign_in": "Accedi",
-        "formazione": "Formazione"
+        "sign_in": "Accedi"
     },
     "hero": {
         "eyebrow": "Automazioni AI per PMI",
@@ -137,8 +136,8 @@
             "description": "ERP, CRM, fogli di calcolo e caselle email collegati all'AI. Niente software nuovo da imparare: i tuoi strumenti di sempre, con molta meno fatica dentro."
         },
         "marketing": {
-            "title": "Formazione operativa",
-            "description": "Workshop pratici sui processi reali del tuo team — non teoria. Copre l'obbligo di alfabetizzazione AI previsto dall'AI Act ed è spesso finanziabile fino al 100% con i fondi interprofessionali."
+            "title": "Conformità AI Act",
+            "description": "Quando portiamo l'AI nei tuoi processi, mettiamo il team in regola con l'obbligo di alfabetizzazione AI (AI Act): regole d'uso e formazione sui casi reali, come parte dell'adozione."
         }
     },
     "partnership": {
@@ -156,6 +155,9 @@
             "PRIMA UN PROCESSO, POI SI SCALA"
         ]
     },
+    "brands": {
+        "label": "Aziende con cui abbiamo lavorato"
+    },
     "stats": {
         "items": [
             {
@@ -169,14 +171,14 @@
                 "label": "ore/mese recuperabili: l'obiettivo minimo di ogni audit"
             },
             {
-                "value": 43,
+                "value": 70,
                 "suffix": "%",
-                "label": "di beneficio fiscale massimo con l'iperammortamento 2026"
+                "label": "di copertura possibile coi voucher camerali su consulenza e automazione"
             },
             {
-                "value": 100,
+                "value": 77,
                 "suffix": "%",
-                "label": "della formazione spesso coperta dai fondi"
+                "label": "dei progetti AI in Italia è integrazione su misura, non software a scaffale"
             }
         ]
     },
@@ -184,7 +186,7 @@
         "eyebrow": "Servizi e prezzi",
         "title_line1": "Prezzi chiari,",
         "title_line2": "fin dall'inizio.",
-        "description": "Niente \"contattaci per un preventivo\" a scatola chiusa: tre modi di lavorare insieme, con prezzi indicativi e condizioni già scritti — più la formazione per il tuo team.",
+        "description": "Niente \"contattaci per un preventivo\" a scatola chiusa: tre modi di lavorare insieme, con prezzi indicativi e condizioni già scritti.",
         "cta_all": "Tutti i dettagli e le condizioni",
         "badge_start": "Parti da qui",
         "automation": {
@@ -203,13 +205,7 @@
             "name": "Progetto Completo",
             "price": "da 8.500 €",
             "price_note": "+ gestione mensile",
-            "summary": "Il progetto su misura che serve alla tua azienda — CRM, portale clienti, piattaforma o app — costruito chiavi in mano, integrato nei tuoi sistemi e gestito mese dopo mese. Il software può rientrare nell'iperammortamento 180%."
-        },
-        "training": {
-            "name": "Formazione operativa",
-            "price": "da 900 €",
-            "price_note": "spesso finanziabile al 100%",
-            "summary": "Mezza giornata o giornata intera in azienda, sui vostri processi reali. Copre l'obbligo di alfabetizzazione AI (AI Act) ed è spesso rimborsabile via fondi interprofessionali."
+            "summary": "Il progetto su misura che serve alla tua azienda — CRM, portale clienti, piattaforma o app — costruito chiavi in mano, integrato nei tuoi sistemi e gestito mese dopo mese."
         },
         "cta_more": "Scopri di più"
     },
@@ -268,7 +264,7 @@
                 "Mappatura dei processi con stima delle ore/mese intrappolate in attività ripetitive",
                 "3–5 automazioni prioritarie, ordinate per ritorno e difficoltà, con stima di costo per ciascuna",
                 "Roadmap 90 giorni: cosa fare prima, cosa dopo, cosa NON automatizzare",
-                "Quadro \"coperture pubbliche\" sulla tua provincia: bandi camerali, iperammortamento, fondi formazione",
+                "Quadro \"coperture pubbliche\" sulla tua provincia: bandi e voucher camerali AI, fondi formazione",
                 "Report finale presentato di persona alla direzione",
                 "Il report è tuo: implementi con noi o con chi preferisci"
             ],
@@ -288,9 +284,9 @@
                 "Automazioni e assistenti AI dove rendono",
                 "Formazione del team e documentazione",
                 "Gestione mensile: monitoraggio ed evoluzioni",
-                "Supporto su incentivi e iperammortamento"
+                "Supporto su voucher camerali e fondi formazione"
             ],
-            "note": "Il software sviluppato può essere documentato come bene immateriale per l'iperammortamento 180% (beneficio effettivo fino a ~43%): lavoriamo con uno studio di finanza agevolata per la pratica.",
+            "note": "Consulenza, automazione e formazione possono spesso rientrare nei voucher camerali AI e nei fondi interprofessionali: lavoriamo con uno studio di finanza agevolata per individuare i bandi attivi nella tua provincia.",
             "details_list": [
                 "Un progetto completo costruito attorno ai vostri processi: CRM su misura, portale clienti, piattaforma interna, app mobile o una suite di automazioni",
                 "Integrazione in profondità con quello che c'è già: ERP, gestionale, CRM, caselle di posta condivise, fogli di calcolo",
@@ -298,40 +294,18 @@
                 "Flussi con controlli di qualità e tracciatura: si vede cosa ha fatto l'AI e quando",
                 "Formazione del team e documentazione d'uso",
                 "Gestione continuativa: monitoraggio, correzioni, evoluzioni e nuove funzionalità ogni mese",
-                "Software documentabile come bene immateriale per l'iperammortamento 180% (beneficio effettivo fino a ~43%)",
+                "Voucher camerali AI e fondi formazione individuati e applicati al progetto dove possibile",
                 "Pratica agevolazioni seguita con uno studio di finanza agevolata partner"
             ],
             "details_tagline": "Quando serve più di un'automazione, serve un progetto: lo costruiamo attorno ai vostri processi e lo integriamo sul serio nei sistemi che usate. In Italia il 77% dei progetti AI è integrazione su misura, non software a scaffale — questo è quel lavoro, fatto bene.",
             "terms": "4–8 settimane · poi gestione mensile"
         },
-        "training": {
-            "name": "Formazione operativa",
-            "tagline": "Il tuo team impara a usare l'AI sui processi veri dell'azienda.",
-            "price": "da 900 € mezza giornata · da 1.500 € giornata intera",
-            "timing_value": "In azienda, da calendario",
-            "payment_value": "Anticipato",
-            "for_whom_value": "Team che già usano (o subiscono) l'AI e vogliono metodo, casi d'uso e regole chiare.",
-            "deliverables_list": [
-                "Sessione pratica sui vostri processi, non su esempi da manuale",
-                "Copertura dell'obbligo di alfabetizzazione AI (art. 4 AI Act, in vigore da febbraio 2025)",
-                "Spesso finanziabile fino al 100% tramite fondi interprofessionali (es. Fondimpresa)",
-                "Regole d'uso interne: cosa usare, cosa evitare, come trattare i dati"
-            ],
-            "note": "È anche il formato che proponiamo gratuitamente a studi professionali e associazioni per i loro clienti: chiedici come."
-        },
-        "training_section": {
-            "eyebrow": "Formazione",
-            "title": "Il team impara",
-            "accent": "sul lavoro vero.",
-            "description": "Workshop operativi in azienda, sui vostri processi — non teoria. Coprono l'obbligo di alfabetizzazione AI previsto dall'AI Act e sono spesso finanziabili fino al 100% con i fondi interprofessionali.",
-            "cta": "Vai alla pagina formazione"
-        },
         "incentives_title": "Quanto copre lo Stato nel 2026",
         "incentives_description": "Gli incentivi cambiano per provincia e si esauriscono, ma i modi per coprire parte dell'investimento nel 2026 non mancano. Questi sono i principali attivi oggi:",
         "incentives": [
             {
-                "title": "Iperammortamento 180%",
-                "text": "Per software e piattaforme AI interconnesse ai sistemi aziendali: beneficio fiscale effettivo fino a ~43% dell'investimento (L. 199/2025, investimenti 2026–2028)."
+                "title": "Fondo Nuove Competenze",
+                "text": "Nel 2026 il FNC rimborsa il costo del lavoro per le ore che il personale passa in formazione su AI e competenze digitali — cumulabile con i fondi interprofessionali che coprono il corso."
             },
             {
                 "title": "Formazione finanziata",
@@ -596,7 +570,7 @@
                     },
                     "ai": {
                         "title": "Incentivi 2026",
-                        "description": "Iperammortamento, voucher camerali e fondi formazione: nel 2026 ci sono diversi modi per coprire parte dell'investimento."
+                        "description": "Voucher camerali AI, fondi formazione e Fondo Nuove Competenze: nel 2026 ci sono diversi modi per coprire parte dell'investimento in consulenza, automazione e formazione."
                     }
                 },
                 "description": "Perimetro chiuso, prezzo chiaro, saldo a risultato funzionante."
@@ -832,6 +806,38 @@
             "body": "Ciao team Noxis,\n\nMi piacerebbe essere preso/a in considerazione per il vostro roster di creator.\n\nSu di me:\n— Nome & handle: \n— Piattaforme principali: \n— Nicchia / temi: \n— Audience / engagement: \n— Collaborazioni passate: \n\nLink ai miei social/portfolio:\n— \n— \n\nGrazie!"
         }
     },
+    "contact": {
+        "title": "Parliamone —",
+        "subtitle_automation": "Raccontaci dove perdete tempo: ti rispondiamo entro un giorno lavorativo con una proposta concreta.",
+        "subtitle_audit": "Due dati sulla tua azienda e ti ricontattiamo per organizzare l'audit.",
+        "subtitle_sprint": "Dicci che progetto avete in mente: ti rispondiamo con una prima valutazione di fattibilità e prezzo.",
+        "form_name": "Nome e cognome",
+        "form_email": "Email aziendale",
+        "form_phone": "Telefono",
+        "form_phone_error": "Inserisci un numero di telefono valido.",
+        "form_company": "Azienda",
+        "need_label_automation": "Quale processo vi ruba più ore?",
+        "need_label_sprint": "Che tipo di progetto?",
+        "employees_label": "Quante persone siete?",
+        "need_other": "Altro",
+        "project_options": {
+            "crm": "CRM su misura",
+            "portal": "Portale clienti",
+            "platform": "Piattaforma interna",
+            "app": "App mobile",
+            "automations": "Suite di automazioni",
+            "unsure": "Non lo sappiamo ancora"
+        },
+        "message_placeholder": "Aggiungi due righe di contesto (facoltativo)",
+        "message_placeholder_sprint": "Raccontaci il progetto in due righe (facoltativo)",
+        "submit": "Invia la richiesta",
+        "sending": "Invio in corso...",
+        "error": "Qualcosa è andato storto. Riprova o scrivici a hello@noxis.agency.",
+        "privacy": "Usiamo questi dati solo per risponderti.",
+        "privacy_link": "Informativa privacy",
+        "success_title": "Richiesta inviata.",
+        "success_text": "Ti rispondiamo entro un giorno lavorativo — di solito prima."
+    },
     "privacy": {
         "title": "Privacy policy",
         "updated": "Ultimo aggiornamento: giugno 2026",
@@ -917,13 +923,6 @@
             "keywords": "influencer marketing, creator management, talent agency, campagne brand, creator economy, social media marketing, performance marketing, agenzia influencer Italia",
             "og_title": "Talent — Noxis",
             "og_description": "Influencer marketing fatto bene. Strategia, brief, produzione, distribuzione e attribuzione tracciata end-to-end."
-        },
-        "formazione": {
-            "title": "Formazione AI in azienda — workshop sui vostri processi · Noxis",
-            "description": "Workshop AI operativi in azienda, sui processi reali del team. Coprono l'obbligo AI Act e sono spesso finanziabili al 100% con i fondi interprofessionali. Da 900 €.",
-            "keywords": "formazione AI aziende, corso intelligenza artificiale azienda, AI Act formazione, alfabetizzazione AI, Fondimpresa formazione AI, workshop AI",
-            "og_title": "Formazione AI in azienda — Noxis",
-            "og_description": "Workshop sui vostri processi reali. Obbligo AI Act coperto, spesso finanziabile al 100%."
         }
     },
     "selected_work": {
@@ -931,64 +930,6 @@
         "title_line1": "Dal primo commit",
         "title_line2": "alla scala globale.",
         "placeholder": "In arrivo"
-    },
-    "trainingPage": {
-        "eyebrow": "Noxis Formazione",
-        "title": "Il tuo team operativo con l'AI,",
-        "accent": "in una giornata.",
-        "description": "Workshop in azienda, costruiti sui vostri processi reali: niente teoria da manuale, solo casi vostri. Coprono l'obbligo di alfabetizzazione AI previsto dall'AI Act e sono spesso rimborsabili fino al 100% tramite i fondi interprofessionali.",
-        "cta_primary": "Richiedi il programma",
-        "cta_secondary": "Fai il check gratuito",
-        "formats_title": "Due formati,",
-        "formats_accent": "un solo obiettivo.",
-        "formats_description": "Si parte sempre dai vostri processi: raccogliamo prima esempi reali (email, preventivi, documenti) e costruiamo la giornata su quelli.",
-        "formats": [
-            {
-                "name": "Mezza giornata — Awareness operativa",
-                "duration": "4 ore · in azienda",
-                "price": "da 900 €",
-                "bullets": [
-                    "Cosa sa fare davvero l'AI oggi (e cosa no), senza hype",
-                    "Demo dal vivo sui vostri casi: email, preventivi, documenti",
-                    "Regole d'uso interne: dati, privacy, cosa evitare",
-                    "Copertura dell'obbligo di alfabetizzazione AI (art. 4 AI Act)"
-                ]
-            },
-            {
-                "name": "Giornata intera — Hands-on",
-                "duration": "8 ore · in azienda",
-                "price": "da 1.500 €",
-                "bullets": [
-                    "Mattina: basi, casi d'uso e demo sui vostri processi",
-                    "Pomeriggio: laboratorio pratico — ognuno lavora sui propri compiti reali",
-                    "Prompt e flussi pronti da riusare dal giorno dopo",
-                    "Mappa dei processi automatizzabili emersi durante il laboratorio"
-                ]
-            }
-        ],
-        "funding_title": "Spesso non la paghi tu:",
-        "funding_accent": "la coprono i fondi.",
-        "funding_description": "Se l'azienda aderisce a un fondo interprofessionale (Fondimpresa, Fondirigenti e simili), la formazione è spesso rimborsabile fino al 100%. Il percorso è semplice:",
-        "funding_steps": [
-            {
-                "title": "Verifica dell'adesione",
-                "text": "Col tuo consulente del lavoro verifichi a quale fondo aderisce l'azienda — l'adesione è gratuita e si fa in busta paga."
-            },
-            {
-                "title": "Piano formativo",
-                "text": "Prepariamo noi il programma e la documentazione del corso nella forma richiesta dal fondo."
-            },
-            {
-                "title": "Erogazione e rimborso",
-                "text": "Si svolge il workshop, si rendiconta, e il fondo rimborsa l'azienda — spesso l'intero importo."
-            }
-        ],
-        "funding_note": "La rendicontazione dipende dal fondo e dal bando attivo: lo verifichiamo insieme prima di partire, senza promettere nulla che non sia scritto.",
-        "aiact_title": "L'obbligo che quasi nessuno sta gestendo",
-        "aiact_text": "Dal 2 febbraio 2025 l'art. 4 dell'AI Act impone a chi usa sistemi AI in azienda di garantire un'adeguata alfabetizzazione del personale. Il workshop copre l'obbligo e ti lascia la documentazione del percorso svolto.",
-        "takeaway_title": "Cosa vi portate a casa",
-        "final_title": "Parliamo del tuo team?",
-        "final_text": "Raccontaci com'è fatta l'azienda e che processi seguite: ti proponiamo il formato giusto. E se l'azienda aderisce a un fondo interprofessionale, la formazione è spesso rimborsabile."
     },
     "bands": {
         "integration": {
@@ -1007,6 +948,8 @@
         },
         "toggle_questionnaire": "Mostra questionario",
         "no_questionnaire": "Nessun questionario allegato a questa richiesta.",
+        "need": "Esigenza:",
+        "no_message": "Nessun messaggio allegato.",
         "delete": "Elimina richiesta",
         "delete_confirm": "Eliminare definitivamente questa richiesta?"
     }

@@ -6,8 +6,8 @@ import { Container } from '@/components/layout/container'
 import { Reveal } from '@/components/ui/reveal'
 import { SectionHeader } from '@/components/ui/section-header'
 import { CleanButton } from '@/components/ui/clean-button'
+import { useContactDialog } from '@/components/contact/contact-dialog'
 import { cardStatic } from '@/lib/styles'
-import { mailtoHref } from '@/lib/mailto'
 import { cn } from '@/lib/utils'
 
 const OFFER_KEYS = ['automation', 'audit', 'sprint'] as const
@@ -30,6 +30,7 @@ function MovingBorder({ children }: { children: React.ReactNode }) {
 
 function OfferCard({ offerKey, highlighted }: { offerKey: OfferKey; highlighted: boolean }) {
   const t = useTranslations()
+  const { openContact } = useContactDialog()
   const deliverables = t.raw(`pricing.${offerKey}.deliverables_list`) as string[]
   return (
     <article
@@ -63,9 +64,9 @@ function OfferCard({ offerKey, highlighted }: { offerKey: OfferKey; highlighted:
         {t(`pricing.${offerKey}.terms`)}
       </p>
 
-      {/* Stesso bottone grande dell'hero, identico su tutte e tre le card. */}
+      {/* Stesso bottone grande dell'hero: apre il form contestuale all'offerta. */}
       <CleanButton
-        href={mailtoHref(t, 'development')}
+        onClick={() => openContact(offerKey)}
         variant={highlighted ? 'primary' : 'outline'}
         arrow
         className="w-full"

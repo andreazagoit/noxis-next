@@ -1,5 +1,11 @@
 import { z } from 'zod'
-import { LEAD_SECTORS, LEAD_EMPLOYEE_BANDS, CHECK_AREAS } from '@/lib/models/lead/config'
+import {
+  LEAD_SECTORS,
+  LEAD_EMPLOYEE_BANDS,
+  LEAD_SOURCES,
+  LEAD_OFFERS,
+  CHECK_AREAS,
+} from '@/lib/models/lead/config'
 
 export const LeadCreateSchema = z.object({
   name: z.string().min(1).max(200),
@@ -27,6 +33,10 @@ export const LeadCreateSchema = z.object({
     .array(z.object({ key: z.enum(CHECK_AREAS), value: z.number().int().min(0).max(2) }))
     .max(20)
     .optional(),
+  source: z.enum(LEAD_SOURCES).optional(),
+  offer: z.enum(LEAD_OFFERS).optional(),
+  need: z.string().max(40).optional(),
+  message: z.string().max(1000).optional(),
   locale: z.string().max(10).optional(),
   // Honeypot field: real users never fill it.
   website: z.string().max(200).optional(),

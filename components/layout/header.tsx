@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useState, useSyncExternalStore } from 'react'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { Container } from '@/components/layout/container'
@@ -23,8 +23,6 @@ import { MenuButton } from '@/components/layout/menu-button'
 import { glass } from '@/lib/styles'
 import type { AppSession } from '@/lib/auth-utils'
 
-const KNOWN_SUBS = ['development']
-
 /** Due varianti animate a confronto: 'pill' (pillola flottante, blur che
     appare allo scroll) o 'island' (barra larga che morfa in capsula). */
 const HEADER_DESIGN: 'pill' | 'island' = 'pill'
@@ -32,8 +30,6 @@ const HEADER_DESIGN: 'pill' | 'island' = 'pill'
 const NAV_ITEMS = [
   { href: '/#servizi', labelKey: 'header.services' },
   { href: '/#pricing', labelKey: 'header.pricing' },
-  { href: '/#formazione', labelKey: 'header.formazione' },
-  { href: '/development', labelKey: 'header.development' },
 ] as const
 
 function getInitials(value: string): string {
@@ -47,26 +43,15 @@ function getInitials(value: string): string {
   )
 }
 
-function getRootHomeHref(): string {
-  if (typeof window === 'undefined') return '/'
-  const { hostname, protocol, port } = window.location
-  const parts = hostname.split('.')
+function subscribeToScroll(callback: () => void): () => void {
+  window.addEventListener('scroll', callback, { passive: true })
+  return () => window.removeEventListener('scroll', callback)
+}
 
-  let isSub = false
-  let rootHost = hostname
-
-  if (hostname.endsWith('.localhost')) {
-    if (KNOWN_SUBS.includes(parts[0])) {
-      isSub = true
-      rootHost = 'localhost'
-    }
-  } else if (parts.length >= 3 && KNOWN_SUBS.includes(parts[0])) {
-    isSub = true
-    rootHost = parts.slice(1).join('.')
-  }
-
-  if (!isSub) return '/'
-  return `${protocol}//${rootHost}${port ? `:${port}` : ''}/`
+function subscribeToDesktop(callback: () => void): () => void {
+  const mql = window.matchMedia('(min-width: 768px)')
+  mql.addEventListener('change', callback)
+  return () => mql.removeEventListener('change', callback)
 }
 
 export type HeaderVariant = 'default' | 'contained' | 'dashboard'
@@ -80,26 +65,27 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
   const pathname = usePathname()
   const router = useRouter()
   const t = useTranslations()
-  const [homeHref, setHomeHref] = useState('/')
   const [menuOpen, setMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16)
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
+  // Stato esterno (scroll, host) letto con useSyncExternalStore: niente
+  // setState sincrono in effect e snapshot SSR coerente.
+  const scrolled = useSyncExternalStore(
+    subscribeToScroll,
+    () => window.scrollY > 16,
+    () => false,
+  )
+  // Su mobile l'header resta nello stato a riposo (niente sfondo, non richiuso):
+  // la variante "scrolled" scatta solo da md in su.
+  const isDesktop = useSyncExternalStore(
+    subscribeToDesktop,
+    () => window.matchMedia('(min-width: 768px)').matches,
+    () => false,
+  )
+  const collapsed = scrolled && isDesktop
   const isAnimated = variant === 'default' || variant === 'contained'
-
-  useEffect(() => {
-    setHomeHref(getRootHomeHref())
-  }, [])
 
   const handleLogoClick = (e: React.MouseEvent) => {
     if (!isAnimated) return
-    if (homeHref !== '/' || pathname !== '/') return
+    if (pathname !== '/') return
     e.preventDefault()
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -119,7 +105,7 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
 
   const Logo = (
     <Link
-      href={variant === 'dashboard' ? '/dashboard' : homeHref}
+      href={variant === 'dashboard' ? '/dashboard' : '/'}
       onClick={handleLogoClick}
       className="flex items-center gap-2"
     >
@@ -260,8 +246,8 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
             opacity: 1,
             // Larghezza sempre = container: allo scroll cambiano solo i padding,
             // così il contenuto rientra dentro la pillola.
-            paddingLeft: scrolled ? 24 : 0,
-            paddingRight: scrolled ? 24 : 0,
+            paddingLeft: collapsed ? 24 : 0,
+            paddingRight: collapsed ? 24 : 0,
           }}
           transition={{ type: 'spring', stiffness: 220, damping: 28 }}
           className="pointer-events-auto relative flex h-14 w-full items-center justify-between gap-4 rounded-full"
@@ -269,7 +255,7 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
           <motion.span
             aria-hidden
             initial={false}
-            animate={{ opacity: scrolled ? 1 : 0 }}
+            animate={{ opacity: collapsed ? 1 : 0 }}
             transition={{ duration: 0.35 }}
             className={cn(glass, 'absolute inset-0 -z-10 rounded-full')}
           />

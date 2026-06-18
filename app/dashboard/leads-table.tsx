@@ -20,6 +20,9 @@ interface LeadRow {
   score: number | null
   answers: number[] | null
   areas: LeadAreaEntry[] | null
+  offer: string | null
+  need: string | null
+  message: string | null
   locale: string | null
   source: string
   status: LeadStatus
@@ -34,6 +37,34 @@ const STATUS_STYLES: Record<LeadStatus, string> = {
 
 const CONTEXT_ANSWER_KEYS = ['answer_no', 'answer_partial', 'answer_yes'] as const
 const AREA_ANSWER_KEYS = ['answer_area_none', 'answer_area_some', 'answer_area_high'] as const
+
+/** Etichetta leggibile per l'esigenza dichiarata nel form di contatto. */
+function NeedLabel({ lead }: { lead: LeadRow }) {
+  const t = useTranslations()
+  if (!lead.need) return null
+  if (lead.offer === 'sprint') return <>{t(`contact.project_options.${lead.need}`)}</>
+  if (lead.need === 'other') return <>{t('contact.need_other')}</>
+  return <>{t(`check.areas.${lead.need}.title`)}</>
+}
+
+function ContactPanel({ lead }: { lead: LeadRow }) {
+  const t = useTranslations()
+  return (
+    <div className="flex flex-col gap-2 text-sm">
+      {lead.need && (
+        <p className="text-foreground/80">
+          <span className="text-muted-foreground mr-2">{t('admin.need')}</span>
+          <NeedLabel lead={lead} />
+        </p>
+      )}
+      {lead.message ? (
+        <p className="whitespace-pre-line leading-relaxed text-foreground/80">{lead.message}</p>
+      ) : (
+        <p className="text-muted-foreground">{t('admin.no_message')}</p>
+      )}
+    </div>
+  )
+}
 
 function QuestionnairePanel({ answers }: { answers: number[] | null }) {
   const t = useTranslations()
@@ -112,6 +143,16 @@ function LeadCard({ lead }: { lead: LeadRow }) {
           </p>
         </div>
 
+        {lead.offer && (
+          <span className="shrink-0 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary">
+            {t(`pricing.${lead.offer}.name`)}
+          </span>
+        )}
+        {lead.need && (
+          <span className="shrink-0 rounded-full bg-white/[0.06] px-2.5 py-1 text-xs font-semibold text-foreground/80">
+            <NeedLabel lead={lead} />
+          </span>
+        )}
         {(lead.areas ?? [])
           .filter((a) => a.value === 2)
           .slice(0, 2)
@@ -183,7 +224,11 @@ function LeadCard({ lead }: { lead: LeadRow }) {
             className="overflow-hidden"
           >
             <div className="border-t border-white/[0.06] px-5 py-4">
-              <QuestionnairePanel answers={lead.answers} />
+              {lead.source === 'contact' ? (
+                <ContactPanel lead={lead} />
+              ) : (
+                <QuestionnairePanel answers={lead.answers} />
+              )}
             </div>
           </motion.div>
         )}
