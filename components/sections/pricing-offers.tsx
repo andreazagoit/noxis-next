@@ -57,14 +57,7 @@ function OfferCard({ offerKey, highlighted }: { offerKey: OfferKey; highlighted:
         {t(`pricing.${offerKey}.tagline`)}
       </p>
 
-      <div className="font-display text-3xl md:text-[2.1rem] leading-none text-foreground">
-        {t(`pricing.${offerKey}.price`)}
-      </div>
-      <p className="mt-2.5 text-xs text-muted-foreground mb-6">
-        {t(`pricing.${offerKey}.terms`)}
-      </p>
-
-      {/* Stesso bottone grande dell'hero: apre il form contestuale all'offerta. */}
+      {/* Bottone grande dell'hero: apre il form contestuale all'offerta. */}
       <CleanButton
         onClick={() => openContact(offerKey)}
         variant={highlighted ? 'primary' : 'outline'}

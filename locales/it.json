@@ -4,7 +4,7 @@
         "development": "Development",
         "talent": "Talent",
         "services": "Servizi",
-        "pricing": "Prezzi",
+        "pricing": "Offerte",
         "check": "Check AI",
         "cta_check": "Check AI gratuito",
         "lets_talk": "Parliamone",
@@ -14,7 +14,7 @@
         "eyebrow": "Automazioni AI per PMI",
         "points": [
             "Prima automazione consegnata in 2 settimane",
-            "Prezzi chiari, concordati prima di iniziare",
+            "Perimetro e condizioni concordati prima di iniziare",
             "Saldo a risultato consegnato e funzionante"
         ],
         "title_line1": "L'AI dentro",
@@ -32,9 +32,9 @@
             "card3_status": "Generato · lunedì 08:00",
             "stat": "+12 ore recuperate a settimana"
         },
-        "description": "Automazioni AI per PMI: preventivi, documenti, email e gestionale. Prezzi chiari fin dall'inizio, incentivi 2026 e consegne in settimane, non trimestri.",
+        "description": "Automazioni AI per PMI: preventivi, documenti, email e gestionale. Consegne in settimane, non trimestri.",
         "cta": "Fai il check gratuito",
-        "cta_secondary": "Vedi i prezzi",
+        "cta_secondary": "Come lavoriamo",
         "we_are_good_at": "Cosa facciamo",
         "skills": {
             "web": "Automazioni",
@@ -148,7 +148,7 @@
     },
     "quotes": {
         "items": [
-            "PREZZI CHIARI, PRIMA DI INIZIARE",
+            "PERIMETRO CHIARO, PRIMA DI INIZIARE",
             "ORE RECUPERATE, NON SLIDE",
             "L'AI NEL GESTIONALE CHE USI GIÀ",
             "CONSEGNE IN SETTIMANE, NON MESI",
@@ -171,9 +171,9 @@
                 "label": "ore/mese recuperabili: l'obiettivo minimo di ogni audit"
             },
             {
-                "value": 70,
-                "suffix": "%",
-                "label": "di copertura possibile coi voucher camerali su consulenza e automazione"
+                "value": 0,
+                "suffix": "",
+                "label": "software nuovi da imparare: l'AI entra negli strumenti che già usi"
             },
             {
                 "value": 77,
@@ -183,10 +183,10 @@
         ]
     },
     "offers": {
-        "eyebrow": "Servizi e prezzi",
-        "title_line1": "Prezzi chiari,",
-        "title_line2": "fin dall'inizio.",
-        "description": "Niente \"contattaci per un preventivo\" a scatola chiusa: tre modi di lavorare insieme, con prezzi indicativi e condizioni già scritti.",
+        "eyebrow": "Come lavoriamo",
+        "title_line1": "Tre modi",
+        "title_line2": "di lavorare insieme.",
+        "description": "Tre modi di lavorare insieme, dal primo processo automatizzato al sistema completo. Perimetro e condizioni concordati prima di iniziare.",
         "cta_all": "Tutti i dettagli e le condizioni",
         "badge_start": "Parti da qui",
         "automation": {
@@ -199,7 +199,7 @@
             "name": "AI Audit",
             "price": "da 3.000 €",
             "price_note": "indicativo · 2 settimane",
-            "summary": "Mappatura dei processi, 3–5 automazioni prioritarie con stima delle ore recuperabili, roadmap 90 giorni e quadro degli incentivi applicabili alla tua provincia."
+            "summary": "Mappatura dei processi, la lista delle 3–5 automazioni da fare con stima delle ore recuperabili e una roadmap 90 giorni."
         },
         "sprint": {
             "name": "Progetto Completo",
@@ -210,10 +210,10 @@
         "cta_more": "Scopri di più"
     },
     "pricing": {
-        "eyebrow": "Servizi e prezzi",
-        "title_line1": "Quanto costa,",
-        "title_line2": "cosa ottieni.",
-        "description": "In Italia quasi nessuna agenzia AI indica i prezzi. Noi sì: range chiari fin da subito, confermati nero su bianco prima della firma — senza call commerciali a sorpresa.",
+        "eyebrow": "Come lavoriamo",
+        "title_line1": "Tre modi",
+        "title_line2": "di lavorare insieme.",
+        "description": "Dal primo processo automatizzato al sistema completo: tre modi di partire. Perimetro e condizioni concordati e messi per iscritto prima di iniziare, senza call a sorpresa.",
         "for_whom": "Per chi è",
         "deliverables": "Cosa include",
         "payment": "Pagamento",
@@ -246,7 +246,7 @@
         },
         "audit": {
             "name": "AI Audit",
-            "tagline": "La fotografia di dove l'azienda perde ore: interviste a chi fa il lavoro, ore misurate sui processi e un piano in ordine di ritorno.",
+            "tagline": "La fotografia di dove l'azienda perde ore: interviste a chi fa il lavoro, ore misurate sui processi e un piano di quali automazioni fare, in che ordine.",
             "price": "da 3.000 €",
             "timing_value": "2 settimane",
             "payment_value": "50% alla firma · 50% alla consegna del report",
@@ -254,9 +254,8 @@
             "deliverables_list": [
                 "Interviste a chi fa il lavoro",
                 "Stima delle ore/mese recuperabili",
-                "3–5 automazioni in ordine di ritorno",
-                "Roadmap 90 giorni con costi",
-                "Incentivi applicabili alla tua provincia"
+                "La lista delle 3–5 automazioni da fare, in ordine di ritorno",
+                "Roadmap 90 giorni con costi"
             ],
             "note": "Il report è tuo: puoi implementare la roadmap con noi o con chi preferisci.",
             "details_list": [
@@ -264,11 +263,10 @@
                 "Mappatura dei processi con stima delle ore/mese intrappolate in attività ripetitive",
                 "3–5 automazioni prioritarie, ordinate per ritorno e difficoltà, con stima di costo per ciascuna",
                 "Roadmap 90 giorni: cosa fare prima, cosa dopo, cosa NON automatizzare",
-                "Quadro \"coperture pubbliche\" sulla tua provincia: bandi e voucher camerali AI, fondi formazione",
                 "Report finale presentato di persona alla direzione",
                 "Il report è tuo: implementi con noi o con chi preferisci"
             ],
-            "details_tagline": "La fotografia completa di dove l'azienda perde ore: interviste a chi fa il lavoro, mappatura dei processi e un piano in ordine di ritorno — con i conti, i tempi e gli incentivi applicabili.",
+            "details_tagline": "La fotografia completa di dove l'azienda perde ore: interviste a chi fa il lavoro, mappatura dei processi e un piano di quali automazioni fare — con i conti e i tempi.",
             "terms": "2 settimane · 50% firma, 50% al report"
         },
         "sprint": {
@@ -283,39 +281,20 @@
                 "Integrazione con i sistemi che già usate",
                 "Automazioni e assistenti AI dove rendono",
                 "Formazione del team e documentazione",
-                "Gestione mensile: monitoraggio ed evoluzioni",
-                "Supporto su voucher camerali e fondi formazione"
+                "Gestione mensile: monitoraggio ed evoluzioni"
             ],
-            "note": "Consulenza, automazione e formazione possono spesso rientrare nei voucher camerali AI e nei fondi interprofessionali: lavoriamo con uno studio di finanza agevolata per individuare i bandi attivi nella tua provincia.",
+            "note": "Il software resta gestito da noi: hosting, monitoraggio ed evoluzioni mese dopo mese.",
             "details_list": [
                 "Un progetto completo costruito attorno ai vostri processi: CRM su misura, portale clienti, piattaforma interna, app mobile o una suite di automazioni",
                 "Integrazione in profondità con quello che c'è già: ERP, gestionale, CRM, caselle di posta condivise, fogli di calcolo",
                 "AI dove rende davvero: automazioni, assistente sulla knowledge base aziendale (listini, procedure, storico offerte), dati che si inseriscono da soli",
                 "Flussi con controlli di qualità e tracciatura: si vede cosa ha fatto l'AI e quando",
                 "Formazione del team e documentazione d'uso",
-                "Gestione continuativa: monitoraggio, correzioni, evoluzioni e nuove funzionalità ogni mese",
-                "Voucher camerali AI e fondi formazione individuati e applicati al progetto dove possibile",
-                "Pratica agevolazioni seguita con uno studio di finanza agevolata partner"
+                "Gestione continuativa: monitoraggio, correzioni, evoluzioni e nuove funzionalità ogni mese"
             ],
             "details_tagline": "Quando serve più di un'automazione, serve un progetto: lo costruiamo attorno ai vostri processi e lo integriamo sul serio nei sistemi che usate. In Italia il 77% dei progetti AI è integrazione su misura, non software a scaffale — questo è quel lavoro, fatto bene.",
             "terms": "4–8 settimane · poi gestione mensile"
         },
-        "incentives_title": "Quanto copre lo Stato nel 2026",
-        "incentives_description": "Gli incentivi cambiano per provincia e si esauriscono, ma i modi per coprire parte dell'investimento nel 2026 non mancano. Questi sono i principali attivi oggi:",
-        "incentives": [
-            {
-                "title": "Fondo Nuove Competenze",
-                "text": "Nel 2026 il FNC rimborsa il costo del lavoro per le ore che il personale passa in formazione su AI e competenze digitali — cumulabile con i fondi interprofessionali che coprono il corso."
-            },
-            {
-                "title": "Formazione finanziata",
-                "text": "I fondi interprofessionali (Fondimpresa, Fondirigenti) coprono spesso fino al 100% della formazione AI del personale."
-            },
-            {
-                "title": "Bandi camerali e voucher",
-                "text": "Le Camere di Commercio finanziano consulenza e adozione AI con coperture fino al 70% (es. Voucher AI Como-Lecco 2026); i bandi attivi variano da provincia a provincia."
-            }
-        ],
         "faq_title": "Le domande",
         "faq": [
             {
@@ -331,8 +310,8 @@
                 "a": "Per questo ogni progetto include la formazione delle persone che useranno l'automazione, e partiamo sempre da un processo che fa risparmiare tempo a qualcuno di preciso — non da un giocattolo tecnologico."
             },
             {
-                "q": "Perché indicate i prezzi? Tutti dicono \"dipende\".",
-                "a": "Perché un range onesto aiuta entrambi: tu capisci subito se siamo nel tuo budget, noi parliamo solo con chi può davvero partire. Il prezzo esatto si concorda sul perimetro, prima della firma — e quello che resta fuori va in roadmap, non in fattura."
+                "q": "Quanto costa? Non vedo i prezzi.",
+                "a": "Ogni azienda ha processi e sistemi diversi, quindi il prezzo lo costruiamo sul tuo perimetro reale — e te lo mettiamo per iscritto prima di iniziare, senza sorprese. In una call di 20 minuti capiamo cosa serve e ti diamo una cifra."
             },
             {
                 "q": "Come so che siete capaci, se siete un'agenzia giovane?",
@@ -523,7 +502,7 @@
         "title_line1": "Costruiamo",
         "title_line2": "automazioni e prodotti",
         "title_line3": "che escono davvero.",
-        "description": "Automazioni per le PMI e sviluppo prodotto per chi parte da zero: integrazioni nei sistemi esistenti, assistenti AI su misura, MVP online in settimane. Perimetro chiaro, prezzi chiari, codice production-grade.",
+        "description": "Automazioni per le PMI e sviluppo prodotto per chi parte da zero: integrazioni nei sistemi esistenti, assistenti AI su misura, MVP online in settimane. Perimetro chiaro, codice production-grade.",
         "cta_project": "Inizia un progetto",
         "cta_work": "Vedi i lavori",
         "cta_pricing": "Prezzi e offerte",
@@ -569,8 +548,8 @@
                         "description": "CRM, piattaforme e app su misura: costruiti chiavi in mano, integrati nei tuoi sistemi e gestiti ogni mese."
                     },
                     "ai": {
-                        "title": "Incentivi 2026",
-                        "description": "Voucher camerali AI, fondi formazione e Fondo Nuove Competenze: nel 2026 ci sono diversi modi per coprire parte dell'investimento in consulenza, automazione e formazione."
+                        "title": "Gestione continuativa",
+                        "description": "Hosting, monitoraggio ed evoluzioni mese dopo mese: restiamo a gestire ciò che costruiamo, non spariamo dopo il go-live."
                     }
                 },
                 "description": "Perimetro chiuso, prezzo chiaro, saldo a risultato funzionante."
@@ -886,22 +865,22 @@
             "og_title": "Privacy policy — Noxis",
             "og_description": "Come trattiamo i dati raccolti dal sito: finalità, conservazione e diritti."
         },
-        "title": "Noxis — Automazioni AI per PMI · Prezzi chiari",
-        "description": "Integriamo l'AI negli strumenti che la tua azienda usa già: preventivi, documenti, email e gestionale. Prezzi chiari fin dall'inizio, incentivi 2026. Sviluppo web e AI su misura.",
+        "title": "Noxis — Automazioni AI per PMI",
+        "description": "Integriamo l'AI negli strumenti che la tua azienda usa già: preventivi, documenti, email e gestionale. Sviluppo web e AI su misura.",
         "keywords": "automazione AI PMI, intelligenza artificiale aziende, integrazione AI gestionale, consulenza AI Italia, automazione processi aziendali, agenzia AI, sviluppo software AI, automazioni n8n, assistente AI aziendale, AI Lombardia",
         "home": {
-            "title": "Noxis — Automazioni AI per PMI · Prezzi chiari",
-            "description": "L'AI dentro gli strumenti che già usi: automazioni di preventivi, documenti, email e gestionale per PMI. Prezzi chiari prima di iniziare, incentivi 2026.",
+            "title": "Noxis — Automazioni AI per PMI",
+            "description": "L'AI dentro gli strumenti che già usi: automazioni di preventivi, documenti, email e gestionale per PMI. Consegne in settimane, non trimestri.",
             "keywords": "automazione AI PMI, AI per aziende, integrazione AI gestionale, automazione processi, consulenza AI Italia, agenzia AI Milano, automazione preventivi, assistente AI aziendale",
             "og_title": "Noxis — Automazioni AI per PMI",
-            "og_description": "L'AI dentro gli strumenti che già usi. Prezzi chiari fin dall'inizio, incentivi 2026."
+            "og_description": "L'AI dentro gli strumenti che già usi. Consegne in settimane, non trimestri."
         },
         "pricing": {
-            "title": "Servizi e prezzi — Automazioni AI con prezzi chiari · Noxis",
-            "description": "Range di prezzo indicati fin da subito, senza call a sorpresa: Prima Automazione da 2.900 €, AI Audit da 3.000 €, Progetto Completo da 8.500 € + gestione mensile. Formazione spesso finanziabile al 100%.",
+            "title": "Servizi — Automazioni AI per PMI · Noxis",
+            "description": "Tre modi di lavorare insieme: Prima Automazione, AI Audit e Progetto Completo. Perimetro e condizioni concordati e scritti prima di iniziare.",
             "keywords": "prezzi automazione AI, costo consulenza AI, AI audit prezzo, automazione processi costo, quanto costa AI azienda, preventivo automazione AI",
-            "og_title": "Servizi e prezzi — Noxis",
-            "og_description": "Prima Automazione da 2.900 € · AI Audit da 3.000 € · Progetto Completo da 8.500 €. Prezzi chiari, perimetro chiaro."
+            "og_title": "Servizi — Noxis",
+            "og_description": "Prima Automazione · AI Audit · Progetto Completo. Perimetro e condizioni concordati prima di iniziare."
         },
         "check": {
             "title": "Check AI gratuito — Cosa può automatizzare la tua azienda · Noxis",
@@ -912,10 +891,10 @@
         },
         "development": {
             "title": "Development — Automazioni AI e prodotti su misura · Noxis",
-            "description": "Automazioni AI per PMI e sviluppo prodotto: integrazioni in ERP/CRM/gestionale, assistenti AI su misura, MVP in settimane. Next.js, codice type-safe, prezzi chiari.",
+            "description": "Automazioni AI per PMI e sviluppo prodotto: integrazioni in ERP/CRM/gestionale, assistenti AI su misura, MVP in settimane. Next.js, codice type-safe.",
             "keywords": "sprint AI, integrazione AI ERP CRM, sviluppo automazioni, assistente AI knowledge base, sviluppo MVP, Next.js, software custom PMI",
             "og_title": "Development — Noxis",
-            "og_description": "Automazioni AI e sviluppo su misura: integrazioni nei tuoi sistemi, MVP in settimane, prezzi chiari."
+            "og_description": "Automazioni AI e sviluppo su misura: integrazioni nei tuoi sistemi, MVP in settimane."
         },
         "talent": {
             "title": "Talent — Influencer Marketing & Creator Management · Noxis",
