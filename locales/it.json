@@ -116,9 +116,9 @@
         "visual_chat_q": "Che prezzo avevamo fatto a Rossi l'anno scorso?",
         "visual_chat_a": "12.400 €, ordine di febbraio. Ti preparo la bozza del nuovo preventivo?",
         "visual_url": "app.tuaazienda.it",
-        "visual_module1": "Prompt operativi",
+        "visual_module1": "Regole d'uso",
         "visual_module2": "Dati e riservatezza",
-        "visual_module3": "Casi d'uso reali",
+        "visual_module3": "Documentazione d'uso",
         "web_dev": {
             "title": "Automazioni di processo",
             "description": "Preventivi, fatture, email ricorrenti, report e inserimento dati che si preparano da soli. L'AI fa la bozza, le persone controllano e approvano: ore recuperate ogni settimana, da subito."
@@ -137,7 +137,7 @@
         },
         "marketing": {
             "title": "Conformità AI Act",
-            "description": "Quando portiamo l'AI nei tuoi processi, mettiamo il team in regola con l'obbligo di alfabetizzazione AI (AI Act): regole d'uso e formazione sui casi reali, come parte dell'adozione."
+            "description": "Quando portiamo l'AI nei tuoi processi, la rendiamo conforme all'obbligo di alfabetizzazione AI (AI Act): regole d'uso scritte, documentazione e il team che sa usare ciò che costruiamo — tutto dentro il progetto."
         }
     },
     "partnership": {

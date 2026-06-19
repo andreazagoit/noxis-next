@@ -49,12 +49,14 @@ function FaqItem({
         <span
           aria-hidden
           className={cn(
-            'shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full border text-primary text-xl leading-none',
+            'relative shrink-0 inline-flex h-8 w-8 rounded-full border',
             'transition-all duration-300',
             open ? 'rotate-45 border-primary/40 bg-primary/10' : 'border-foreground/10',
           )}
         >
-          +
+          {/* Croce costruita da due barrette centrate: ruota pulita attorno al centro */}
+          <span className="absolute left-1/2 top-1/2 h-[1.5px] w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary" />
+          <span className="absolute left-1/2 top-1/2 h-3 w-[1.5px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary" />
         </span>
       </button>
       <AnimatePresence initial={false}>

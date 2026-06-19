@@ -116,9 +116,9 @@
         "visual_chat_q": "What price did we quote Rossi last year?",
         "visual_chat_a": "€12,400, February order. Want me to draft the new quote?",
         "visual_url": "app.yourcompany.com",
-        "visual_module1": "Practical prompting",
+        "visual_module1": "Usage rules",
         "visual_module2": "Data & confidentiality",
-        "visual_module3": "Real use cases",
+        "visual_module3": "Usage documentation",
         "web_dev": {
             "title": "Process automation",
             "description": "Quotes, invoices, recurring emails, reports and data entry that prepare themselves. The AI drafts, your people review and approve: hours recovered every week, starting now."
@@ -137,7 +137,7 @@
         },
         "marketing": {
             "title": "AI Act compliance",
-            "description": "When we bring AI into your processes, we get your team compliant with the AI literacy obligation (EU AI Act): usage rules and training on real cases, as part of adoption."
+            "description": "When we bring AI into your processes, we make it compliant with the AI literacy obligation (EU AI Act): written usage rules, documentation and a team that knows how to use what we build — all inside the project."
         }
     },
     "partnership": {
