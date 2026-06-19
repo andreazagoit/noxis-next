@@ -489,11 +489,13 @@ function BuildCard() {
 
 const RING_LOOP = 10
 
+// Tre tick sincronizzati: a ognuno l'anello fa +⅓, la spunta compare e il numero sale.
+const TICKS = [0.2, 0.45, 0.7] as const
 const COUNTERS = [
-  { label: '0/4', opacity: [1, 1, 0, 0], times: [0, 0.18, 0.22, 1] },
-  { label: '1/4', opacity: [0, 0, 1, 1, 0, 0], times: [0, 0.18, 0.22, 0.36, 0.4, 1] },
-  { label: '2/4', opacity: [0, 0, 1, 1, 0, 0], times: [0, 0.36, 0.4, 0.54, 0.58, 1] },
-  { label: '3/4', opacity: [0, 0, 1, 1, 0], times: [0, 0.54, 0.58, 0.93, 1] },
+  { label: '0/3', opacity: [1, 1, 0, 0], times: [0, 0.2, 0.26, 1] },
+  { label: '1/3', opacity: [0, 0, 1, 1, 0, 0], times: [0, 0.2, 0.26, 0.45, 0.51, 1] },
+  { label: '2/3', opacity: [0, 0, 1, 1, 0, 0], times: [0, 0.45, 0.51, 0.7, 0.76, 1] },
+  { label: '3/3', opacity: [0, 0, 1, 1, 0], times: [0, 0.7, 0.76, 0.9, 1] },
 ] as const
 
 function TrainingCard() {
@@ -523,18 +525,18 @@ function TrainingCard() {
                   initial={reduce ? false : { pathLength: 0 }}
                   animate={
                     reduce
-                      ? { pathLength: 0.75 }
-                      : { pathLength: [0, 0, 0.25, 0.25, 0.5, 0.5, 0.75, 0.75, 0] }
+                      ? { pathLength: 1 }
+                      : { pathLength: [0, 0, 0.333, 0.333, 0.666, 0.666, 1, 1, 0] }
                   }
                   transition={
                     reduce
                       ? { duration: 0 }
-                      : { ...loop, times: [0, 0.14, 0.2, 0.32, 0.38, 0.5, 0.56, 0.93, 1] }
+                      : { ...loop, times: [0, 0.2, 0.26, 0.45, 0.51, 0.7, 0.76, 0.9, 1] }
                   }
                 />
               </svg>
               {reduce ? (
-                <span className="absolute text-[11px] font-semibold text-foreground/85">3/4</span>
+                <span className="absolute text-[11px] font-semibold text-foreground/85">3/3</span>
               ) : (
                 COUNTERS.map(({ label, opacity, times }) => (
                   <motion.span
@@ -551,13 +553,13 @@ function TrainingCard() {
             {/* checklist: i moduli si spuntano in sequenza */}
             <span className="flex flex-1 flex-col gap-3">
               {(['visual_module1', 'visual_module2', 'visual_module3'] as const).map((key, i) => {
-                const at = 0.18 + i * 0.18
+                const at = TICKS[i]
                 return (
                   <span key={key} className="flex items-center gap-2.5">
                     <motion.span
                       initial={reduce ? false : { opacity: 0, scale: 0.5 }}
                       animate={reduce ? undefined : { opacity: [0, 0, 1, 1, 0], scale: [0.5, 0.5, 1, 1, 0.5] }}
-                      transition={{ ...loop, times: [0, at, at + 0.05, 0.93, 1] }}
+                      transition={{ ...loop, times: [0, at, at + 0.06, 0.9, 1] }}
                       className="inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-emerald-500/15"
                     >
                       <Check size={9} strokeWidth={3} className="text-emerald-600" />
@@ -572,13 +574,13 @@ function TrainingCard() {
           </div>
           {/* il badge arriva a percorso completato */}
           <motion.div
-            initial={reduce ? false : { opacity: 0, scale: 0.5, y: 6 }}
+            initial={reduce ? false : { opacity: 0, scale: 0.96, y: 4 }}
             animate={
               reduce
                 ? undefined
-                : { opacity: [0, 0, 1, 1, 0], scale: [0.5, 0.5, 1.08, 1, 0.8], y: [6, 6, 0, -3, -6] }
+                : { opacity: [0, 0, 1, 1, 0], scale: [0.96, 0.96, 1, 1, 0.96], y: [4, 4, 0, 0, -4] }
             }
-            transition={{ ...loop, times: [0, 0.64, 0.7, 0.93, 1] }}
+            transition={{ ...loop, times: [0, 0.78, 0.86, 0.9, 1] }}
             className={cn(glass, 'absolute -top-3 right-4 flex items-center gap-1.5 rounded-xl px-3 py-1.5')}
           >
             <BadgeCheck size={13} className="text-primary" />
