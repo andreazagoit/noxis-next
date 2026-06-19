@@ -168,9 +168,11 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
     <>
       {Logo}
 
-      <div className="flex items-center gap-2 md:gap-5">
+      {/* Cluster destro con ritmo uniforme (gap-7 = 28px): link e utility
+          condividono la stessa spaziatura. Su mobile resta compatto (gap-2). */}
+      <div className="flex items-center gap-2 md:gap-7">
         {/* Voci a destra, testo puro */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-7">
           {NAV_ITEMS.map((item) => {
             const active =
               !item.href.includes('#') &&
@@ -190,8 +192,6 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
             )
           })}
         </ul>
-
-        <span aria-hidden className="hidden md:block h-4 w-px bg-white/10" />
 
         <LanguageSwitcher className="hidden md:inline-flex" />
 
