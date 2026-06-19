@@ -6,7 +6,7 @@
         "services": "Services",
         "pricing": "Offers",
         "check": "AI Check",
-        "cta_check": "Free AI check",
+        "cta_check": "Let's talk",
         "lets_talk": "Let's Talk",
         "sign_in": "Sign in"
     },
@@ -33,7 +33,7 @@
             "stat": "+12 hours recovered per week"
         },
         "description": "AI automation for SMBs: quotes, documents, email and your management software. Delivery in weeks, not quarters.",
-        "cta": "Take the free check",
+        "cta": "Let's talk",
         "cta_secondary": "How we work",
         "we_are_good_at": "What we do",
         "skills": {
@@ -138,6 +138,52 @@
         "marketing": {
             "title": "AI Act compliance",
             "description": "When we bring AI into your processes, we make it compliant with the AI literacy obligation (EU AI Act): written usage rules, documentation and a team that knows how to use what we build — all inside the project."
+        }
+    },
+    "use_cases": {
+        "eyebrow": "Examples",
+        "title_line1": "Three examples,",
+        "title_line2": "explained in full.",
+        "description": "Concrete examples of what AI can automate in an SMB: the problem, the time you can recover (indicative) and how it works, step by step.",
+        "saved_label": "Time saved",
+        "how_label": "How it works",
+        "items": {
+            "quotes": {
+                "title": "Quotes & offers",
+                "saved": "10–15 hours / month",
+                "result": "from ~40 to ~5 minutes per quote",
+                "problem": "Hours lost re-reading emails and attachments, looking up price lists and retyping quotes by hand.",
+                "steps": [
+                    { "title": "The request arrives", "detail": "By email, often with a PDF or technical drawing attached." },
+                    { "title": "The AI reads & extracts", "detail": "It reads text and attachments and pulls out client, quantity, material, deadline." },
+                    { "title": "Draft with price list", "detail": "It fetches the price list and similar past quotes and fills in the draft." },
+                    { "title": "You approve", "detail": "You check, adjust and approve: the quote goes into your system." }
+                ]
+            },
+            "documents": {
+                "title": "Invoices & documents",
+                "saved": "20–30 hours / month",
+                "result": "zero manual re-entry, zero typos",
+                "problem": "Data from invoices, delivery notes and orders retyped by hand from one system to another, with errors.",
+                "steps": [
+                    { "title": "The document arrives", "detail": "An invoice, delivery note or order — email, PDF or scan." },
+                    { "title": "The AI extracts the data", "detail": "Number, supplier, amounts, line items and dates, automatically." },
+                    { "title": "Quality check", "detail": "Uncertain data is routed to a person before it goes in." },
+                    { "title": "Into the system", "detail": "The data enters ready and verified, with nothing retyped." }
+                ]
+            },
+            "email": {
+                "title": "Email & customer requests",
+                "saved": "8–12 hours / month",
+                "result": "a draft reply ready in seconds",
+                "problem": "The same requests to answer every day, and manual routing to the right person.",
+                "steps": [
+                    { "title": "Email arrives", "detail": "The customer's request lands in the shared inbox." },
+                    { "title": "The AI understands & routes", "detail": "It works out what it's about and sends it to the right team." },
+                    { "title": "Draft reply", "detail": "For recurring requests it prepares a draft with the right data." },
+                    { "title": "You check and send", "detail": "You take a look, tweak if needed, and send." }
+                ]
+            }
         }
     },
     "partnership": {
@@ -246,7 +292,7 @@
         },
         "audit": {
             "name": "AI Audit",
-            "tagline": "A clear picture of where your company loses hours: interviews with the people doing the work, measured processes and a plan of which automations to do, in what order.",
+            "tagline": "Where the company loses hours: interviews with the people doing the work, and a plan of which automations to do, in what order.",
             "price": "from €3,000",
             "timing_value": "2 weeks",
             "payment_value": "50% on signing · 50% on report delivery",
@@ -327,8 +373,8 @@
         ],
         "final_cta_kicker_suffix": "without changing your tools.",
         "final_cta_title": "Not sure where to start?",
-        "final_cta_text": "Take the free check: 10 questions, 3 minutes, and we'll tell you the right starting point for your company.",
-        "final_cta_button": "Take the free check",
+        "final_cta_text": "Tell us where you're losing time: in a 20-minute call, no strings attached, we'll tell you what's worth automating and where to start.",
+        "final_cta_button": "Let's talk",
         "final_cta_secondary": "Or write to us",
         "card_cta": "Let's talk",
         "faq_eyebrow": "FAQ",

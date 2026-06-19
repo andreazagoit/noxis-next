@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl'
 import { useCallback, useEffect, useState, useSyncExternalStore } from 'react'
 import { createPortal } from 'react-dom'
 import { cn } from '@/lib/utils'
-import { useCheckDialog } from '@/components/check/check-dialog'
+import { useContactDialog } from '@/components/contact/contact-dialog'
 
 const ITEMS = [
   { href: '/', labelKey: 'header.home' },
@@ -63,7 +63,7 @@ export function MenuButton({ className, open: openProp, onOpenChange }: MenuButt
   )
   const pathname = usePathname()
   const t = useTranslations()
-  const { openCheck } = useCheckDialog()
+  const { openContact } = useContactDialog()
 
   useEffect(() => {
     if (!open) return
@@ -190,7 +190,7 @@ export function MenuButton({ className, open: openProp, onOpenChange }: MenuButt
                 type="button"
                 onClick={() => {
                   setOpen(false)
-                  openCheck()
+                  openContact('automation')
                 }}
                 className="flex items-center justify-between px-4 py-3 rounded-2xl text-lg font-semibold hover:bg-foreground/5 transition-colors cursor-pointer text-left"
               >

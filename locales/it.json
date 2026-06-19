@@ -6,7 +6,7 @@
         "services": "Servizi",
         "pricing": "Offerte",
         "check": "Check AI",
-        "cta_check": "Check AI gratuito",
+        "cta_check": "Parliamone",
         "lets_talk": "Parliamone",
         "sign_in": "Accedi"
     },
@@ -33,7 +33,7 @@
             "stat": "+12 ore recuperate a settimana"
         },
         "description": "Automazioni AI per PMI: preventivi, documenti, email e gestionale. Consegne in settimane, non trimestri.",
-        "cta": "Fai il check gratuito",
+        "cta": "Parliamone",
         "cta_secondary": "Come lavoriamo",
         "we_are_good_at": "Cosa facciamo",
         "skills": {
@@ -138,6 +138,52 @@
         "marketing": {
             "title": "Conformità AI Act",
             "description": "Quando portiamo l'AI nei tuoi processi, la rendiamo conforme all'obbligo di alfabetizzazione AI (AI Act): regole d'uso scritte, documentazione e il team che sa usare ciò che costruiamo — tutto dentro il progetto."
+        }
+    },
+    "use_cases": {
+        "eyebrow": "Esempi",
+        "title_line1": "Tre esempi,",
+        "title_line2": "spiegati per intero.",
+        "description": "Esempi concreti di cosa l'AI può automatizzare in una PMI: il problema, il tempo che puoi recuperare (indicativo) e come funziona, passo per passo.",
+        "saved_label": "Tempo risparmiato",
+        "how_label": "Come funziona",
+        "items": {
+            "quotes": {
+                "title": "Preventivi e offerte",
+                "saved": "10–15 ore / mese",
+                "result": "da ~40 a ~5 minuti a preventivo",
+                "problem": "Ore perse a rileggere email e allegati, cercare a listino e ribattere preventivi a mano.",
+                "steps": [
+                    { "title": "Arriva la richiesta", "detail": "Via email, anche con PDF o disegno tecnico allegato." },
+                    { "title": "L'AI legge ed estrae", "detail": "Legge testo e allegati e tira fuori cliente, quantità, materiale, scadenza." },
+                    { "title": "Bozza con listino", "detail": "Recupera listino e preventivi simili passati e compila la bozza." },
+                    { "title": "Tu approvi", "detail": "Controlli, correggi e approvi: il preventivo entra nel gestionale." }
+                ]
+            },
+            "documents": {
+                "title": "Fatture e documenti",
+                "saved": "20–30 ore / mese",
+                "result": "zero reinserimenti a mano, zero errori di battitura",
+                "problem": "Dati di fatture, DDT e ordini ribattuti a mano da un sistema all'altro, con errori.",
+                "steps": [
+                    { "title": "Arriva il documento", "detail": "Una fattura, un DDT o un ordine — email, PDF o scansione." },
+                    { "title": "L'AI estrae i dati", "detail": "Numero, fornitore, importi, righe e date, in automatico." },
+                    { "title": "Controllo qualità", "detail": "I dati incerti passano a una persona prima di entrare." },
+                    { "title": "Nel gestionale", "detail": "I dati entrano già pronti e verificati, senza ribattere nulla." }
+                ]
+            },
+            "email": {
+                "title": "Email e richieste clienti",
+                "saved": "8–12 ore / mese",
+                "result": "bozza di risposta pronta in pochi secondi",
+                "problem": "Le stesse richieste a cui rispondere ogni giorno e lo smistamento manuale alla persona giusta.",
+                "steps": [
+                    { "title": "Email in arrivo", "detail": "La richiesta del cliente arriva nella casella condivisa." },
+                    { "title": "L'AI capisce e smista", "detail": "Capisce di cosa si tratta e la manda al reparto giusto." },
+                    { "title": "Bozza di risposta", "detail": "Per le richieste ricorrenti prepara una bozza con i dati giusti." },
+                    { "title": "Tu controlli e invii", "detail": "Dai un'occhiata, ritocchi se serve, e invii." }
+                ]
+            }
         }
     },
     "partnership": {
@@ -246,7 +292,7 @@
         },
         "audit": {
             "name": "AI Audit",
-            "tagline": "La fotografia di dove l'azienda perde ore: interviste a chi fa il lavoro, ore misurate sui processi e un piano di quali automazioni fare, in che ordine.",
+            "tagline": "La fotografia di dove l'azienda perde ore: interviste a chi fa il lavoro e un piano di quali automazioni fare, in che ordine.",
             "price": "da 3.000 €",
             "timing_value": "2 settimane",
             "payment_value": "50% alla firma · 50% alla consegna del report",
@@ -327,8 +373,8 @@
         ],
         "final_cta_kicker_suffix": "senza cambiare strumenti.",
         "final_cta_title": "Non sai da dove partire?",
-        "final_cta_text": "Fai il check gratuito: 10 domande, 3 minuti, e ti diciamo qual è il punto di partenza giusto per la tua azienda.",
-        "final_cta_button": "Fai il check gratuito",
+        "final_cta_text": "Raccontaci dove perdete tempo: in una call di 20 minuti, senza impegno, ti diciamo cosa conviene automatizzare e da dove partire.",
+        "final_cta_button": "Parliamone",
         "final_cta_secondary": "Oppure scrivici",
         "card_cta": "Parliamone",
         "faq_eyebrow": "FAQ",

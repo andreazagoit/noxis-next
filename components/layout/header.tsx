@@ -168,9 +168,9 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
     <>
       {Logo}
 
-      <div className="flex items-center gap-3 md:gap-6">
+      <div className="flex items-center gap-2 md:gap-5">
         {/* Voci a destra, testo puro */}
-        <ul className="hidden md:flex items-center gap-6">
+        <ul className="hidden md:flex items-center gap-8">
           {NAV_ITEMS.map((item) => {
             const active =
               !item.href.includes('#') &&
@@ -181,7 +181,7 @@ export function Header({ variant = 'contained', session }: HeaderProps) {
                   href={item.href}
                   className={cn(
                     'text-sm font-medium tracking-tight transition-colors',
-                    active ? 'text-foreground' : 'text-foreground/55 hover:text-foreground',
+                    active ? 'text-foreground' : 'text-foreground/60 hover:text-foreground',
                   )}
                 >
                   {t(item.labelKey)}

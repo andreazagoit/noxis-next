@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { CleanButton } from '@/components/ui/clean-button'
 import { HeroVisual } from '@/components/sections/hero-visual'
-import { useCheckDialog } from '@/components/check/check-dialog'
+import { useContactDialog } from '@/components/contact/contact-dialog'
 
 const EASE = [0.16, 1, 0.3, 1] as const
 
@@ -23,7 +23,7 @@ function FadeUp({ delay, children }: { delay: number; children: React.ReactNode 
 
 export function CleanHero() {
   const t = useTranslations()
-  const { openCheck } = useCheckDialog()
+  const { openContact } = useContactDialog()
   return (
     <section className="relative overflow-hidden pt-44 md:pt-52 pb-24 md:pb-28">
       {/* Quiet depth: one warm glow + a fading engineering grid */}
@@ -57,7 +57,7 @@ export function CleanHero() {
             </FadeUp>
             <FadeUp delay={0.24}>
               <div className="mt-10 flex flex-wrap items-center gap-3.5">
-                <CleanButton onClick={openCheck} arrow>
+                <CleanButton onClick={() => openContact('automation')} arrow>
                   {t('hero.cta')}
                 </CleanButton>
                 <CleanButton variant="outline" href="/#pricing">

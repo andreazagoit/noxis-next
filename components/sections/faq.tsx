@@ -8,7 +8,7 @@ import { Container } from '@/components/layout/container'
 import { SectionHeader } from '@/components/ui/section-header'
 import { CleanButton } from '@/components/ui/clean-button'
 import { FlipWords } from '@/components/ui/flip-words'
-import { useCheckDialog } from '@/components/check/check-dialog'
+import { useContactDialog } from '@/components/contact/contact-dialog'
 import { cardStatic, darkPanel } from '@/lib/styles'
 import { mailtoHref } from '@/lib/mailto'
 import { cn } from '@/lib/utils'
@@ -81,7 +81,7 @@ function FaqItem({
 
 export function Faq() {
   const t = useTranslations()
-  const { openCheck } = useCheckDialog()
+  const { openContact } = useContactDialog()
   const faq = t.raw('pricing.faq') as { q: string; a: string }[]
   const [openIndex, setOpenIndex] = useState<number | null>(0)
   return (
@@ -142,7 +142,7 @@ export function Faq() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-5">
             <CleanButton
-              onClick={openCheck}
+              onClick={() => openContact('automation')}
               arrow
               className="bg-primary text-primary-foreground shadow-[0_16px_40px_-12px_oklch(0.705_0.213_47.6/0.7)] hover:bg-foreground hover:text-background"
             >
