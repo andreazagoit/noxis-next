@@ -13,7 +13,6 @@ import {
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/layout/container'
 import { Reveal } from '@/components/ui/reveal'
-import { SectionHeader } from '@/components/ui/section-header'
 import { cardStatic } from '@/lib/styles'
 import { cn } from '@/lib/utils'
 
@@ -62,13 +61,6 @@ export function CustomDevelopment() {
   return (
     <section id="sviluppo" className="py-24 md:py-32 scroll-mt-24">
       <Container>
-        <SectionHeader
-          eyebrow={t('development.eyebrow')}
-          title={`${t('development.title_line1')} ${t('development.title_line2')}`}
-          accent={t('development.title_line3')}
-          description={t('development.description')}
-        />
-
         {/* Punti di valore */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 md:gap-6">
           {HIGHLIGHTS.map(({ key, Icon }, i) => (
